@@ -1,0 +1,4 @@
+09-06-21:38:00.8081 10740 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(3) ask login bs
+09-06-21:38:00.8111 10740 CB2LSession::Msg_User_Login:61 user(asd)(123)(3) ask login ret
+09-06-21:39:01.8016 10740 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(4) ask login bs
+09-06-21:39:01.8046 10740 CB2LSession::Msg_User_Login:61 user(asd)(123)(4) ask login ret

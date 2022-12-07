@@ -1,0 +1,10 @@
+09-06-21:35:58.2061 9488 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49997, ReuseAddr 1
+09-06-21:35:58.2081 9488 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49996, ReuseAddr 1
+09-06-21:37:59.7970 9488 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:asd(2), sessionid:123, platform:0
+09-06-21:37:59.8660 9488 SdkConnector::Update:610 Add uid:asd, sessionid:0asd
+09-06-21:37:59.8680 9488 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+09-06-21:38:00.8091 9488 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:asd
+09-06-21:38:59.5274 9488 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:asd(3), sessionid:123, platform:0
+09-06-21:38:59.5314 9488 SdkConnector::Update:610 Add uid:asd, sessionid:0asd
+09-06-21:38:59.5324 9488 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+09-06-21:39:01.8026 9488 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:asd

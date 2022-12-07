@@ -1,0 +1,10 @@
+04-17-10:46:04.1698 5888 SceneServer::CSSCfgMgr::LoadMapObjCfg:901  Load 38 map obj cfg.
+04-17-10:46:04.1778 5888 SceneServer::CSSCfgMgr::LoadMapCfg:787  load 4 map.
+04-17-10:46:04.2638 5888 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:20001, ReuseAddr 1
+04-17-10:46:05.2729 5888 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234
+04-17-10:46:06.2749 5888 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234
+04-17-17:37:01.5661 5888 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 0 battle
+04-17-17:37:26.8966 3116 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:9
+04-17-17:37:26.9246 3116 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+04-17-17:37:26.9656 3116 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 1
+04-17-22:17:22.3022 5888 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234

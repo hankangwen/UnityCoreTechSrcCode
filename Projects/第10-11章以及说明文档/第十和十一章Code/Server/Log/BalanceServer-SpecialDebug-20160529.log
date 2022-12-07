@@ -1,0 +1,10 @@
+05-29-17:00:23.2070 21152 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(3) ask login bs
+05-29-17:00:23.2290 21152 CB2LSession::Msg_User_Login:61 user(zxc)(123)(3) ask login ret
+05-29-17:00:53.4617 21152 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(4) ask login bs
+05-29-17:00:53.4727 21152 CB2LSession::Msg_User_Login:61 user(zxc)(123)(4) ask login ret
+05-29-21:07:45.3149 21152 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(5) ask login bs
+05-29-21:07:45.3239 21152 CB2LSession::Msg_User_Login:61 user(zxc)(123)(5) ask login ret
+05-29-11:22:30.7374 11412 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(6) ask login bs
+05-29-11:22:30.7394 11412 CB2LSession::Msg_User_Login:61 user(zxc)(123)(6) ask login ret
+05-29-11:30:24.2645 11412 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(7) ask login bs
+05-29-11:30:24.2695 11412 CB2LSession::Msg_User_Login:61 user(zxc)(123)(7) ask login ret

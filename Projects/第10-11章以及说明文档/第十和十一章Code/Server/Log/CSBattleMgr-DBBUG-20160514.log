@@ -1,0 +1,44 @@
+05-14-19:32:47.9742 5772 CentralServer::CCSCfgMgr::LoadNewSkillCfg:815 Load 268 Skill cfg.
+05-14-19:32:48.1122 5772 CentralServer::CCSCfgMgr::LoadSkillModelAccountCfg:905 Load 322 Skill cfg.
+05-14-19:32:48.3412 5772 CentralServer::CCSCfgMgr::LoadSkillModelEmitCfg:1023 Load 96 Skill cfg.
+05-14-19:32:48.3582 5772 CentralServer::CCSCfgMgr::LoadSkillModelRangeCfg:1098 Load 123 Skill cfg.
+05-14-19:32:48.3602 5772 CentralServer::CCSCfgMgr::LoadSkillModelLeadingCfg:959  Load 17 Skill cfg.
+05-14-19:32:48.3712 5772 CentralServer::CCSCfgMgr::LoadSkillModelBufCfg:1183  Load 302 Skill cfg.
+05-14-19:32:48.3882 5772 CentralServer::CCSCfgMgr::LoadSkillModelSummonCfg:1288  Load 5 Skill cfg.
+05-14-19:32:48.4052 5772 CentralServer::CCSCfgMgr::LoadSkillModelMoveCfg:1355  Load 26 Skill cfg.
+05-14-19:32:48.4072 5772 CentralServer::CCSCfgMgr::LoadSkillModelSwitchCfg:1414  Load 26 Skill cfg.
+05-14-19:32:48.4082 5772 CentralServer::CCSCfgMgr::LoadSkillModelPurifactionCfg:1477  Load 1 Skill cfg.
+05-14-19:32:48.4102 5772 CentralServer::CCSCfgMgr::LoadSkillModelLinkCfg:1542  Load 1 Skill cfg.
+05-14-19:32:48.4492 5772 CentralServer::CCSCfgMgr::LoadPassitiveSkillCfg:1635  Load 126 Skill cfg.
+05-14-19:32:48.4522 5772 CentralServer::CCSCfgMgr::LoadPassitiveEffectBloodSeekCfg:1682  Load 6 Skill cfg.
+05-14-19:32:48.4552 5772 CentralServer::CCSCfgMgr::LoadPassitiveEffectReboundCfg:1729  Load 4 Skill cfg.
+05-14-19:32:48.4572 5772 CentralServer::CCSCfgMgr::LoadPassitiveEffectReliveCfg:1777 Load 1 Skill cfg.
+05-14-19:32:48.4862 5772 CentralServer::CCSCfgMgr::LoadNPCCfg:224 Load 52 NPC cfg.
+05-14-19:32:48.5652 5772 CentralServer::CCSCfgMgr::LoadHeroCfg:353  Load 22 hero cfg.
+05-14-19:32:48.9982 5772 CentralServer::CCSCfgMgr::LoadGoodsCfg:628 Load 103 goods cfg.
+05-14-19:32:49.0022 5772 CentralServer::CCSCfgMgr::LoadShopCfg:710 Load 3 shop cfg.
+05-14-19:32:49.0032 5772 CentralServer::CCSCfgMgr::LoadMapCfg:419  load 4 map.
+05-14-19:32:49.0102 5772 CentralServer::CCSCfgMgr::LoadHeroChooseCfg:1998 Load 22 herochoose cfg.
+05-14-19:32:49.0732 5772 CentralServer::CCSCfgMgr::LoadRobotAICfg:2058 Load 609 RobotAI cfg.
+05-14-19:32:49.1102 5772 CentralServer::CCSCfgMgr::LoadRobotAIPathCfg:2107 Load 197 RobotAI cfg.
+05-14-19:32:49.1322 5772 CentralServer::CCSCfgMgr::LoadRunesCfg:101 Load 75 runes cfg.
+05-14-19:32:49.1372 5772 CentralServer::CCSCfgMgr::LoadRunesSlotCfg:345 Load 19 runesslot cfg.
+05-14-19:32:49.1472 5772 CentralServer::CCSCfgMgr::LoadHeroBuyCfg:466 Load 63 hero buy cfg.
+05-14-19:32:49.1512 5772 CentralServer::CCSCfgMgr::LoadDiscountCfg:527 Load 0 discount cfg.
+05-14-19:32:49.1622 5772 CentralServer::CCSCfgMgr::LoadHotAndNewGoodsCfg:777 Load NewCfg:1 and HotCfg:1
+05-14-19:32:49.6003 5772 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10002, ReuseAddr 1
+05-14-19:32:49.6033 5772 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10001, ReuseAddr 1
+05-14-19:32:49.6053 5772 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10010, ReuseAddr 1
+05-14-19:32:50.6143 5772 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234
+05-14-20:47:44.3344 5772 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(4)
+05-14-20:48:20.1064 5772 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(5)
+05-14-20:48:20.1104 5772 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-14-20:48:28.7689 5772 CentralServer::CCSUser::AddHero:163 Notify herolist:10001 expitred:-1, idfree:0
+05-14-21:01:00.6279 5772 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-14-21:01:00.6299 5772 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(6)
+05-14-21:01:00.6329 5772 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-14-21:47:18.2348 5772 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-14-21:47:18.2388 5772 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(7)
+05-14-21:47:18.2408 5772 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-14-22:13:07.6224 5772 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6379
+05-14-22:13:07.8994 5772 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6380

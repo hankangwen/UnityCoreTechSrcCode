@@ -1,0 +1,2 @@
+06-06-16:41:46.9919 48060 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+06-06-16:41:47.9980 48060 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15

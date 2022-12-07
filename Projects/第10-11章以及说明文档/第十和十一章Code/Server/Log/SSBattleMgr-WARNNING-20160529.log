@@ -1,0 +1,38 @@
+05-29-17:00:44.6252 20912 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-29-17:00:44.6772 19536 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-29-17:07:26.0271 21004 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+05-29-17:07:26.0491 20912 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-29-21:55:00.5000 20912 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-29-21:55:00.5761 21744 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+geCurHP:1641 Not Find killer hero.
+05-29-10:47:33.3785 6680 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+05-29-10:47:33.4435 5012 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-29-11:24:09.9041 5036 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:24:19.3687 5036 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:24:20.9167 5036 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:25:00.9560 5036 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:25:15.8869 5036 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:25:25.9565 5036 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:25:26.1185 5036 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:25:26.2855 5036 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:25:26.4475 5036 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:25:26.6145 5036 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:25:30.9418 5036 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:26:18.2175 5036 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:26:46.2821 5036 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:27:00.1109 5036 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:28:58.1146 5036 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+05-29-11:28:58.1316 5012 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-29-11:32:28.5786 4004 SceneServer::CSSBattle::AskLockTar:170 Lock not Exit GO
+05-29-11:33:01.1355 4004 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-29-11:33:20.7636 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:20.9216 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:21.6817 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:22.4817 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:22.6517 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:22.8097 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:22.9888 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:23.1528 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:33:23.3368 4004 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-29-11:34:22.3381 4004 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+05-29-11:34:22.3491 5012 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510

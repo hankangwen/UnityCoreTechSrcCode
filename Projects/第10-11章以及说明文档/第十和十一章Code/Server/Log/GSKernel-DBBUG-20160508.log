@@ -1,0 +1,77 @@
+05-08-08:55:24.1090 6676 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+05-08-08:55:24.7060 6676 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+05-08-08:56:16.4200 6676 CClientSession::OnRealEstablish:38 client(4)(10.10.10.8:5404) connected.
+05-08-08:56:16.4410 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(zxc)(5D9006020AD7473E98177C391C13084F)
+05-08-09:01:26.4017 6676 CClientSession::OnClose:46 client(4)(10.10.10.8:5404) disconnected.
+05-08-09:01:52.7172 6676 CClientSession::OnRealEstablish:38 client(5)(10.10.10.8:5718) connected.
+05-08-09:01:52.7392 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(zxc)(11E7CE743D29404FBDCC79E93B9561AE)
+05-08-09:02:39.6339 6676 CClientSession::OnClose:46 client(5)(10.10.10.8:5718) disconnected.
+05-08-09:11:27.7361 6676 CClientSession::OnRealEstablish:38 client(6)(10.10.10.8:6289) connected.
+05-08-09:11:27.7471 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(zxc)(5D04C065495E4F6E90F420F6A65BD360)
+05-08-09:15:45.3918 6676 CClientSession::OnClose:46 client(6)(10.10.10.8:6289) disconnected.
+05-08-09:23:07.6581 6676 CClientSession::OnRealEstablish:38 client(7)(10.10.10.8:6876) connected.
+05-08-09:23:07.6611 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxc)(CB743015AA1244B28AA045173942F1FB)
+05-08-09:28:41.4422 6676 CClientSession::OnClose:46 client(7)(10.10.10.8:6876) disconnected.
+05-08-10:49:42.2382 6676 CClientSession::OnRealEstablish:38 client(8)(10.10.10.8:11909) connected.
+05-08-10:49:42.2412 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(zxc)(0E77644A1DBC4AEDA3F2FD66D539F884)
+05-08-11:09:47.3422 6676 CClientSession::OnClose:46 client(8)(10.10.10.8:11909) disconnected.
+05-08-11:32:30.1781 6676 CClientSession::OnRealEstablish:38 client(9)(10.10.10.8:13577) connected.
+05-08-11:32:30.1931 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(zxc)(84CA49BEF42D403EB1D17877AC92445E)
+05-08-11:36:15.8960 6676 CClientSession::OnClose:46 client(9)(10.10.10.8:13577) disconnected.
+05-08-11:36:20.9933 6676 CClientSession::OnRealEstablish:38 client(10)(10.10.10.8:13789) connected.
+05-08-11:38:10.5586 6676 CClientSession::OnClose:46 client(10)(10.10.10.8:13789) disconnected.
+05-08-14:54:01.6717 6676 CClientSession::OnRealEstablish:38 client(11)(10.10.10.8:22356) connected.
+05-08-14:54:01.6767 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(11) ask login(zxc)(4CBD4828087E4704A6568C5BDE41F801)
+05-08-15:12:28.6330 6676 CClientSession::OnClose:46 client(11)(10.10.10.8:22356) disconnected.
+05-08-15:14:56.1585 6676 CClientSession::OnRealEstablish:38 client(12)(10.10.10.8:23161) connected.
+05-08-15:14:56.1795 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(12) ask login(zxc)(F92F6464B3E140AB954E6A050424A35F)
+05-08-15:21:37.1014 6676 CClientSession::OnClose:46 client(12)(10.10.10.8:23161) disconnected.
+05-08-15:26:10.9160 6676 CClientSession::OnRealEstablish:38 client(13)(10.10.10.8:23592) connected.
+05-08-15:26:10.9351 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(13) ask login(zxc)(391D9B81A65B41D8881D7535B466E605)
+05-08-15:28:20.0754 6676 CClientSession::OnClose:46 client(13)(10.10.10.8:23592) disconnected.
+05-08-17:07:50.8089 6676 CClientSession::OnRealEstablish:38 client(14)(10.10.10.8:27328) connected.
+05-08-17:07:50.8119 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(14) ask login(zxc)(94B2659217CE4E9C92AA3AA9E8A5C910)
+05-08-17:11:09.7923 6676 CClientSession::OnClose:46 client(14)(10.10.10.8:27328) disconnected.
+05-08-17:18:19.7249 6676 CClientSession::OnRealEstablish:38 client(15)(10.10.10.8:27717) connected.
+05-08-17:18:19.7289 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(15) ask login(zxc)(CDDCF40C80FF4513A4FF9279F8DFDB7E)
+05-08-17:19:38.7164 6676 CClientSession::OnClose:46 client(15)(10.10.10.8:27717) disconnected.
+05-08-17:20:23.8450 6676 CClientSession::OnRealEstablish:38 client(16)(10.10.10.8:27785) connected.
+05-08-17:20:23.8470 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(16) ask login(zxc)(23BFEC8E916D47AEB81BAA460F801EA8)
+05-08-17:24:50.9963 6676 CClientSession::OnClose:46 client(16)(10.10.10.8:27785) disconnected.
+05-08-17:27:10.1243 6676 CClientSession::OnRealEstablish:38 client(17)(10.10.10.8:28001) connected.
+05-08-17:27:10.1323 6676 CClientSession::OnClose:46 client(17)(10.10.10.8:28001) disconnected.
+05-08-18:12:08.8246 6676 CClientSession::OnRealEstablish:38 client(18)(10.10.10.8:32143) connected.
+05-08-18:12:08.8266 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(18) ask login(zxc)(91B68F749DDE480C985D9DD0E5ED5FF0)
+05-08-18:15:45.7790 6676 CClientSession::OnClose:46 client(18)(10.10.10.8:32143) disconnected.
+05-08-18:16:47.5205 6676 CClientSession::OnRealEstablish:38 client(19)(10.10.10.8:32332) connected.
+05-08-18:16:47.5286 6676 CClientSession::OnClose:46 client(19)(10.10.10.8:32332) disconnected.
+05-08-18:17:50.9572 6676 CClientSession::OnRealEstablish:38 client(20)(10.10.10.8:32363) connected.
+05-08-18:17:50.9592 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(20) ask login(zxc)(15BE2939A03941BABD327A33BB869AFB)
+05-08-18:21:09.1055 6676 CClientSession::OnClose:46 client(20)(10.10.10.8:32363) disconnected.
+05-08-18:22:00.9625 6676 CClientSession::OnRealEstablish:38 client(21)(10.10.10.8:32506) connected.
+05-08-18:22:10.0020 6676 CClientSession::OnClose:46 client(21)(10.10.10.8:32506) disconnected.
+05-08-18:29:18.6825 6676 CClientSession::OnRealEstablish:38 client(22)(10.10.10.8:32759) connected.
+05-08-18:29:18.6845 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(22) ask login(zxc)(66839F3BF72E4802B83ECAD45D56E2C3)
+05-08-18:31:32.1912 6676 CClientSession::OnClose:46 client(22)(10.10.10.8:32759) disconnected.
+05-08-18:31:42.7808 6676 CClientSession::OnRealEstablish:38 client(23)(10.10.10.8:32843) connected.
+05-08-18:31:42.7858 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(23) ask login(zxc)(99A72AC746734042B4D481CE3E1C478F)
+05-08-18:31:59.4097 6676 CClientSession::OnClose:46 client(23)(10.10.10.8:32843) disconnected.
+05-08-18:33:02.7413 6676 CClientSession::OnRealEstablish:38 client(24)(10.10.10.8:32885) connected.
+05-08-18:33:02.7433 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(24) ask login(zxc)(CABDB42BFCFC48E497A1A16479DFFD10)
+05-08-18:34:05.4419 6676 CClientSession::OnClose:46 client(24)(10.10.10.8:32885) disconnected.
+05-08-19:44:19.1269 6676 CClientSession::OnRealEstablish:38 client(25)(10.10.10.8:37080) connected.
+05-08-19:44:19.1319 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(25) ask login(zxc)(0F417DBA8B4343978F147341C08DD204)
+05-08-19:48:18.6476 6676 CClientSession::OnClose:46 client(25)(10.10.10.8:37080) disconnected.
+05-08-19:49:24.8544 6676 CClientSession::OnRealEstablish:38 client(26)(10.10.10.8:37263) connected.
+05-08-19:49:24.8624 6676 CClientSession::OnClose:46 client(26)(10.10.10.8:37263) disconnected.
+05-08-19:52:04.2055 6676 CClientSession::OnRealEstablish:38 client(27)(10.10.10.8:37393) connected.
+05-08-19:52:04.2115 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(27) ask login(zxc)(4899C8ED47CD43A5B71F93593C5618A8)
+05-08-19:52:49.9791 6676 CClientSession::OnClose:46 client(27)(10.10.10.8:37393) disconnected.
+05-08-19:58:14.9287 6676 CClientSession::OnRealEstablish:38 client(28)(10.10.10.8:37623) connected.
+05-08-19:58:14.9367 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(28) ask login(zxc)(ADF8237B5D8F46249709745370364630)
+05-08-20:01:26.2327 6676 CClientSession::OnClose:46 client(28)(10.10.10.8:37623) disconnected.
+05-08-20:41:43.8820 6676 CClientSession::OnRealEstablish:38 client(29)(10.10.10.8:40140) connected.
+05-08-20:41:43.9880 6676 GateServer::CGSKernel::OnMsgFromGC:57 client(29) ask login(zxc)(ED659CD1283947EB8526B9C6BCA94B02)
+05-08-20:48:54.8446 6676 CClientSession::OnClose:46 client(29)(10.10.10.8:40140) disconnected.
+05-08-21:54:56.6022 6676 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:20001
+05-08-21:54:57.8913 6676 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002

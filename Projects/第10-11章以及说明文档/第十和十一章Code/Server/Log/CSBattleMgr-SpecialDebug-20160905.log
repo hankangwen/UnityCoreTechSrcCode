@@ -1,0 +1,5 @@
+09-05-07:41:39.3590 9952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asd--
+09-05-07:41:56.3429 9952 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:asd, nickName:飓桂先知
+09-05-07:44:34.9190 9952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asd--
+09-05-07:44:53.0301 9952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!aaa--
+09-05-07:45:06.9358 9952 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:aaa, nickName:恐冷创造者

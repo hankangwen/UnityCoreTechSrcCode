@@ -1,0 +1,57 @@
+04-24-14:33:13.7875 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!adfa--
+04-24-14:33:19.3498 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:adfa, nickName:静虚堕天使
+04-24-16:38:19.8808 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asad--
+04-24-16:38:23.3790 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:asad, nickName:霜沌创造者
+04-24-16:38:44.1392 7568 CentralServer::CCSBattle::CCSBattle:33 create battle(1)
+04-24-16:38:44.1452 7568 CentralServer::CCSBattle::CCSBattle:43 battle(1) add user(2001)
+04-24-16:38:50.1005 7568 CentralServer::CCSBattle::OnFinish:236 destory battle(1)
+04-24-16:38:50.1035 7568 CentralServer::CCSBattle::OnFinish:242 battle(1) remove user(2001)
+04-24-16:38:50.1055 7568 CentralServer::CCSUserBattleInfo::Clear:64 user(asad) clear by reason(2)
+04-24-16:38:50.1125 7568 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 ɾ�����!
+04-24-16:43:01.7849 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asda--
+04-24-16:43:05.1061 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:asda, nickName:独争博学者
+04-24-16:44:37.1814 7568 CentralServer::CCSBattle::CCSBattle:33 create battle(2)
+04-24-16:44:37.1884 7568 CentralServer::CCSBattle::CCSBattle:43 battle(2) add user(3001)
+04-24-16:44:39.5985 7568 CentralServer::CCSBattle::OnFinish:236 destory battle(2)
+04-24-16:44:39.6005 7568 CentralServer::CCSBattle::OnFinish:242 battle(2) remove user(3001)
+04-24-16:44:39.6025 7568 CentralServer::CCSUserBattleInfo::Clear:64 user(asda) clear by reason(2)
+04-24-16:44:39.6085 7568 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 ɾ�����!
+04-24-16:45:33.3416 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxcz--
+04-24-16:45:37.7319 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxcz, nickName:完狱武者
+04-24-20:02:53.6418 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asdad--
+04-24-20:02:58.5921 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:asdad, nickName:战义意志
+04-24-20:47:19.1593 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxczc--
+04-24-20:47:30.1529 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxczc, nickName:adfa
+04-24-20:48:28.2272 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!adfa--
+04-24-20:48:41.7280 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!azxs--
+04-24-20:48:48.9604 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:azxs, nickName:重龙苍穹
+04-24-21:13:02.5266 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!qwwww--
+04-24-21:13:08.3349 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:qwwww, nickName:爆暴潜伏者
+04-24-21:14:22.0791 7568 CentralServer::CCSBattle::CCSBattle:33 create battle(3)
+04-24-21:14:22.0861 7568 CentralServer::CCSBattle::CCSBattle:43 battle(3) add user(8001)
+04-24-21:14:26.3794 7568 CentralServer::CCSBattle::OnFinish:236 destory battle(3)
+04-24-21:14:26.3964 7568 CentralServer::CCSBattle::OnFinish:242 battle(3) remove user(8001)
+04-24-21:14:26.4054 7568 CentralServer::CCSUserBattleInfo::Clear:64 user(qwwww) clear by reason(2)
+04-24-21:14:26.4094 7568 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 ɾ�����!
+04-24-22:03:38.5152 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!aseqaw--
+04-24-22:03:43.1525 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:aseqaw, nickName:裂魅浸染者
+04-24-22:17:07.3395 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxzczc--
+04-24-22:17:11.0297 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxzczc, nickName:雷魂踏浪者
+04-24-22:19:56.1491 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxcae--
+04-24-22:24:02.8072 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxcae, nickName:蛮破镇魂曲
+04-24-22:26:17.2549 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!aqwe--
+04-24-22:26:24.5623 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:aqwe, nickName:新魂魔王
+04-24-22:26:32.2448 7568 CentralServer::CCSBattle::CCSBattle:33 create battle(4)
+04-24-22:26:32.2518 7568 CentralServer::CCSBattle::CCSBattle:43 battle(4) add user(12001)
+04-24-22:26:42.8044 7568 CentralServer::CCSBattle::OnFinish:236 destory battle(4)
+04-24-22:26:42.8054 7568 CentralServer::CCSBattle::OnFinish:242 battle(4) remove user(12001)
+04-24-22:26:42.8124 7568 CentralServer::CCSUserBattleInfo::Clear:64 user(aqwe) clear by reason(2)
+04-24-22:26:42.8254 7568 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 ɾ�����!
+04-24-22:27:45.3030 7568 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxdfr--
+04-24-22:28:07.1342 7568 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxdfr, nickName:混蓝潜伏者
+04-24-22:31:13.1659 7568 CentralServer::CCSBattle::CCSBattle:33 create battle(5)
+04-24-22:31:13.1689 7568 CentralServer::CCSBattle::CCSBattle:43 battle(5) add user(13001)
+04-24-22:33:52.7290 7568 CentralServer::CCSBattle::OnFinish:236 destory battle(5)
+04-24-22:33:52.7310 7568 CentralServer::CCSBattle::OnFinish:242 battle(5) remove user(13001)
+04-24-22:33:52.7330 7568 CentralServer::CCSUserBattleInfo::Clear:64 user(zxdfr) clear by reason(2)
+04-24-22:33:52.7370 7568 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 ɾ�����!

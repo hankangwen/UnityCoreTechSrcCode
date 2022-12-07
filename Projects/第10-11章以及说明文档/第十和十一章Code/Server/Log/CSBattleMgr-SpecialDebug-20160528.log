@@ -1,0 +1,44 @@
+05-28-15:08:46.9578 10412 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-28-15:08:51.9681 10412 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxc, nickName:ÈªÑÈô®ÊÅ∂È≠î
+05-28-15:08:55.1342 10412 CentralServer::CCSBattle::CCSBattle:33 create battle(1)
+05-28-15:08:55.1482 10412 CentralServer::CCSBattle::CCSBattle:43 battle(1) add user(1001)
+05-28-15:51:07.2261 10412 CentralServer::CCSBattle::OnFinish:236 destory battle(1)
+05-28-15:51:07.2351 10412 CentralServer::CCSBattle::OnFinish:242 battle(1) remove user(1001)
+05-28-15:51:07.2381 10412 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-28-15:51:07.2421 10412 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 …æ≥˝ÕÊº“!
+05-28-17:04:07.1596 10412 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-28-17:04:12.5019 10412 CentralServer::CCSUser::AskBuyGoods:505 π∫¬Úª®∑—Ω±“2500£¨ £”‡:40
+05-28-17:04:17.0792 10412 CentralServer::CCSBattle::CCSBattle:33 create battle(2)
+05-28-17:04:17.0972 10412 CentralServer::CCSBattle::CCSBattle:43 battle(2) add user(1001)
+05-28-17:36:10.6856 10412 CentralServer::CCSBattle::OnFinish:236 destory battle(2)
+05-28-17:36:10.8126 10412 CentralServer::CCSBattle::OnFinish:242 battle(2) remove user(1001)
+05-28-17:36:10.8176 10412 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-28-17:36:10.8916 10412 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 …æ≥˝ÕÊº“!
+05-28-20:13:44.4183 10412 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-28-20:13:49.5186 10412 CentralServer::CCSBattle::CCSBattle:33 create battle(3)
+05-28-20:13:49.5236 10412 CentralServer::CCSBattle::CCSBattle:43 battle(3) add user(1001)
+05-28-20:24:52.2235 10412 CentralServer::CCSBattle::OnFinish:236 destory battle(3)
+05-28-20:24:52.2265 10412 CentralServer::CCSBattle::OnFinish:242 battle(3) remove user(1001)
+05-28-20:24:52.2295 10412 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-28-20:24:52.2325 10412 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 …æ≥˝ÕÊº“!
+05-28-20:57:43.8053 10412 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-28-20:57:55.5530 10412 CentralServer::CCSBattle::CCSBattle:33 create battle(4)
+05-28-20:57:55.5580 10412 CentralServer::CCSBattle::CCSBattle:43 battle(4) add user(1001)
+05-28-21:07:12.0748 10412 CentralServer::CCSBattle::OnFinish:236 destory battle(4)
+05-28-21:07:12.0788 10412 CentralServer::CCSBattle::OnFinish:242 battle(4) remove user(1001)
+05-28-21:07:12.0828 10412 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-28-21:07:12.1048 10412 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 …æ≥˝ÕÊº“!
+05-28-21:09:11.7846 10412 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-28-21:09:17.8600 10412 CentralServer::CCSBattle::CCSBattle:33 create battle(5)
+05-28-21:09:17.8750 10412 CentralServer::CCSBattle::CCSBattle:43 battle(5) add user(1001)
+05-28-21:26:01.2774 10412 CentralServer::CCSBattle::OnFinish:236 destory battle(5)
+05-28-21:26:01.2804 10412 CentralServer::CCSBattle::OnFinish:242 battle(5) remove user(1001)
+05-28-21:26:01.2834 10412 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-28-21:26:01.3024 10412 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 …æ≥˝ÕÊº“!
+05-28-21:26:32.0431 10412 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-28-21:26:35.7904 10412 CentralServer::CCSBattle::CCSBattle:33 create battle(6)
+05-28-21:26:35.8094 10412 CentralServer::CCSBattle::CCSBattle:43 battle(6) add user(1001)
+05-28-21:32:01.3000 10412 CentralServer::CCSBattle::OnFinish:236 destory battle(6)
+05-28-21:32:01.3040 10412 CentralServer::CCSBattle::OnFinish:242 battle(6) remove user(1001)
+05-28-21:32:01.3510 10412 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-28-21:32:01.4020 10412 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 …æ≥˝ÕÊº“!

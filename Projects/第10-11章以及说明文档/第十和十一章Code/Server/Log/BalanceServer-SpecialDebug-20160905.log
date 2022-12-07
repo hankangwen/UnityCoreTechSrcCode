@@ -1,0 +1,6 @@
+09-05-07:41:39.3070 8768 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(3) ask login bs
+09-05-07:41:39.3090 8768 CB2LSession::Msg_User_Login:61 user(asd)(123)(3) ask login ret
+09-05-07:44:34.8670 8768 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(4) ask login bs
+09-05-07:44:34.8700 8768 CB2LSession::Msg_User_Login:61 user(asd)(123)(4) ask login ret
+09-05-07:44:52.9710 8768 CClientSession::MSG_OneClientLogin:58 user(aaa)(123)(5) ask login bs
+09-05-07:44:52.9740 8768 CB2LSession::Msg_User_Login:61 user(aaa)(123)(5) ask login ret

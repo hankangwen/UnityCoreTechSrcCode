@@ -1,0 +1,12 @@
+04-17-10:46:26.0181 5460 CClientSession::MSG_OneClientLogin:58 user(xzc)(123)(3) ask login bs
+04-17-10:46:26.0211 5460 CB2LSession::Msg_User_Login:61 user(xzc)(123)(3) ask login ret
+04-17-14:20:41.3563 5460 CClientSession::MSG_OneClientLogin:58 user(nbn)(123)(4) ask login bs
+04-17-14:20:41.3623 5460 CB2LSession::Msg_User_Login:61 user(nbn)(123)(4) ask login ret
+04-17-14:49:42.7269 5460 CClientSession::MSG_OneClientLogin:58 user(zxczc)(123)(5) ask login bs
+04-17-14:49:42.7429 5460 CB2LSession::Msg_User_Login:61 user(zxczc)(123)(5) ask login ret
+04-17-17:17:36.8925 5460 CClientSession::MSG_OneClientLogin:58 user(zxcz)(123)(6) ask login bs
+04-17-17:17:36.8945 5460 CB2LSession::Msg_User_Login:61 user(zxcz)(123)(6) ask login ret
+04-17-17:23:54.7011 5460 CClientSession::MSG_OneClientLogin:58 user(zxczc)(123)(7) ask login bs
+04-17-17:23:54.7051 5460 CB2LSession::Msg_User_Login:61 user(zxczc)(123)(7) ask login ret
+04-17-17:36:11.4283 5460 CClientSession::MSG_OneClientLogin:58 user(xcv)(123)(8) ask login bs
+04-17-17:36:11.5693 5460 CB2LSession::Msg_User_Login:61 user(xcv)(123)(8) ask login ret

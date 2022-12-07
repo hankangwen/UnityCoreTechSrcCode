@@ -1,0 +1,22 @@
+09-24-20:26:12.9209 12000 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49997, ReuseAddr 1
+09-24-20:26:12.9219 12000 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49996, ReuseAddr 1
+09-24-21:01:13.7371 12000 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:asd(2), sessionid:123, platform:0
+09-24-21:01:13.8351 12000 SdkConnector::Update:610 Add uid:asd, sessionid:0asd
+09-24-21:01:13.8651 12000 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+09-24-21:01:15.1292 12000 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:asd
+09-24-21:02:14.3865 12000 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:asd(3), sessionid:123, platform:0
+09-24-21:02:14.4235 12000 SdkConnector::Update:610 Add uid:asd, sessionid:0asd
+09-24-21:02:14.4255 12000 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+09-24-21:02:15.4276 12000 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:asd
+09-24-21:05:25.7345 12000 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:asd(4), sessionid:123, platform:0
+09-24-21:05:25.7825 12000 SdkConnector::Update:610 Add uid:asd, sessionid:0asd
+09-24-21:05:25.8095 12000 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+09-24-21:05:27.2476 12000 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:asd
+09-24-21:09:40.3130 12000 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:asd(5), sessionid:123, platform:0
+09-24-21:09:40.3841 12000 SdkConnector::Update:610 Add uid:asd, sessionid:0asd
+09-24-21:09:40.3881 12000 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+09-24-21:09:41.5711 12000 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:asd
+09-24-21:14:28.0395 12000 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:asd(6), sessionid:123, platform:0
+09-24-21:14:28.0665 12000 SdkConnector::Update:610 Add uid:asd, sessionid:0asd
+09-24-21:14:28.0835 12000 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+09-24-21:14:29.3146 12000 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:asd

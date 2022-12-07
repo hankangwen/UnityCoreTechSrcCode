@@ -1,0 +1,5 @@
+07-23-21:31:22.3830 5712 CClientSession::MSG_OneClientLogin:58 user(asdd)(123)(3) ask login bs
+07-23-21:31:22.3930 5712 CB2LSession::Msg_User_Login:61 user(asdd)(123)(3) ask login ret
+07-23-21:33:15.8835 5712 CClientSession::MSG_OneClientLogin:58 user(asdd)(123)(4) ask login bs
+07-23-21:33:15.8875 5712 CB2LSession::Msg_User_Login:61 user(asdd)(123)(4) ask login ret
+et

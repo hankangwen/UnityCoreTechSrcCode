@@ -1,0 +1,22 @@
+05-28-15:08:25.6376 12700 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+05-28-15:08:26.6756 12700 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+05-28-15:08:46.9568 12700 CClientSession::OnRealEstablish:38 client(4)(10.10.10.1:21104) connected.
+05-28-15:08:46.9678 12700 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(zxc)(B046AE0D031E47CC8D3F4A695B008445)
+05-28-15:51:07.2241 12700 CClientSession::OnClose:46 client(4)(10.10.10.1:21104) disconnected.
+05-28-17:04:07.1376 12700 CClientSession::OnRealEstablish:38 client(5)(10.10.10.1:28046) connected.
+05-28-17:04:07.1496 12700 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(zxc)(A032E98904A14A6496D36FC0D2175699)
+05-28-17:36:10.5806 12700 CClientSession::OnClose:46 client(5)(10.10.10.1:28046) disconnected.
+05-28-20:13:44.4173 12700 CClientSession::OnRealEstablish:38 client(6)(10.10.10.1:36669) connected.
+05-28-20:13:44.4223 12700 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(zxc)(D420361B567B49DC94A2CFD28F125DC1)
+05-28-20:24:52.2155 12700 CClientSession::OnClose:46 client(6)(10.10.10.1:36669) disconnected.
+05-28-20:57:43.8043 12700 CClientSession::OnRealEstablish:38 client(7)(10.10.10.1:47827) connected.
+05-28-20:57:43.8103 12700 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxc)(720AACA519424E63B212BAEBF51D3B40)
+05-28-21:07:12.0638 12700 CClientSession::OnClose:46 client(7)(10.10.10.1:47827) disconnected.
+05-28-21:09:11.7836 12700 CClientSession::OnRealEstablish:38 client(8)(10.10.10.1:50011) connected.
+05-28-21:09:11.7856 12700 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(zxc)(DC56EC737CE94753BE687E21100DFFB8)
+05-28-21:26:01.2694 12700 CClientSession::OnClose:46 client(8)(10.10.10.1:50011) disconnected.
+05-28-21:26:32.0421 12700 CClientSession::OnRealEstablish:38 client(9)(10.10.10.1:53318) connected.
+05-28-21:26:32.0441 12700 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(zxc)(6F4300FA3DC442188B5DB703C6864F3E)
+05-28-21:32:01.1910 12700 CClientSession::OnClose:46 client(9)(10.10.10.1:53318) disconnected.
+05-28-22:31:43.1618 12700 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:20001
+05-28-22:31:44.1929 12700 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002

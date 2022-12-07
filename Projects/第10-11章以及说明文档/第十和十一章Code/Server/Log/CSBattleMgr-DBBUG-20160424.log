@@ -1,0 +1,48 @@
+04-24-10:31:24.9236 7568 CentralServer::CCSCfgMgr::LoadNewSkillCfg:815 Load 268 Skill cfg.
+04-24-10:31:25.0966 7568 CentralServer::CCSCfgMgr::LoadSkillModelAccountCfg:905 Load 322 Skill cfg.
+04-24-10:31:25.1516 7568 CentralServer::CCSCfgMgr::LoadSkillModelEmitCfg:1023 Load 96 Skill cfg.
+04-24-10:31:25.1996 7568 CentralServer::CCSCfgMgr::LoadSkillModelRangeCfg:1098 Load 123 Skill cfg.
+04-24-10:31:25.2046 7568 CentralServer::CCSCfgMgr::LoadSkillModelLeadingCfg:959  Load 17 Skill cfg.
+04-24-10:31:25.3287 7568 CentralServer::CCSCfgMgr::LoadSkillModelBufCfg:1183  Load 302 Skill cfg.
+04-24-10:31:25.3447 7568 CentralServer::CCSCfgMgr::LoadSkillModelSummonCfg:1288  Load 5 Skill cfg.
+04-24-10:31:25.3617 7568 CentralServer::CCSCfgMgr::LoadSkillModelMoveCfg:1355  Load 26 Skill cfg.
+04-24-10:31:25.3627 7568 CentralServer::CCSCfgMgr::LoadSkillModelSwitchCfg:1414  Load 26 Skill cfg.
+04-24-10:31:25.3647 7568 CentralServer::CCSCfgMgr::LoadSkillModelPurifactionCfg:1477  Load 1 Skill cfg.
+04-24-10:31:25.3667 7568 CentralServer::CCSCfgMgr::LoadSkillModelLinkCfg:1542  Load 1 Skill cfg.
+04-24-10:31:25.4297 7568 CentralServer::CCSCfgMgr::LoadPassitiveSkillCfg:1635  Load 126 Skill cfg.
+04-24-10:31:25.4367 7568 CentralServer::CCSCfgMgr::LoadPassitiveEffectBloodSeekCfg:1682  Load 6 Skill cfg.
+04-24-10:31:25.4387 7568 CentralServer::CCSCfgMgr::LoadPassitiveEffectReboundCfg:1729  Load 4 Skill cfg.
+04-24-10:31:25.4397 7568 CentralServer::CCSCfgMgr::LoadPassitiveEffectReliveCfg:1777 Load 1 Skill cfg.
+04-24-10:31:25.4707 7568 CentralServer::CCSCfgMgr::LoadNPCCfg:224 Load 52 NPC cfg.
+04-24-10:31:25.5087 7568 CentralServer::CCSCfgMgr::LoadHeroCfg:353  Load 22 hero cfg.
+04-24-10:31:25.5777 7568 CentralServer::CCSCfgMgr::LoadGoodsCfg:628 Load 103 goods cfg.
+04-24-10:31:25.5837 7568 CentralServer::CCSCfgMgr::LoadShopCfg:710 Load 3 shop cfg.
+04-24-10:31:25.5837 7568 CentralServer::CCSCfgMgr::LoadMapCfg:419  load 4 map.
+04-24-10:31:25.5897 7568 CentralServer::CCSCfgMgr::LoadHeroChooseCfg:1998 Load 22 herochoose cfg.
+04-24-10:31:25.6517 7568 CentralServer::CCSCfgMgr::LoadRobotAICfg:2058 Load 609 RobotAI cfg.
+04-24-10:31:25.6747 7568 CentralServer::CCSCfgMgr::LoadRobotAIPathCfg:2107 Load 197 RobotAI cfg.
+04-24-10:31:25.7057 7568 CentralServer::CCSCfgMgr::LoadRunesCfg:101 Load 75 runes cfg.
+04-24-10:31:25.7087 7568 CentralServer::CCSCfgMgr::LoadRunesSlotCfg:345 Load 19 runesslot cfg.
+04-24-10:31:25.7487 7568 CentralServer::CCSCfgMgr::LoadHeroBuyCfg:466 Load 63 hero buy cfg.
+04-24-10:31:25.7607 7568 CentralServer::CCSCfgMgr::LoadDiscountCfg:527 Load 0 discount cfg.
+04-24-10:31:25.7777 7568 CentralServer::CCSCfgMgr::LoadHotAndNewGoodsCfg:777 Load NewCfg:1 and HotCfg:1
+04-24-10:31:26.3267 7568 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10002, ReuseAddr 1
+04-24-10:31:26.3467 7568 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10001, ReuseAddr 1
+04-24-10:31:26.3487 7568 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10010, ReuseAddr 1
+04-24-14:33:13.8025 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(4)
+04-24-16:38:19.8838 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(5)
+04-24-16:43:01.7919 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(6)
+04-24-16:45:33.3466 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(7)
+04-24-20:02:53.6468 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(8)
+04-24-20:47:19.1833 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(9)
+04-24-20:48:28.2732 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(10)
+04-24-20:48:28.2782 7568 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+04-24-20:48:41.7330 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(11)
+04-24-21:13:02.5316 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(12)
+04-24-22:03:38.5232 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(13)
+04-24-22:17:07.3445 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(14)
+04-24-22:19:56.1581 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(15)
+04-24-22:26:17.2589 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(16)
+04-24-22:27:45.3060 7568 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(17)
+04-24-22:35:12.7316 7568 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6380
+04-24-22:35:12.7386 7568 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6379

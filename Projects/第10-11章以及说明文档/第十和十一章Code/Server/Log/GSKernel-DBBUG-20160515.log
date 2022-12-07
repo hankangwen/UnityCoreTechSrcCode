@@ -1,0 +1,39 @@
+05-15-09:47:28.4285 18312 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+05-15-09:47:29.4395 18312 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+05-15-09:53:37.8156 18312 CClientSession::OnRealEstablish:38 client(4)(10.10.10.6:58426) connected.
+05-15-09:53:37.8196 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(zxc)(9C977E55A014403E9AC0F81C071B43FE)
+05-15-09:54:13.4507 18312 CClientSession::OnClose:46 client(4)(10.10.10.6:58426) disconnected.
+05-15-09:54:39.0691 18312 CClientSession::OnRealEstablish:38 client(5)(10.10.10.6:58478) connected.
+05-15-09:54:39.0731 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(zxc)(1D447FB2EB024B5FB8AF1205B811D1F4)
+05-15-09:57:29.5439 18312 CClientSession::OnClose:46 client(5)(10.10.10.6:58478) disconnected.
+05-15-09:58:23.4780 18312 CClientSession::OnRealEstablish:38 client(6)(10.10.10.6:58604) connected.
+05-15-09:58:23.4860 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(zxc)(4CFAD843A15643F6BE2B3B733A0D0F65)
+05-15-10:03:30.2425 18312 CClientSession::OnClose:46 client(6)(10.10.10.6:58604) disconnected.
+05-15-10:04:26.6027 18312 CClientSession::OnRealEstablish:38 client(7)(10.10.10.6:58816) connected.
+05-15-10:04:26.6147 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxc)(52F3833E099E46CEB94BE3CFADE29DAE)
+05-15-10:04:47.3029 18312 CClientSession::OnClose:46 client(7)(10.10.10.6:58816) disconnected.
+05-15-10:05:48.7624 18312 CClientSession::OnRealEstablish:38 client(8)(10.10.10.6:58881) connected.
+05-15-10:05:48.7664 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(zxc)(2F81C6FB6D054CA391F505B0B8905681)
+05-15-10:06:31.7959 18312 CClientSession::OnClose:46 client(8)(10.10.10.6:58881) disconnected.
+05-15-10:07:34.0614 18312 CClientSession::OnRealEstablish:38 client(9)(10.10.10.6:58956) connected.
+05-15-10:07:34.0674 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(zxc)(7FD2AA5574C242EC99CE4434808DC288)
+05-15-10:12:18.7637 18312 CClientSession::OnClose:46 client(9)(10.10.10.6:58956) disconnected.
+05-15-10:41:21.8714 18312 CClientSession::OnRealEstablish:38 client(10)(10.10.10.6:61520) connected.
+05-15-10:41:21.9914 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(10) ask login(zxc)(E5FCB91C246140D5BB8993B03549BB27)
+05-15-10:49:19.1777 18312 CClientSession::OnClose:46 client(10)(10.10.10.6:61520) disconnected.
+05-15-16:27:53.4466 18312 CClientSession::OnRealEstablish:38 client(11)(10.10.10.6:15461) connected.
+05-15-16:27:53.4566 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(11) ask login(zxc)(10BDFAD22D194A65BEB9FAD0ADE988E9)
+05-15-16:32:27.1223 18312 CClientSession::OnClose:46 client(11)(10.10.10.6:15461) disconnected.
+05-15-16:32:37.8929 18312 CClientSession::OnRealEstablish:38 client(12)(10.10.10.6:16150) connected.
+05-15-16:32:37.8999 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(12) ask login(zxc)(2313794D17D34954A642D7983BAFF576)
+05-15-16:33:47.9929 18312 CClientSession::OnClose:46 client(12)(10.10.10.6:16150) disconnected.
+05-15-16:34:21.3098 18312 CClientSession::OnRealEstablish:38 client(13)(10.10.10.6:16383) connected.
+05-15-16:34:21.3128 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(13) ask login(zxc)(9472C80301E34BA8B8702726A763D84D)
+05-15-16:36:27.9811 18312 CClientSession::OnClose:46 client(13)(10.10.10.6:16383) disconnected.
+05-15-16:37:08.7004 18312 CClientSession::OnRealEstablish:38 client(14)(10.10.10.6:16770) connected.
+05-15-16:37:08.7064 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(14) ask login(zxc)(9E20EADFF5554829891F924FA490909F)
+05-15-16:45:09.9349 18312 CClientSession::OnClose:46 client(14)(10.10.10.6:16770) disconnected.
+05-15-21:33:49.4445 18312 CClientSession::OnRealEstablish:38 client(15)(10.10.10.6:59498) connected.
+05-15-21:33:49.4535 18312 GateServer::CGSKernel::OnMsgFromGC:57 client(15) ask login(zxc)(FD1304DC60F846B2A97E0A881868FC10)
+05-15-21:41:08.8237 18312 CClientSession::OnClose:46 client(15)(10.10.10.6:59498) disconnected.
+05-15-22:14:43.3479 18312 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:20001

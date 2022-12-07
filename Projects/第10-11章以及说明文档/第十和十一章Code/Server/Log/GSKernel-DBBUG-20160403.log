@@ -1,0 +1,14 @@
+04-03-16:21:32.7812 1744 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+04-03-16:21:33.3313 1744 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+04-03-16:28:26.9409 1744 CClientSession::OnRealEstablish:38 client(4)(10.10.10.7:16302) connected.
+04-03-16:28:26.9479 1744 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(test)(4307D5B98D774D7286BCC56FF767737F)
+04-03-16:28:34.9114 1744 CClientSession::OnClose:46 client(4)(10.10.10.7:16302) disconnected.
+04-03-16:28:57.5217 1744 CClientSession::OnRealEstablish:38 client(5)(10.10.10.7:16314) connected.
+04-03-16:28:57.5307 1744 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(test)(6EC5FE089456457C9CC15F08C3A2E748)
+04-03-16:29:56.6100 1744 CClientSession::OnClose:46 client(5)(10.10.10.7:16314) disconnected.
+04-03-17:28:22.2566 1744 CClientSession::OnRealEstablish:38 client(6)(10.10.10.7:17274) connected.
+04-03-17:28:22.2596 1744 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(test)(3CB17CCE29FD417B8DF73223973B06E3)
+04-03-17:28:35.0573 1744 CClientSession::OnClose:46 client(6)(10.10.10.7:17274) disconnected.
+04-03-20:38:26.2728 1744 CClientSession::OnRealEstablish:38 client(7)(10.10.10.7:20411) connected.
+04-03-20:38:26.2768 1744 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(test)(E8AD66A8BAF34F0790D8ACDFEA9C7FBB)
+04-03-20:38:43.8408 1744 CClientSession::OnClose:46 client(7)(10.10.10.7:20411) disconnected.

@@ -1,0 +1,4 @@
+04-16-19:40:43.4137 7656 CGateSession::OnRealEstablish:36 GS(30001) Connected.
+04-16-19:40:43.5797 7656 CB2LSession::SendInitData:29 LS Connected, try to register me.
+04-16-19:40:43.5817 7656 CB2LSession::OnRealEstablish:36 LS Connected and register ok
+04-16-22:14:41.3151 7656 CGateSession::OnClose:47 GS(30001) DisConnect.

@@ -1,0 +1,84 @@
+05-15-09:47:28.5485 16768 CentralServer::CCSCfgMgr::LoadNewSkillCfg:815 Load 268 Skill cfg.
+05-15-09:47:28.6485 16768 CentralServer::CCSCfgMgr::LoadSkillModelAccountCfg:905 Load 322 Skill cfg.
+05-15-09:47:28.6915 16768 CentralServer::CCSCfgMgr::LoadSkillModelEmitCfg:1023 Load 96 Skill cfg.
+05-15-09:47:28.7335 16768 CentralServer::CCSCfgMgr::LoadSkillModelRangeCfg:1098 Load 123 Skill cfg.
+05-15-09:47:28.7385 16768 CentralServer::CCSCfgMgr::LoadSkillModelLeadingCfg:959  Load 17 Skill cfg.
+05-15-09:47:28.8555 16768 CentralServer::CCSCfgMgr::LoadSkillModelBufCfg:1183  Load 302 Skill cfg.
+05-15-09:47:28.8695 16768 CentralServer::CCSCfgMgr::LoadSkillModelSummonCfg:1288  Load 5 Skill cfg.
+05-15-09:47:28.8865 16768 CentralServer::CCSCfgMgr::LoadSkillModelMoveCfg:1355  Load 26 Skill cfg.
+05-15-09:47:28.8875 16768 CentralServer::CCSCfgMgr::LoadSkillModelSwitchCfg:1414  Load 26 Skill cfg.
+05-15-09:47:28.8905 16768 CentralServer::CCSCfgMgr::LoadSkillModelPurifactionCfg:1477  Load 1 Skill cfg.
+05-15-09:47:28.8915 16768 CentralServer::CCSCfgMgr::LoadSkillModelLinkCfg:1542  Load 1 Skill cfg.
+05-15-09:47:28.9275 16768 CentralServer::CCSCfgMgr::LoadPassitiveSkillCfg:1635  Load 126 Skill cfg.
+05-15-09:47:28.9305 16768 CentralServer::CCSCfgMgr::LoadPassitiveEffectBloodSeekCfg:1682  Load 6 Skill cfg.
+05-15-09:47:28.9335 16768 CentralServer::CCSCfgMgr::LoadPassitiveEffectReboundCfg:1729  Load 4 Skill cfg.
+05-15-09:47:28.9365 16768 CentralServer::CCSCfgMgr::LoadPassitiveEffectReliveCfg:1777 Load 1 Skill cfg.
+05-15-09:47:28.9605 16768 CentralServer::CCSCfgMgr::LoadNPCCfg:224 Load 52 NPC cfg.
+05-15-09:47:28.9915 16768 CentralServer::CCSCfgMgr::LoadHeroCfg:353  Load 22 hero cfg.
+05-15-09:47:29.0375 16768 CentralServer::CCSCfgMgr::LoadGoodsCfg:628 Load 103 goods cfg.
+05-15-09:47:29.0405 16768 CentralServer::CCSCfgMgr::LoadShopCfg:710 Load 3 shop cfg.
+05-15-09:47:29.0435 16768 CentralServer::CCSCfgMgr::LoadMapCfg:419  load 4 map.
+05-15-09:47:29.0455 16768 CentralServer::CCSCfgMgr::LoadHeroChooseCfg:1998 Load 22 herochoose cfg.
+05-15-09:47:29.0975 16768 CentralServer::CCSCfgMgr::LoadRobotAICfg:2058 Load 609 RobotAI cfg.
+05-15-09:47:29.1225 16768 CentralServer::CCSCfgMgr::LoadRobotAIPathCfg:2107 Load 197 RobotAI cfg.
+05-15-09:47:29.1455 16768 CentralServer::CCSCfgMgr::LoadRunesCfg:101 Load 75 runes cfg.
+05-15-09:47:29.1535 16768 CentralServer::CCSCfgMgr::LoadRunesSlotCfg:345 Load 19 runesslot cfg.
+05-15-09:47:29.1635 16768 CentralServer::CCSCfgMgr::LoadHeroBuyCfg:466 Load 63 hero buy cfg.
+05-15-09:47:29.1675 16768 CentralServer::CCSCfgMgr::LoadDiscountCfg:527 Load 0 discount cfg.
+05-15-09:47:29.1695 16768 CentralServer::CCSCfgMgr::LoadHotAndNewGoodsCfg:777 Load NewCfg:1 and HotCfg:1
+05-15-09:47:29.2285 16768 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10002, ReuseAddr 1
+05-15-09:47:29.2325 16768 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10001, ReuseAddr 1
+05-15-09:47:29.2355 16768 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10010, ReuseAddr 1
+05-15-09:53:37.8216 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(4)
+05-15-09:54:39.0751 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(5)
+05-15-09:54:39.0851 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-09:54:45.2515 16768 CentralServer::CCSUser::AddHero:163 Notify herolist:10001 expitred:-1, idfree:0
+05-15-09:58:23.4910 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-09:58:23.4940 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(6)
+05-15-09:58:23.4970 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-10:04:26.6157 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-10:04:26.6197 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(7)
+05-15-10:04:26.6227 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-10:05:48.7684 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-10:05:48.7794 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(8)
+05-15-10:05:48.7814 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-10:07:34.0674 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-10:07:34.0784 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(9)
+05-15-10:07:34.0814 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-10:41:22.0074 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-10:41:22.0834 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(10)
+05-15-10:41:22.0974 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-16:27:53.4906 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-16:27:53.4966 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(11)
+05-15-16:27:53.5016 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-16:32:37.9029 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-16:32:37.9089 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(12)
+05-15-16:32:37.9129 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-16:34:04.0128 16768 CentralServer::CCSBattle::CaculateResult:322 CurExp:50, GotExp:103, GotGold:6.
+05-15-16:34:21.3178 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-16:34:21.3238 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(13)
+05-15-16:34:21.3268 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-16:34:28.5982 16768 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:1, runeid:120101
+05-15-16:34:54.5007 16768 CentralServer::CCSUser::AddRuneNum:1749 É¾³ý·ûÎÄ£¡
+05-15-16:34:54.5027 16768 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:0, runeid:120101
+05-15-16:34:54.5057 16768 CentralServer::CCSUser::GCAskEqipRunes:294 euip rune(120101) to pos(0) success
+05-15-16:37:08.7104 16768 CentralServer::CCSUser::InitRunes:1715 Add page:0, pos:0,runeid:120101 from db
+05-15-16:37:08.7144 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-16:37:08.7164 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(14)
+05-15-16:37:08.7174 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-16:37:38.3561 16768 CentralServer::CCSUser::GCAskUnloadRunes:309 from page:0 pos:0
+05-15-16:37:38.3591 16768 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:1, runeid:120101
+05-15-16:37:38.3621 16768 CentralServer::CCSUser::GCAskUnloadRunes:344 remove equip rune page(0) pos:0
+05-15-16:37:39.3131 16768 CentralServer::CCSUser::AddRuneNum:1749 É¾³ý·ûÎÄ£¡
+05-15-16:37:39.3191 16768 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:0, runeid:120101
+05-15-16:37:39.3211 16768 CentralServer::CCSUser::GCAskEqipRunes:294 euip rune(120101) to pos(0) success
+05-15-16:37:54.9290 16768 CentralServer::CCSUser::GCAskUnloadRunes:309 from page:0 pos:0
+05-15-16:37:54.9350 16768 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:1, runeid:120101
+05-15-16:37:54.9390 16768 CentralServer::CCSUser::GCAskUnloadRunes:344 remove equip rune page(0) pos:0
+05-15-21:33:49.4555 16768 CentralServer::CCSUser::InitRunes:1698 add rune id:120101, num:1, gotime:1463301474
+05-15-21:33:49.4595 16768 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-15-21:33:49.4635 16768 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(15)
+05-15-21:33:49.4685 16768 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-15-22:14:44.2449 16768 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6380
+05-15-22:14:44.2609 16768 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6379
+05-15-22:14:46.4451 16768 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234

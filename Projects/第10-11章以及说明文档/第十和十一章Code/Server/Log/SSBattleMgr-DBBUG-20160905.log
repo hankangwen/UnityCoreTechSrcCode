@@ -1,0 +1,4 @@
+09-05-07:40:38.2155 4360 SceneServer::CSSCfgMgr::LoadMapObjCfg:901  Load 38 map obj cfg.
+09-05-07:40:38.2215 4360 SceneServer::CSSCfgMgr::LoadMapCfg:787  load 4 map.
+09-05-07:40:38.2725 4360 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:20001, ReuseAddr 1
+09-05-08:05:58.7554 4360 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234

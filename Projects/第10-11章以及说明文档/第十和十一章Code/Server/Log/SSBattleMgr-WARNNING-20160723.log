@@ -1,0 +1,10 @@
+07-23-21:32:50.8041 872 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+07-23-21:32:50.8311 1908 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+07-23-21:35:25.1979 11636 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+07-23-21:35:27.3990 11636 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+07-23-21:35:30.5212 11636 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+07-23-21:35:38.0286 11636 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+07-23-21:36:54.9260 11636 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+07-23-21:37:03.2345 11636 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+07-23-21:37:17.4403 11636 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+07-23-21:37:17.4933 872 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510

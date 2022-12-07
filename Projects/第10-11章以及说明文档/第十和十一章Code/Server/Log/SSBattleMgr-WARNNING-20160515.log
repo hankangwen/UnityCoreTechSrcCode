@@ -1,0 +1,15 @@
+05-15-09:54:13.4727 15028 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-15-09:54:13.5517 4304 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-15-10:49:32.8315 16640 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+05-15-10:49:32.8805 15028 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-15-16:32:27.1433 15028 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-15-16:32:27.1513 10356 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-15-16:33:57.7625 16516 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-15-16:34:01.8817 16516 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+05-15-16:34:03.9818 16516 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+05-15-16:34:04.0018 15028 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-15-16:36:28.0071 15028 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-15-16:36:28.0421 4304 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-15-16:43:46.1311 16640 SceneServer::CSSHero::AskBuyGoods:333 failed for errorcode:-130920
+05-15-16:45:09.9709 15028 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-15-16:45:09.9889 16640 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.

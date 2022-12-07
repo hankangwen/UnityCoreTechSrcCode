@@ -1,0 +1,12 @@
+10-15-21:11:52.4110 17172 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+10-15-21:11:53.4271 17172 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+10-15-21:12:27.6300 17172 CClientSession::OnRealEstablish:38 client(4)(10.10.10.8:23970) connected.
+10-15-21:12:27.6390 17172 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(asd)(DED4BBC6666446BC9C1172F6E930C676)
+10-15-21:17:41.7010 17172 CClientSession::OnClose:46 client(4)(10.10.10.8:23970) disconnected.
+entSession::OnRealEstablish:38 client(4)(10.10.10.4:14753) connected.
+10-15-14:29:28.5651 18132 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(asd)(D4C95ECC9B82464499EA06001CA5C36F)
+10-15-14:33:17.9682 18132 CClientSession::OnClose:46 client(4)(10.10.10.4:14753) disconnected.
+10-15-14:33:38.9364 18132 CClientSession::OnRealEstablish:38 client(5)(10.10.10.4:14802) connected.
+10-15-14:33:38.9424 18132 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(asd)(604991E04E984B2B9B09EE61AA1F20DA)
+10-15-14:41:33.9626 18132 CClientSession::OnClose:46 client(5)(10.10.10.4:14802) disconnected.
+10-15-21:11:40.8804 18132 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002

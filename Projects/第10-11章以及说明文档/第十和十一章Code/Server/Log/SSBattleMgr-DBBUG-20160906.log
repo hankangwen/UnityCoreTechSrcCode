@@ -1,0 +1,66 @@
+09-06-21:35:57.3190 2996 SceneServer::CSSCfgMgr::LoadMapObjCfg:901  Load 38 map obj cfg.
+09-06-21:35:57.3210 2996 SceneServer::CSSCfgMgr::LoadMapCfg:787  load 4 map.
+09-06-21:35:57.3590 2996 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:20001, ReuseAddr 1
+09-06-21:38:08.8345 2996 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 0 battle
+09-06-21:38:28.4447 6428 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+09-06-21:38:48.4878 6428 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:4
+09-06-21:38:48.4908 6428 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+09-06-21:38:48.4988 6428 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 1
+09-06-21:39:33.1614 2996 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 0 battle
+09-06-21:40:05.8082 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30017 n32RemainCoolTime:0
+09-06-21:40:11.9106 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30009 n32RemainCoolTime:0
+09-06-21:40:13.6107 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:15.2108 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+09-06-21:40:15.2148 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+09-06-21:40:15.3108 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:16.3108 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+09-06-21:40:16.3138 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+09-06-21:40:16.4108 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:17.3109 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30009 n32RemainCoolTime:0
+09-06-21:40:17.3139 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:23.5113 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:29.9276 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:30.4276 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+09-06-21:40:30.5397 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:34.0599 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:34.9739 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+09-06-21:40:35.0709 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:39.5832 9844 SceneServer::CSSHero::GetCurTitel:1193 1.
+09-06-21:40:39.5872 9844 SceneServer::CSSHero::GetCurTitel:1193 0.
+09-06-21:40:41.1853 9844 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:283831, HurtTime:283324.
+09-06-21:40:41.1883 9844 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:283831, HurtTime:283731.
+09-06-21:40:41.1943 9844 SceneServer::CSSHero::GetCurTitel:1193 2.
+09-06-21:40:41.1983 9844 SceneServer::CSSHero::GetCurTitel:1193 0.
+09-06-21:40:50.5528 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+09-06-21:40:52.3539 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+09-06-21:40:56.3561 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30003 n32RemainCoolTime:0
+09-06-21:40:58.7553 9844 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:301401, HurtTime:298999.
+09-06-21:40:58.7593 9844 SceneServer::CSSHero::GetCurTitel:1193 1.
+09-06-21:40:58.7623 9844 SceneServer::CSSHero::GetCurTitel:1193 0.
+09-06-21:40:59.8613 9844 SceneServer::CSSHero::GetCurTitel:1193 1.
+09-06-21:40:59.8633 9844 SceneServer::CSSHero::GetCurTitel:1193 0.
+09-06-21:40:59.9563 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+09-06-21:41:01.2604 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+09-06-21:41:01.6674 9844 SceneServer::CSSHero::GetCurTitel:1193 1.
+09-06-21:41:01.6694 9844 SceneServer::CSSHero::GetCurTitel:1193 1.
+09-06-21:41:02.9655 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+09-06-21:41:05.9667 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:4.
+09-06-21:41:11.8710 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+09-06-21:41:12.3690 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+09-06-21:41:23.2717 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+09-06-21:41:23.3717 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30032 n32RemainCoolTime:0
+09-06-21:41:23.3737 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:-1, eOT:30085 n32RemainCoolTime:0
+09-06-21:41:35.3114 9844 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:337957, HurtTime:292398.
+09-06-21:41:35.3174 9844 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:337957, HurtTime:337740.
+09-06-21:41:35.3224 9844 SceneServer::CSSHero::GetCurTitel:1193 3.
+09-06-21:41:35.3314 9844 SceneServer::CSSHero::GetCurTitel:1193 0.
+09-06-21:41:36.7184 9844 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:339364, HurtTime:302502.
+09-06-21:41:36.7264 9844 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:339364, HurtTime:337959.
+09-06-21:41:36.7324 9844 SceneServer::CSSHero::GetCurTitel:1193 4.
+09-06-21:41:36.7354 9844 SceneServer::CSSHero::GetCurTitel:1193 0.
+09-06-21:41:36.8194 9844 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30084 n32RemainCoolTime:0
+09-06-21:41:39.9126 9844 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:5
+09-06-21:41:45.9230 9844 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+09-06-21:41:53.4294 9844 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+09-06-21:41:53.4344 9844 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 2
+09-06-21:43:19.5273 2996 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234

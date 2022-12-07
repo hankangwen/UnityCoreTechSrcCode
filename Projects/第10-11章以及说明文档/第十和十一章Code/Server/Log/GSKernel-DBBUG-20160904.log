@@ -1,0 +1,12 @@
+09-04-19:27:56.6007 18400 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+09-04-19:27:56.6467 18400 CClientSession::OnRealEstablish:38 client(3)(10.10.10.4:21800) connected.
+09-04-19:27:56.6547 18400 CClientSession::OnClose:46 client(3)(10.10.10.4:21800) disconnected.
+09-04-19:27:57.1227 18400 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+09-04-19:29:09.3808 18400 CClientSession::OnRealEstablish:38 client(5)(10.10.10.4:21833) connected.
+09-04-19:29:09.3878 18400 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(asd)(A14EAB744C234611AE6FA4EA23F07B28)
+09-04-19:31:03.8104 18400 CClientSession::OnClose:46 client(5)(10.10.10.4:21833) disconnected.
+09-04-19:31:13.0829 18400 CClientSession::OnRealEstablish:38 client(6)(10.10.10.4:21859) connected.
+09-04-19:31:13.0879 18400 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(asd)(48FEDAF50EB941C6A1269F67F568AD26)
+09-04-19:40:38.1302 18400 CClientSession::OnClose:46 client(6)(10.10.10.4:21859) disconnected.
+09-04-19:40:53.7731 18400 CClientSession::OnRealEstablish:38 client(7)(10.10.10.4:21992) connected.
+09-04-19:42:22.0362 18400 CClientSession::OnClose:46 client(7)(10.10.10.4:21992) disconnected.

@@ -1,0 +1,2 @@
+04-17-17:37:26.9426 3116 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+04-17-17:37:26.9996 5888 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510

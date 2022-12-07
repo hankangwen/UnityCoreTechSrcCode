@@ -1,0 +1,8 @@
+09-06-21:35:57.5040 4952 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+09-06-21:35:58.0971 4952 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+09-06-21:38:00.8591 4952 CClientSession::OnRealEstablish:38 client(4)(10.10.10.7:8085) connected.
+09-06-21:38:00.8621 4952 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(asd)(C531A45FBDD545B8A8E8BC040E579115)
+09-06-21:38:48.4798 4952 CClientSession::OnClose:46 client(4)(10.10.10.7:8085) disconnected.
+09-06-21:39:01.8506 4952 CClientSession::OnRealEstablish:38 client(5)(10.10.10.7:8109) connected.
+09-06-21:39:01.8556 4952 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(asd)(A764AC23A5FA4BF98C74796D4A04DD5C)
+09-06-21:41:39.8936 4952 CClientSession::OnClose:46 client(5)(10.10.10.7:8109) disconnected.

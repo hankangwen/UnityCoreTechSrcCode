@@ -1,0 +1,452 @@
+05-08-08:55:23.0829 8464 SceneServer::CSSCfgMgr::LoadMapObjCfg:901  Load 38 map obj cfg.
+05-08-08:55:23.3479 8464 SceneServer::CSSCfgMgr::LoadMapCfg:787  load 4 map.
+05-08-08:55:23.4879 8464 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:20001, ReuseAddr 1
+05-08-08:56:27.2566 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 0 battle
+05-08-08:56:49.2018 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-09:00:33.8727 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30001 n32RemainCoolTime:20000
+05-08-09:01:26.4097 5884 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:4
+05-08-09:01:26.4117 5884 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-09:01:26.4577 5884 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 1
+05-08-09:02:03.2888 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 0 battle
+05-08-09:02:34.1916 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-09:02:34.1956 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-09:02:35.7087 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30009 n32RemainCoolTime:0
+05-08-09:02:37.3147 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-09:02:39.1239 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-09:02:39.1279 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-09:02:39.1319 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-09:02:39.1349 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-09:02:39.2239 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-09:02:39.6419 6044 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:5
+05-08-09:02:42.3380 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-09:02:42.5380 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-09:02:42.5410 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-09:02:42.6381 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-09:02:47.3383 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-09:02:52.2416 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-09:02:52.4416 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-09:02:53.2507 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-09:02:53.5587 6044 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-09:02:53.5627 6044 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 2
+05-08-09:14:26.4413 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 2 actor and now it hv 0 battle
+05-08-09:15:45.4048 2060 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:6
+05-08-09:15:45.4078 2060 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-09:15:45.4198 2060 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 3
+05-08-11:09:15.1453 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 0 battle
+05-08-11:09:47.3902 5444 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:8
+05-08-11:10:05.5732 5444 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 4
+05-08-15:12:20.1485 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 1 battle
+05-08-15:12:28.6620 5884 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:11
+05-08-15:12:40.4177 5884 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 5
+05-08-15:26:46.1721 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 1 battle
+05-08-15:28:07.4167 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-15:28:07.4597 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-15:28:07.5167 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-15:28:07.5277 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-15:28:07.5517 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-15:28:07.6157 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-15:28:07.7157 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-15:28:07.7197 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-15:28:10.0619 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30019 n32RemainCoolTime:0
+05-08-15:28:10.0649 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-15:28:10.1709 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-15:28:11.5029 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-15:28:18.2043 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-15:28:18.2263 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-15:28:18.3223 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-15:28:20.1204 6044 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:13
+05-08-15:28:25.6608 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-15:28:25.7698 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-15:28:25.9708 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-15:28:26.0708 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-15:28:36.7704 6044 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-15:28:36.7734 6044 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 6
+05-08-17:08:25.1079 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 2 actor and now it hv 1 battle
+05-08-17:09:46.9386 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-17:09:46.9416 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:09:47.0386 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:09:49.3387 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-17:09:49.3417 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:09:51.8389 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-17:09:51.8409 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:09:51.9389 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:09:52.9389 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-17:09:52.9429 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:09:54.8380 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-17:09:54.8410 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:09:54.9380 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:10:00.2383 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:10:00.3384 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:10:05.8397 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-17:10:05.9397 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:10:07.0397 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-17:10:07.1397 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:10:08.0528 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-17:10:08.0608 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-17:10:08.1398 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:10:08.1428 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:10:16.2453 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:10:16.2483 2060 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-17:10:17.7423 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:29694291, HurtTime:29689890.
+05-08-17:10:17.7463 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:10:17.7483 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:10:20.3415 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:29696890, HurtTime:29687789.
+05-08-17:10:31.2451 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-17:10:39.1566 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-17:10:44.7589 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-17:10:44.8599 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30032 n32RemainCoolTime:0
+05-08-17:10:44.8639 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:-1, eOT:30085 n32RemainCoolTime:0
+05-08-17:10:46.6650 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:10:46.6700 2060 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-17:10:47.5611 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+05-08-17:10:56.6616 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:4.
+05-08-17:10:59.4627 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:5.
+05-08-17:11:02.2619 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:6.
+05-08-17:11:09.8043 2060 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:14
+05-08-17:11:12.4685 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:29749017, HurtTime:29747517.
+05-08-17:11:12.4715 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:29749017, HurtTime:29687889.
+05-08-17:11:12.4745 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:11:12.4765 2060 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-17:11:12.5685 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30014 n32RemainCoolTime:0
+05-08-17:11:12.5715 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30086 n32RemainCoolTime:0
+05-08-17:11:25.2712 2060 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-17:11:25.2732 2060 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 7
+05-08-17:18:55.1619 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 1 battle
+05-08-17:19:38.7214 5444 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:15
+05-08-17:19:55.3574 5444 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 8
+05-08-17:21:57.1984 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 2 battle
+05-08-17:23:24.7284 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30017 n32RemainCoolTime:0
+05-08-17:23:27.6285 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30019 n32RemainCoolTime:0
+05-08-17:23:27.6325 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:23:27.7285 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:28.9286 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-17:23:28.9346 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:23:29.0286 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:30.3317 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-17:23:30.3347 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:23:30.4327 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:32.2358 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-17:23:32.2388 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-17:23:32.3398 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:37.4361 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:43.9535 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-17:23:44.0535 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:44.0565 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:44.4545 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-17:23:44.5545 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:45.7606 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-17:23:45.8546 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-17:23:53.7540 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-17:23:58.0573 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-17:23:59.7614 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:23:59.7634 5884 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-17:24:02.2575 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:30518806, HurtTime:30505303.
+05-08-17:24:02.2605 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:30518806, HurtTime:30515605.
+05-08-17:24:02.2635 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:24:02.2655 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:24:28.9630 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-17:24:34.1643 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-17:24:34.9844 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:24:34.9874 5884 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-17:24:34.9904 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-17:24:35.0644 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30032 n32RemainCoolTime:0
+05-08-17:24:35.0674 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:-1, eOT:30085 n32RemainCoolTime:0
+05-08-17:24:48.5812 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:24:48.5842 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-17:24:48.6782 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30019 n32RemainCoolTime:0
+05-08-17:24:48.6832 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:-1, eOT:30085 n32RemainCoolTime:0
+05-08-17:24:51.0053 5884 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:16
+05-08-17:24:59.1888 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-17:25:02.4880 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30017 n32RemainCoolTime:0
+05-08-17:25:02.4910 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30084 n32RemainCoolTime:0
+05-08-17:25:07.3902 5884 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-17:25:07.3922 5884 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 9
+05-08-18:12:36.1322 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 2 battle
+05-08-18:13:57.6228 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-18:13:57.6258 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:13:58.3229 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-18:13:58.3249 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:14:01.4291 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:14:05.0293 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-18:14:05.0333 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:14:05.1293 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:14:06.2293 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30017 n32RemainCoolTime:0
+05-08-18:14:09.7295 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-18:14:09.7315 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:14:09.8295 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:14:16.4309 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:14:30.7307 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:14:31.2338 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:14:33.6329 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:14:34.1369 6044 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:14:34.1409 6044 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:14:34.2319 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-18:14:35.8400 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:14:37.4441 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:14:37.6531 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-18:14:52.8550 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:33569404, HurtTime:33550780.
+05-08-18:14:56.8572 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-18:15:39.5637 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:15:42.3638 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+05-08-18:15:45.7840 6044 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:18
+05-08-18:15:45.8630 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:4.
+05-08-18:15:51.1663 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:15:51.2633 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:15:52.1684 6044 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:15:52.1754 6044 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:15:56.2666 6044 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-18:15:56.2696 6044 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 10
+05-08-18:18:18.1957 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 2 actor and now it hv 2 battle
+05-08-18:19:40.1284 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-18:19:40.1314 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:19:40.2284 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:19:43.3296 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-18:19:43.3326 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:19:43.4296 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:19:46.0318 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-18:19:46.0348 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:19:46.1318 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:19:51.2311 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-18:19:51.2341 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:19:51.3311 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:19:52.0311 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30019 n32RemainCoolTime:0
+05-08-18:19:52.0351 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:19:52.1311 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:19:58.7325 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:19:58.8325 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:19:58.8345 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:19:58.9335 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:20:03.6418 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:20:03.7418 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:20:04.9448 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:33881493, HurtTime:33880992.
+05-08-18:20:04.9498 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:20:04.9518 2060 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:20:08.2550 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:20:08.2590 2060 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:20:21.9628 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:20:22.0598 2060 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:20:22.7599 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:20:29.0632 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:20:30.3633 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:33906912, HurtTime:33900210.
+05-08-18:20:33.4635 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:33910012, HurtTime:33883699.
+05-08-18:20:42.4620 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-18:20:51.6685 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:20:59.3790 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:33935928, HurtTime:33900210.
+05-08-18:20:59.3820 2060 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:33935928, HurtTime:33932024.
+05-08-18:20:59.3870 2060 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:20:59.3900 2060 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:21:00.8810 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-18:21:09.1115 2060 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:20
+05-08-18:21:26.4945 2060 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-18:21:28.3006 2060 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-18:21:28.3036 2060 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 11
+05-08-18:29:45.1880 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 2 battle
+05-08-18:31:14.4481 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-18:31:14.4511 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:15.8482 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-18:31:15.8632 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:15.9492 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:16.3492 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-18:31:16.3522 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:18.7494 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30019 n32RemainCoolTime:0
+05-08-18:31:18.7514 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:18.8494 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:19.3494 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30019 n32RemainCoolTime:0
+05-08-18:31:19.3544 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:19.4494 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:20.4785 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:20.4835 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:32.1972 5444 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:22
+05-08-18:31:35.7814 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:35.8804 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:37.4825 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:34574031, HurtTime:34573730.
+05-08-18:31:37.4865 5444 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:31:37.4895 5444 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:31:42.3867 5444 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:31:43.0868 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:34579635, HurtTime:34578735.
+05-08-18:31:43.0918 5444 SceneServer::CSSHero::GetCurTitel:1193 2.
+05-08-18:31:43.0958 5444 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:31:43.1868 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30019 n32RemainCoolTime:0
+05-08-18:31:43.1898 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:-1, eOT:30085 n32RemainCoolTime:0
+05-08-18:31:53.0143 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:53.0163 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:53.1143 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:53.1173 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:55.0165 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:55.1185 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:31:58.7247 5444 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:31:58.7267 5444 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:31:59.4167 5444 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:23
+05-08-18:31:59.8207 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-18:31:59.9207 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-18:32:00.2248 5444 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:32:00.2288 5444 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-18:32:02.6209 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:34599169, HurtTime:34591465.
+05-08-18:32:02.6239 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:34599169, HurtTime:34598769.
+05-08-18:32:02.6269 5444 SceneServer::CSSHero::GetCurTitel:1193 2.
+05-08-18:32:02.6299 5444 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-18:32:02.7209 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30019 n32RemainCoolTime:0
+05-08-18:32:02.7239 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:-1, eOT:30085 n32RemainCoolTime:0
+05-08-18:32:03.2209 5444 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-18:32:13.2325 5444 SceneServer::CSSHero::GetCurTitel:1193 3.
+05-08-18:32:13.2375 5444 SceneServer::CSSHero::GetCurTitel:1193 2.
+05-08-18:32:13.8205 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:34610369, HurtTime:34571829.
+05-08-18:32:13.8235 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:34610369, HurtTime:34603070.
+05-08-18:32:15.4236 5444 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-18:32:15.4266 5444 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 12
+05-08-18:33:39.1244 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 3 battle
+05-08-18:34:05.4469 5884 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:24
+05-08-18:34:19.1757 5884 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 13
+05-08-19:44:53.1239 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 3 battle
+05-08-19:46:19.9488 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30017 n32RemainCoolTime:0
+05-08-19:46:21.0489 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-19:46:21.0529 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:21.1489 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-19:46:21.3489 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-19:46:21.3509 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:21.4489 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-19:46:26.1492 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30017 n32RemainCoolTime:0
+05-08-19:46:26.9492 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30011 n32RemainCoolTime:0
+05-08-19:46:26.9522 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:27.0492 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-19:46:33.4506 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:33.4556 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:37.2538 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:37.2568 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:37.3538 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-19:46:43.7812 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39080325, HurtTime:39080325.
+05-08-19:46:43.7842 6044 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-19:46:43.7872 6044 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-19:46:43.8752 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-19:46:44.2772 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:45.5813 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:45.6803 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-19:46:48.5855 6044 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-19:46:48.5885 6044 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-19:46:48.6815 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-19:46:58.9851 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-19:46:59.8851 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-19:46:59.9851 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-19:47:03.9874 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-19:47:06.6885 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-19:47:12.6879 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39109236, HurtTime:39107636.
+05-08-19:47:12.6909 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39109236, HurtTime:39104636.
+05-08-19:47:12.6939 6044 SceneServer::CSSHero::GetCurTitel:1193 2.
+05-08-19:47:12.6969 6044 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-19:47:36.8962 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-19:47:40.4044 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-19:47:48.4269 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39144974, HurtTime:39105137.
+05-08-19:47:48.5239 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39145072, HurtTime:39104636.
+05-08-19:48:01.3296 6044 SceneServer::CSSHero::GetCurTitel:1193 3.
+05-08-19:48:01.3356 6044 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-19:48:04.4268 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+05-08-19:48:08.4310 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39164977, HurtTime:39164977.
+05-08-19:48:08.4360 6044 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39164977, HurtTime:39078919.
+05-08-19:48:08.4390 6044 SceneServer::CSSHero::GetCurTitel:1193 4.
+05-08-19:48:08.4420 6044 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-19:48:08.5280 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30017 n32RemainCoolTime:0
+05-08-19:48:08.5310 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30026 n32RemainCoolTime:0
+05-08-19:48:11.0292 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+05-08-19:48:11.1282 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30032 n32RemainCoolTime:0
+05-08-19:48:11.1312 6044 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30084 n32RemainCoolTime:0
+05-08-19:48:18.4286 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-19:48:18.6536 6044 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:25
+05-08-19:48:27.4501 6044 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-19:48:27.4541 6044 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-19:48:30.5473 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-19:48:32.3494 6044 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+05-08-19:48:33.3535 6044 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-19:48:33.3585 6044 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 14
+05-08-19:52:24.1237 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 2 actor and now it hv 3 battle
+05-08-19:52:49.9821 2060 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:27
+05-08-19:53:04.2130 2060 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 15
+05-08-19:58:48.1166 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 3 battle
+05-08-20:00:11.2884 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30019 n32RemainCoolTime:0
+05-08-20:00:11.2904 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:00:11.3904 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:00:14.9906 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-20:00:14.9926 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:00:15.0906 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:00:15.7916 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-20:00:15.8016 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:00:15.8936 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:00:18.1018 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-20:00:18.1048 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:00:22.5070 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-20:00:22.5110 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:00:22.6070 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:00:23.3071 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:00:34.0467 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:00:34.1467 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-20:00:34.5467 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:00:34.6477 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-20:00:48.3805 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39924929, HurtTime:39917814.
+05-08-20:00:52.6928 5444 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-20:01:00.1122 5444 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-20:01:02.8123 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:01:02.9123 5444 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-20:01:22.6605 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39959209, HurtTime:39917814.
+05-08-20:01:22.6645 5444 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:39959209, HurtTime:39945763.
+05-08-20:01:26.2417 5444 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:28
+05-08-20:01:30.8149 5444 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-20:01:38.6264 5444 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-20:01:38.6294 5444 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 16
+05-08-20:46:06.1630 8464 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 4 battle
+05-08-20:47:30.2018 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30019 n32RemainCoolTime:0
+05-08-20:47:30.2078 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:30.3018 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:47:30.8048 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-20:47:30.8078 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:30.9068 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:47:36.7261 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30014 n32RemainCoolTime:0
+05-08-20:47:36.7511 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:40.5264 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-20:47:40.5294 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:40.6264 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:47:40.8264 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-20:47:40.8294 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:40.9264 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:1, eOT:30003 n32RemainCoolTime:0
+05-08-20:47:52.3530 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:52.4460 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:52.4490 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-20:47:52.5460 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-20:47:55.1462 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:47:55.5982 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-20:47:55.6212 5884 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-20:47:56.4523 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-20:47:56.4563 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-20:47:56.4573 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+05-08-20:47:56.5523 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30032 n32RemainCoolTime:0
+05-08-20:48:04.0527 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-20:48:05.3568 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-20:48:05.3598 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-20:48:07.5619 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-20:48:07.5659 5884 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-20:48:08.3539 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-20:48:12.6552 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-20:48:13.2552 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:3.
+05-08-20:48:15.2553 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:48:15.3553 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-20:48:15.9554 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:42772504, HurtTime:42762702.
+05-08-20:48:25.6569 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:0, eOT:30001 n32RemainCoolTime:0
+05-08-20:48:25.7569 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:2, num:0, eOT:30003 n32RemainCoolTime:0
+05-08-20:48:27.7621 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-20:48:27.8671 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:42784416, HurtTime:42783307.
+05-08-20:48:27.8691 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:42784416, HurtTime:42778005.
+05-08-20:48:27.8731 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-20:48:27.8761 5884 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-20:48:27.9621 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30032 n32RemainCoolTime:0
+05-08-20:48:27.9651 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:-1, eOT:30085 n32RemainCoolTime:0
+05-08-20:48:36.9796 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:1.
+05-08-20:48:36.9816 5884 SceneServer::CSSNPC::ChangeCurHP:305 LastHit:2.
+05-08-20:48:37.0796 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:0, eOT:30032 n32RemainCoolTime:0
+05-08-20:48:37.0816 5884 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30087 n32RemainCoolTime:0
+05-08-20:48:42.0899 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:42798638, HurtTime:42792328.
+05-08-20:48:42.0939 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:42798638, HurtTime:42783814.
+05-08-20:48:54.8506 5884 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:29
+05-08-20:48:57.5228 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:42814071, HurtTime:42813471.
+05-08-20:48:57.5258 5884 SceneServer::CSSHero::GetLastValidHeroHurt:1254 CurTIme:42814071, HurtTime:42778005.
+05-08-20:48:57.5288 5884 SceneServer::CSSHero::GetCurTitel:1193 1.
+05-08-20:48:57.5328 5884 SceneServer::CSSHero::GetCurTitel:1193 0.
+05-08-20:49:06.5423 5884 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-08-20:49:06.5443 5884 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 17

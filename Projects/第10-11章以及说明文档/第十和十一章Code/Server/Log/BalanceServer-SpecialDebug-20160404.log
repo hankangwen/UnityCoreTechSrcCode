@@ -1,0 +1,2 @@
+04-04-17:36:39.0090 10388 CClientSession::MSG_OneClientLogin:58 user(test)(123)(3) ask login bs
+04-04-17:36:39.0120 10388 CB2LSession::Msg_User_Login:61 user(test)(123)(3) ask login ret

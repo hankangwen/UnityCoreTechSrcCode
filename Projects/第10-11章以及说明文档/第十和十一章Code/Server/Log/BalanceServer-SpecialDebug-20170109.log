@@ -1,0 +1,2 @@
+01-09-21:09:56.2499 14456 CClientSession::MSG_OneClientLogin:58 user(test)(123)(3) ask login bs
+01-09-21:09:56.2559 14456 CB2LSession::Msg_User_Login:61 user(test)(123)(3) ask login ret

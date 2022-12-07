@@ -1,0 +1,128 @@
+05-08-08:55:23.2129 7940 CentralServer::CCSCfgMgr::LoadNewSkillCfg:815 Load 268 Skill cfg.
+05-08-08:55:23.3659 7940 CentralServer::CCSCfgMgr::LoadSkillModelAccountCfg:905 Load 322 Skill cfg.
+05-08-08:55:23.4389 7940 CentralServer::CCSCfgMgr::LoadSkillModelEmitCfg:1023 Load 96 Skill cfg.
+05-08-08:55:23.5149 7940 CentralServer::CCSCfgMgr::LoadSkillModelRangeCfg:1098 Load 123 Skill cfg.
+05-08-08:55:23.5209 7940 CentralServer::CCSCfgMgr::LoadSkillModelLeadingCfg:959  Load 17 Skill cfg.
+05-08-08:55:23.6499 7940 CentralServer::CCSCfgMgr::LoadSkillModelBufCfg:1183  Load 302 Skill cfg.
+05-08-08:55:23.6599 7940 CentralServer::CCSCfgMgr::LoadSkillModelSummonCfg:1288  Load 5 Skill cfg.
+05-08-08:55:23.6769 7940 CentralServer::CCSCfgMgr::LoadSkillModelMoveCfg:1355  Load 26 Skill cfg.
+05-08-08:55:23.6819 7940 CentralServer::CCSCfgMgr::LoadSkillModelSwitchCfg:1414  Load 26 Skill cfg.
+05-08-08:55:23.6829 7940 CentralServer::CCSCfgMgr::LoadSkillModelPurifactionCfg:1477  Load 1 Skill cfg.
+05-08-08:55:23.6849 7940 CentralServer::CCSCfgMgr::LoadSkillModelLinkCfg:1542  Load 1 Skill cfg.
+05-08-08:55:23.7339 7940 CentralServer::CCSCfgMgr::LoadPassitiveSkillCfg:1635  Load 126 Skill cfg.
+05-08-08:55:23.7379 7940 CentralServer::CCSCfgMgr::LoadPassitiveEffectBloodSeekCfg:1682  Load 6 Skill cfg.
+05-08-08:55:23.7399 7940 CentralServer::CCSCfgMgr::LoadPassitiveEffectReboundCfg:1729  Load 4 Skill cfg.
+05-08-08:55:23.7429 7940 CentralServer::CCSCfgMgr::LoadPassitiveEffectReliveCfg:1777 Load 1 Skill cfg.
+05-08-08:55:23.7709 7940 CentralServer::CCSCfgMgr::LoadNPCCfg:224 Load 52 NPC cfg.
+05-08-08:55:23.8000 7940 CentralServer::CCSCfgMgr::LoadHeroCfg:353  Load 22 hero cfg.
+05-08-08:55:23.8510 7940 CentralServer::CCSCfgMgr::LoadGoodsCfg:628 Load 103 goods cfg.
+05-08-08:55:23.8530 7940 CentralServer::CCSCfgMgr::LoadShopCfg:710 Load 3 shop cfg.
+05-08-08:55:23.8590 7940 CentralServer::CCSCfgMgr::LoadMapCfg:419  load 4 map.
+05-08-08:55:23.8600 7940 CentralServer::CCSCfgMgr::LoadHeroChooseCfg:1998 Load 22 herochoose cfg.
+05-08-08:55:23.9160 7940 CentralServer::CCSCfgMgr::LoadRobotAICfg:2058 Load 609 RobotAI cfg.
+05-08-08:55:23.9520 7940 CentralServer::CCSCfgMgr::LoadRobotAIPathCfg:2107 Load 197 RobotAI cfg.
+05-08-08:55:23.9920 7940 CentralServer::CCSCfgMgr::LoadRunesCfg:101 Load 75 runes cfg.
+05-08-08:55:24.0130 7940 CentralServer::CCSCfgMgr::LoadRunesSlotCfg:345 Load 19 runesslot cfg.
+05-08-08:55:24.0490 7940 CentralServer::CCSCfgMgr::LoadHeroBuyCfg:466 Load 63 hero buy cfg.
+05-08-08:55:24.0570 7940 CentralServer::CCSCfgMgr::LoadDiscountCfg:527 Load 0 discount cfg.
+05-08-08:55:24.0590 7940 CentralServer::CCSCfgMgr::LoadHotAndNewGoodsCfg:777 Load NewCfg:1 and HotCfg:1
+05-08-08:55:24.2380 7940 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10002, ReuseAddr 1
+05-08-08:55:24.2420 7940 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10001, ReuseAddr 1
+05-08-08:55:24.2560 7940 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10010, ReuseAddr 1
+05-08-08:56:16.4540 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(4)
+05-08-09:01:52.7572 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(5)
+05-08-09:01:52.7672 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-09:01:59.7416 7940 CentralServer::CCSUser::AddHero:163 Notify herolist:10001 expitred:-1, idfree:0
+05-08-09:02:53.5657 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:50, GotExp:103, GotGold:3.
+05-08-09:11:27.7621 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-09:11:27.7661 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(6)
+05-08-09:11:27.7741 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-09:11:36.1286 7940 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:1, runeid:120106
+05-08-09:12:02.7361 7940 CentralServer::CCSUser::AddRuneNum:1749 É¾³ý·ûÎÄ£¡
+05-08-09:12:02.7411 7940 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:0, runeid:120106
+05-08-09:12:02.7541 7940 CentralServer::CCSUser::AddRuneNum:1764 ¸üÐÂ·ûÎÄÐÅÏ¢num:1, runeid:120112
+05-08-09:23:07.6631 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-09:23:07.6651 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-09:23:07.6671 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(7)
+05-08-09:23:07.6691 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-10:49:42.2422 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-10:49:42.2472 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-10:49:42.2512 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(8)
+05-08-10:49:42.2552 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-11:10:05.6012 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:40, GotExp:104, GotGold:3.
+05-08-11:32:30.2091 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-11:32:30.2141 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-11:32:30.2161 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(9)
+05-08-11:32:30.2181 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-14:54:01.6797 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-14:54:01.6957 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-14:54:01.6977 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(11)
+05-08-14:54:01.6987 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-15:12:40.5077 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:13, GotExp:105, GotGold:3.
+05-08-15:14:56.2875 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-15:14:56.2935 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-15:14:56.3895 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(12)
+05-08-15:14:56.3935 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-15:26:10.9981 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-15:26:11.0761 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-15:26:11.0941 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(13)
+05-08-15:26:11.1391 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-15:28:36.7944 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:118, GotExp:105, GotGold:6.
+05-08-17:07:50.8149 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-17:07:50.8169 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-17:07:50.8199 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(14)
+05-08-17:07:50.8219 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-17:11:25.2742 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:72, GotExp:106, GotGold:12.
+05-08-17:18:19.7319 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-17:18:19.7379 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-17:18:19.7489 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(15)
+05-08-17:18:19.7519 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-17:19:55.3644 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:3, GotExp:108, GotGold:6.
+05-08-17:20:23.8490 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-17:20:23.8520 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-17:20:23.8540 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(16)
+05-08-17:20:23.8550 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-17:25:07.3942 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:111, GotExp:108, GotGold:12.
+05-08-18:12:08.8286 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-18:12:08.8326 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-18:12:08.8346 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(18)
+05-08-18:12:08.8356 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-18:15:56.2716 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:17, GotExp:109, GotGold:12.
+05-08-18:17:50.9612 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-18:17:50.9642 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-18:17:50.9652 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(20)
+05-08-18:17:50.9672 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-18:21:28.3066 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:126, GotExp:109, GotGold:12.
+05-08-18:29:18.6865 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-18:29:18.6885 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-18:29:18.6905 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(22)
+05-08-18:29:18.6915 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-18:31:42.7918 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(23)
+05-08-18:32:15.4276 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:5, GotExp:110, GotGold:9.
+05-08-18:33:02.7453 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-18:33:02.7483 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-18:33:02.7493 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(24)
+05-08-18:33:02.7513 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-18:34:19.1817 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:115, GotExp:110, GotGold:3.
+05-08-19:44:19.1329 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-19:44:19.1359 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-19:44:19.1369 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(25)
+05-08-19:44:19.1389 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-19:48:33.3625 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:225, GotExp:110, GotGold:12.
+05-08-19:52:04.2145 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-19:52:04.2195 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-19:52:04.2215 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(27)
+05-08-19:52:04.2235 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-19:53:04.2200 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:73, GotExp:112, GotGold:3.
+05-08-19:58:14.9367 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-19:58:14.9407 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-19:58:14.9417 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(28)
+05-08-19:58:14.9437 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-20:01:38.6304 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:185, GotExp:112, GotGold:9.
+05-08-20:41:44.2250 7940 CentralServer::CCSUser::InitRunes:1698 add rune id:120112, num:1, gotime:1462669922
+05-08-20:41:44.3580 7940 CentralServer::CCSUser::LoadHeroFromRedis:1935 Add redis hero:10001
+05-08-20:41:44.4610 7940 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(29)
+05-08-20:41:44.5610 7940 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:1001
+05-08-20:49:06.5463 7940 CentralServer::CCSBattle::CaculateResult:322 CurExp:2, GotExp:113, GotGold:12.
+05-08-21:54:52.8870 7940 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6379
+05-08-21:54:52.8930 7940 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:6380

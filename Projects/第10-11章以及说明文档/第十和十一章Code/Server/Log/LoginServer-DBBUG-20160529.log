@@ -1,0 +1,22 @@
+05-29-16:58:50.7797 22516 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49997, ReuseAddr 1
+05-29-16:58:50.8527 22516 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49996, ReuseAddr 1
+05-29-17:00:22.1149 22516 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(2), sessionid:123, platform:0
+05-29-17:00:22.1749 22516 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-29-17:00:22.1849 22516 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-29-17:00:23.2080 22516 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-29-17:00:52.4006 22516 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(3), sessionid:123, platform:0
+05-29-17:00:52.4216 22516 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-29-17:00:52.4226 22516 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-29-17:00:53.4627 22516 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-29-21:07:44.0078 22516 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(4), sessionid:123, platform:0
+05-29-21:07:44.0218 22516 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-29-21:07:44.0238 22516 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-29-21:07:45.3159 22516 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-29-11:22:28.5593 11160 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(5), sessionid:123, platform:0
+05-29-11:22:28.5673 11160 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-29-11:22:28.5693 11160 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-29-11:22:30.7384 11160 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-29-11:30:22.0174 11160 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(6), sessionid:123, platform:0
+05-29-11:30:22.0254 11160 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-29-11:30:22.0264 11160 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-29-11:30:24.2655 11160 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc

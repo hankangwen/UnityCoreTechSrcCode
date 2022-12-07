@@ -1,0 +1,8 @@
+05-14-20:47:44.2684 8300 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(3) ask login bs
+05-14-20:47:44.2734 8300 CB2LSession::Msg_User_Login:61 user(zxc)(123)(3) ask login ret
+05-14-20:48:20.0444 8300 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(4) ask login bs
+05-14-20:48:20.0484 8300 CB2LSession::Msg_User_Login:61 user(zxc)(123)(4) ask login ret
+05-14-21:01:00.5529 8300 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(5) ask login bs
+05-14-21:01:00.5599 8300 CB2LSession::Msg_User_Login:61 user(zxc)(123)(5) ask login ret
+05-14-21:47:18.1128 8300 CClientSession::MSG_OneClientLogin:58 user(zxc)(123)(6) ask login bs
+05-14-21:47:18.1248 8300 CB2LSession::Msg_User_Login:61 user(zxc)(123)(6) ask login ret

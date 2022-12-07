@@ -1,0 +1,17 @@
+05-29-16:58:50.6537 15588 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+05-29-16:58:51.6627 15588 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+05-29-17:00:23.2950 15588 CClientSession::OnRealEstablish:38 client(4)(10.10.10.3:35539) connected.
+05-29-17:00:23.3080 15588 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(zxc)(DE3907041741446ABDCEDD3B62F41FE5)
+05-29-17:00:44.6122 15588 CClientSession::OnClose:46 client(4)(10.10.10.3:35539) disconnected.
+05-29-17:00:53.5497 15588 CClientSession::OnRealEstablish:38 client(5)(10.10.10.3:35564) connected.
+05-29-17:00:53.5737 15588 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(zxc)(CF02ADFD20104D47AC8C9E82436FF9A5)
+05-29-17:07:11.2583 15588 CClientSession::OnClose:46 client(5)(10.10.10.3:35564) disconnected.
+05-29-21:07:45.4419 15588 CClientSession::OnRealEstablish:38 client(6)(10.10.10.3:49783) connected.
+05-29-21:07:45.4999 15588 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(zxc)(42FF50CFD58A4046BEEB8BFA5A2CF642)
+05-29-21:55:00.4880 15588 CClientSession::OnClose:46 client(6)(10.10.10.3:49783) disconnected.
+0.7994 6880 CClientSession::OnRealEstablish:38 client(7)(10.10.10.1:15207) connected.
+05-29-11:22:30.8104 6880 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxc)(348586DB2B4A4F759F27F26E734C3830)
+05-29-11:28:46.4899 6880 CClientSession::OnClose:46 client(7)(10.10.10.1:15207) disconnected.
+05-29-11:30:24.4795 6880 CClientSession::OnRealEstablish:38 client(8)(10.10.10.1:15550) connected.
+05-29-11:30:24.4825 6880 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(zxc)(CB00CB71AF8C43F892E8635BCE0247C6)
+05-29-11:34:10.7615 6880 CClientSession::OnClose:46 client(8)(10.10.10.1:15550) disconnected.

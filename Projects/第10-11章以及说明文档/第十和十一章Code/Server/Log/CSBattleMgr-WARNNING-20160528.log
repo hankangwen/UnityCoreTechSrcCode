@@ -1,0 +1,17 @@
+05-28-15:08:26.2376 8420 CentralServer::CCSUserMgr::CDKThreadBeginCallback:101 --errorCode:2006,errorStr:MySQL server has gone away
+05-28-15:08:46.9768 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-15:08:51.9751 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-15:51:07.2301 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-17:04:12.5259 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-17:07:07.1839 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-17:36:10.5966 10412 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-28-20:16:44.4186 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-20:24:52.2195 10412 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-28-21:00:43.8296 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-21:07:12.0698 10412 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-28-21:12:11.7859 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-21:26:01.2734 10412 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-28-21:29:32.0604 7888 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-28-21:32:01.1970 10412 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-28-22:31:40.6537 10412 CLogicRedisSession::OnClose:49 与Redis断开连接!
+05-28-22:31:40.6647 10412 CRedisSession::OnClose:59 与Redis断开连接!

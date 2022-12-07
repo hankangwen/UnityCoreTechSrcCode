@@ -1,0 +1,42 @@
+05-14-20:47:44.3214 5772 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-14-20:47:48.3176 5772 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxc, nickName:婕╁瘨鐚庢墜
+05-14-20:47:58.2622 5772 CentralServer::CCSBattle::CCSBattle:33 create battle(1)
+05-14-20:47:58.2702 5772 CentralServer::CCSBattle::CCSBattle:43 battle(1) add user(1001)
+05-14-20:48:11.4419 5772 CentralServer::CCSBattle::OnFinish:236 destory battle(1)
+05-14-20:48:11.4469 5772 CentralServer::CCSBattle::OnFinish:242 battle(1) remove user(1001)
+05-14-20:48:11.4509 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-14-20:48:11.4579 5772 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+05-14-20:48:20.0994 5772 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-14-20:48:28.7649 5772 CentralServer::CCSUser::AskBuyGoods:505 购买花费金币2500，剩余:40
+05-14-20:49:01.9568 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(22)
+05-14-20:49:01.9608 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(33)
+05-14-20:50:04.3144 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(22)
+05-14-20:50:04.3174 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(33)
+05-14-20:52:10.8546 5772 CentralServer::CCSBattle::CCSBattle:33 create battle(2)
+05-14-20:52:10.8616 5772 CentralServer::CCSBattle::CCSBattle:43 battle(2) add user(1001)
+05-14-20:52:26.5125 5772 CentralServer::CCSBattle::OnFinish:236 destory battle(2)
+05-14-20:52:26.5155 5772 CentralServer::CCSBattle::OnFinish:242 battle(2) remove user(1001)
+05-14-20:52:26.5185 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-14-20:52:26.5215 5772 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+05-14-21:01:00.6099 5772 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-14-21:01:49.2927 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(22)
+05-14-21:01:49.2977 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(33)
+05-14-21:01:54.4820 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(22)
+05-14-21:01:54.4850 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(33)
+05-14-21:11:09.6817 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(22)
+05-14-21:11:09.6897 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(33)
+05-14-21:12:09.6522 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(22)
+05-14-21:12:09.6572 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(33)
+05-14-21:47:18.1758 5772 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+05-14-21:47:35.8658 5772 CCSBattleRoom::AddPlayer:65 玩家zxc创建房间(1)
+05-14-21:48:05.7455 5772 CCSBattleRoom::RemoverPlayer:138 玩家zxc离开房间(1)
+05-14-21:48:05.7475 5772 CentralServer::CCSBattleMgr::OnBattleRoomAbort:273 房间(1)无房主而中止
+05-14-21:48:05.7505 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(5)
+05-14-21:55:26.0247 5772 CCSBattleRoom::AddPlayer:65 玩家zxc创建房间(2)
+05-14-22:06:51.4549 5772 CentralServer::CCSBattle::CCSBattle:33 create battle(3)
+05-14-22:06:51.4609 5772 CentralServer::CCSBattle::CCSBattle:43 battle(3) add user(1001)
+05-14-22:06:51.4649 5772 CentralServer::CCSBattleMgr::OnBattleRoomStart:262 房间(2)因战斗而结束
+05-14-22:07:31.5182 5772 CentralServer::CCSBattle::OnFinish:236 destory battle(3)
+05-14-22:07:31.5262 5772 CentralServer::CCSBattle::OnFinish:242 battle(3) remove user(1001)
+05-14-22:07:31.5292 5772 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+05-14-22:07:31.5332 5772 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!

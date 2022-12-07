@@ -1,0 +1,5 @@
+08-13-21:26:51.4164 25924 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49997, ReuseAddr 1
+08-13-21:26:51.4274 25924 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49996, ReuseAddr 1
+08-13-21:29:20.8959 25924 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:adfad(2), sessionid:123, platform:0
+08-13-21:29:21.0209 25924 SdkConnector::Update:610 Add uid:adfad, sessionid:0adfad
+08-13-21:29:21.0229 25924 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.

@@ -1,0 +1,45 @@
+04-24-10:31:25.5047 5092 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+04-24-10:31:26.5237 5092 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+04-24-14:33:13.7865 5092 CClientSession::OnRealEstablish:38 client(4)(10.10.10.2:14662) connected.
+04-24-14:33:13.7935 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(adfa)(E1FBE9D7B5C4426290AD69FF83CEC165)
+04-24-14:52:23.7483 5092 CClientSession::OnClose:46 client(4)(10.10.10.2:14662) disconnected.
+04-24-16:38:19.8768 5092 CClientSession::OnRealEstablish:38 client(5)(10.10.10.2:22838) connected.
+04-24-16:38:19.8838 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(asad)(A676E2617AA74C3C879FEE77AA044E07)
+04-24-16:38:50.0965 5092 CClientSession::OnClose:46 client(5)(10.10.10.2:22838) disconnected.
+04-24-16:43:01.7849 5092 CClientSession::OnRealEstablish:38 client(6)(10.10.10.2:23021) connected.
+04-24-16:43:01.7899 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(asda)(D254F2F1FADE43A7878B79338A8FB6D3)
+04-24-16:44:39.5945 5092 CClientSession::OnClose:46 client(6)(10.10.10.2:23021) disconnected.
+04-24-16:45:33.3416 5092 CClientSession::OnRealEstablish:38 client(7)(10.10.10.2:23088) connected.
+04-24-16:45:33.3446 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxcz)(8DABCD6F6D9047F29216F7B8CC5E15A4)
+04-24-16:46:55.0673 5092 CClientSession::OnClose:46 client(7)(10.10.10.2:23088) disconnected.
+04-24-20:02:53.6408 5092 CClientSession::OnRealEstablish:38 client(8)(10.10.10.2:31408) connected.
+04-24-20:02:53.6438 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(asdad)(8899CF0A2D074A4D974700C53E2B196A)
+04-24-20:04:38.5958 5092 CClientSession::OnClose:46 client(8)(10.10.10.2:31408) disconnected.
+04-24-20:47:19.1533 5092 CClientSession::OnRealEstablish:38 client(9)(10.10.10.2:33568) connected.
+04-24-20:47:19.1773 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(zxczc)(0C7B8CBF17724397AD37EA0E1DBF7D6E)
+04-24-20:47:50.7281 5092 CClientSession::OnClose:46 client(9)(10.10.10.2:33568) disconnected.
+04-24-20:48:28.2262 5092 CClientSession::OnRealEstablish:38 client(10)(10.10.10.2:33603) connected.
+04-24-20:48:28.2362 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(10) ask login(adfa)(B30C11A5A4224D6B8C539CF2BD4A1B03)
+04-24-20:48:30.7274 5092 CClientSession::OnClose:46 client(10)(10.10.10.2:33603) disconnected.
+04-24-20:48:41.7280 5092 CClientSession::OnRealEstablish:38 client(11)(10.10.10.2:33619) connected.
+04-24-20:48:41.7300 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(11) ask login(azxs)(B1A28D85BF064E13AA38B617A7669AA8)
+04-24-20:49:39.9643 5092 CClientSession::OnClose:46 client(11)(10.10.10.2:33619) disconnected.
+04-24-21:13:02.5256 5092 CClientSession::OnRealEstablish:38 client(12)(10.10.10.2:34521) connected.
+04-24-21:13:02.5286 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(12) ask login(qwwww)(D65A36DE49D24DE493CC8F9D1B1E9209)
+04-24-21:14:26.3714 5092 CClientSession::OnClose:46 client(12)(10.10.10.2:34521) disconnected.
+04-24-22:03:38.5142 5092 CClientSession::OnRealEstablish:38 client(13)(10.10.10.2:36852) connected.
+04-24-22:03:38.5172 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(13) ask login(aseqaw)(ABCF1F70869540B48C2FCE9215AAB18F)
+04-24-22:04:10.6381 5092 CClientSession::OnClose:46 client(13)(10.10.10.2:36852) disconnected.
+04-24-22:17:07.3385 5092 CClientSession::OnRealEstablish:38 client(14)(10.10.10.2:37072) connected.
+04-24-22:17:07.3425 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(14) ask login(zxzczc)(E7CA1A5E2A6B433AA388AE70D0585642)
+04-24-22:19:18.9450 5092 CClientSession::OnClose:46 client(14)(10.10.10.2:37072) disconnected.
+04-24-22:19:56.1481 5092 CClientSession::OnRealEstablish:38 client(15)(10.10.10.2:37134) connected.
+04-24-22:19:56.1551 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(15) ask login(zxcae)(F4AC3534B4F04330BB2B277DBC8E6BBA)
+04-24-22:26:01.3660 5092 CClientSession::OnClose:46 client(15)(10.10.10.2:37134) disconnected.
+04-24-22:26:17.2519 5092 CClientSession::OnRealEstablish:38 client(16)(10.10.10.2:37278) connected.
+04-24-22:26:17.2569 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(16) ask login(aqwe)(C614C99CA2F5461194DC767789BE0416)
+04-24-22:26:42.8004 5092 CClientSession::OnClose:46 client(16)(10.10.10.2:37278) disconnected.
+04-24-22:27:45.3020 5092 CClientSession::OnRealEstablish:38 client(17)(10.10.10.2:37307) connected.
+04-24-22:27:45.3040 5092 GateServer::CGSKernel::OnMsgFromGC:57 client(17) ask login(zxdfr)(8AAB5B29F41945E6B14712BEC11228A6)
+04-24-22:33:52.7250 5092 CClientSession::OnClose:46 client(17)(10.10.10.2:37307) disconnected.
+04-24-22:35:14.7967 5092 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002

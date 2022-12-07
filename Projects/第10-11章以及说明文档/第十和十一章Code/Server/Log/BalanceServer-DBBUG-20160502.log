@@ -1,0 +1,4 @@
+05-02-09:10:35.2639 9780 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49999, ReuseAddr 1
+05-02-09:10:35.2659 9780 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49998, ReuseAddr 1
+05-02-09:10:36.2680 9780 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:49997
+05-02-09:10:37.2660 9780 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:49997

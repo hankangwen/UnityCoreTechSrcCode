@@ -1,0 +1,45 @@
+05-22-16:46:03.3450 8856 SceneServer::CSSCfgMgr::LoadMapObjCfg:901  Load 38 map obj cfg.
+05-22-16:46:03.3850 8856 SceneServer::CSSCfgMgr::LoadMapCfg:787  load 4 map.
+05-22-16:46:03.4810 8856 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:20001, ReuseAddr 1
+05-22-16:46:04.5080 8856 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234
+05-22-16:46:25.9933 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 0 battle
+05-22-16:46:30.7905 9224 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:4
+05-22-16:46:30.7955 9224 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-16:46:30.8645 9224 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 1
+05-22-16:46:56.6650 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 0 battle
+05-22-16:49:39.8363 3484 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+05-22-16:55:00.2147 3484 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:5
+05-22-16:55:00.2627 3484 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-16:55:00.6407 3484 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 2
+05-22-17:45:54.0533 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 2 actor and now it hv 0 battle
+05-22-17:48:57.8879 3880 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+05-22-17:49:46.2286 3880 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:1, num:1, eOT:30003 n32RemainCoolTime:0
+05-22-17:50:13.7272 3880 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:6
+05-22-17:50:13.7302 3880 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-17:50:13.7712 3880 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 3
+05-22-19:40:44.9025 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 0 battle
+05-22-19:44:45.1852 8020 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:7
+05-22-19:44:45.1882 8020 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-19:44:45.2082 8020 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 4
+05-22-21:11:51.5361 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 1 battle
+05-22-21:12:56.6719 9224 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:8
+05-22-21:12:56.6749 9224 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-21:12:56.7499 9224 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 5
+05-22-21:13:11.1667 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 1 battle
+05-22-21:29:10.7626 3484 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:9
+05-22-21:29:10.7666 3484 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-21:29:10.8576 3484 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 6
+05-22-22:02:02.2644 8856 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234
+attle:72 Destroy a battle : 7
+05-22-14:37:59.1525 8020 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 1 battle
+05-22-14:45:10.4231 3484 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:11
+05-22-14:45:10.4251 3484 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-14:45:10.5001 3484 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 8
+05-22-14:45:29.3152 8020 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 2 battle
+05-22-14:45:34.0995 9704 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:12
+05-22-14:45:34.1035 9704 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-14:45:34.1155 9704 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 9
+05-22-14:47:26.7729 8020 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 2 battle
+05-22-14:49:19.9204 8588 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:13
+05-22-14:49:19.9244 8588 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-22-14:49:19.9944 8588 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 10

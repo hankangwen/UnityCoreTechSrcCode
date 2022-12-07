@@ -1,0 +1,37 @@
+05-02-09:12:28.9994 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:54 ´´½¨Õ½³¡(1)
+05-02-09:12:29.0024 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:74 Íæ¼Ò(useguid:1001)½øÈëÕ½³¡(1)
+05-02-09:12:29.0054 7384 SceneServer::CSSBattleMgr::OnMsgFromCS_CreateBattle:221 ÑûÇëÍæ¼Ò(é˜´æš—ä½è¯­è€…)¼ÓÈëÕ½³¡(1)
+05-02-09:12:29.0184 7384 SceneServer::CSSBattle::PostMsgToGC_EnterBattleState:233 Íæ¼Ò(é˜´æš—ä½è¯­è€…)È·ÈÏ¼ÓÈëÕ½³¡(1),µ±Ç°Õ½³¡×´Ì¬(2)
+05-02-09:12:38.4840 7384 SceneServer::CSSBattleMgr::OnMsgFromGC_LoadBattleComplete:100 Íæ¼Ò(é˜´æš—ä½è¯­è€…)AskLoadBattleComplete
+05-02-09:12:45.1324 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:113 Íæ¼Ò(1001)ÏÂÏßÀë¿ªÕ½³¡(1)
+05-02-09:12:45.1374 7384 SceneServer::CSSBattle::OnUserOffline:569 Íæ¼ÒÏÂÏß£¬ÇåÀíÍæ¼Ò(é˜´æš—ä½è¯­è€…)µÄÍøÂçĞÅÏ¢
+05-02-09:12:45.2244 7384 SceneServer::CSSWorkThreadMgr::NotifyDelBattle:274 ½áÊøÕ½³¡(1)
+05-02-09:12:45.2264 11476 SceneServer::CSSWorkThreadMgr::CheckDelBattleCallbackQueue:328 Õ½³¡½áÊø(1)Íæ¼Ò(1001)ÒÆ³ı
+05-02-10:25:10.3999 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:54 ´´½¨Õ½³¡(2)
+05-02-10:25:10.4019 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:74 Íæ¼Ò(useguid:2001)½øÈëÕ½³¡(2)
+05-02-10:25:10.4039 11884 SceneServer::CSSBattleMgr::OnMsgFromCS_CreateBattle:221 ÑûÇëÍæ¼Ò(è‹æ³•å‰¥å‰Šè€…)¼ÓÈëÕ½³¡(2)
+05-02-10:25:10.4219 11884 SceneServer::CSSBattle::PostMsgToGC_EnterBattleState:233 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)È·ÈÏ¼ÓÈëÕ½³¡(2),µ±Ç°Õ½³¡×´Ì¬(2)
+05-02-10:25:12.5200 11884 SceneServer::CSSBattleMgr::OnMsgFromGC_LoadBattleComplete:100 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)AskLoadBattleComplete
+05-02-10:25:13.9341 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:113 Íæ¼Ò(2001)ÏÂÏßÀë¿ªÕ½³¡(2)
+05-02-10:25:13.9361 11884 SceneServer::CSSBattle::OnUserOffline:569 Íæ¼ÒÏÂÏß£¬ÇåÀíÍæ¼Ò(è‹æ³•å‰¥å‰Šè€…)µÄÍøÂçĞÅÏ¢
+05-02-10:25:13.9641 11884 SceneServer::CSSWorkThreadMgr::NotifyDelBattle:274 ½áÊøÕ½³¡(2)
+05-02-10:25:13.9661 11476 SceneServer::CSSWorkThreadMgr::CheckDelBattleCallbackQueue:328 Õ½³¡½áÊø(2)Íæ¼Ò(2001)ÒÆ³ı
+05-02-16:43:33.2354 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:54 ´´½¨Õ½³¡(3)
+05-02-16:43:33.2624 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:74 Íæ¼Ò(useguid:2001)½øÈëÕ½³¡(3)
+05-02-16:43:33.2724 8768 SceneServer::CSSBattleMgr::OnMsgFromCS_CreateBattle:221 ÑûÇëÍæ¼Ò(è‹æ³•å‰¥å‰Šè€…)¼ÓÈëÕ½³¡(3)
+05-02-16:43:33.3804 8768 SceneServer::CSSBattle::PostMsgToGC_EnterBattleState:233 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)È·ÈÏ¼ÓÈëÕ½³¡(3),µ±Ç°Õ½³¡×´Ì¬(0)
+05-02-16:43:37.8767 8768 SceneServer::CSSBattleMgr::OnMsgFromGC_AskTrySelectHero:62 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)AskTrySelectHero
+05-02-16:43:38.9897 8768 SceneServer::CSSBattleMgr::OnMsgFromGC_AskSeleteHero:69 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)AskSeleteHero
+05-02-16:43:39.0838 8768 SceneServer::CSSBattleMgr::OnMsgFromGC_AskSeleteRunePage:85 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)AskSeleteRunePage
+05-02-16:43:47.4452 8768 SceneServer::CSSBattleMgr::OnMsgFromGC_AskSeleteRunePage:85 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)AskSeleteRunePage
+05-02-16:44:11.7606 8768 SceneServer::CSSBattleMgr::OnMsgFromGC_LoadBattleComplete:100 Íæ¼Ò(è‹æ³•å‰¥å‰Šè€…)AskLoadBattleComplete
+05-02-16:44:20.2671 11476 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:113 Íæ¼Ò(2001)ÏÂÏßÀë¿ªÕ½³¡(3)
+05-02-16:44:20.3051 8768 SceneServer::CSSBattle::OnUserOffline:569 Íæ¼ÒÏÂÏß£¬ÇåÀíÍæ¼Ò(è‹æ³•å‰¥å‰Šè€…)µÄÍøÂçĞÅÏ¢
+05-02-16:44:32.0858 8768 SceneServer::CSSHero::ChangeCurHP:1611 Hero hit 27240053.
+05-02-16:44:32.2208 8768 SceneServer::CSSHero::ChangeCurHP:1611 Hero hit 27240160.
+05-02-16:44:32.8278 8768 SceneServer::CSSHero::ChangeCurHP:1611 Hero hit 27240789.
+05-02-16:44:32.9228 8768 SceneServer::CSSHero::ChangeCurHP:1611 Hero hit 27240889.
+05-02-16:44:33.2229 8768 SceneServer::CSSHero::ChangeCurHP:1611 Hero hit 27241191.
+05-02-16:44:33.5249 8768 SceneServer::CSSHero::ChangeCurHP:1611 Hero hit 27241493.
+05-02-16:44:33.6949 8768 SceneServer::CSSWorkThreadMgr::NotifyDelBattle:274 ½áÊøÕ½³¡(3)
+05-02-16:44:33.7119 11476 SceneServer::CSSWorkThreadMgr::CheckDelBattleCallbackQueue:328 Õ½³¡½áÊø(3)Íæ¼Ò(2001)ÒÆ³ı

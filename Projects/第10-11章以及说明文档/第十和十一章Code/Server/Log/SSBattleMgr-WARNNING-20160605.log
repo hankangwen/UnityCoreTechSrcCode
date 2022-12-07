@@ -1,0 +1,20 @@
+06-05-15:56:56.6993 14460 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+06-05-15:56:56.7723 1816 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+06-05-17:03:54.7391 14452 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+06-05-17:03:54.7581 14460 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+06-05-17:06:01.2633 18028 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+06-05-17:06:01.2743 14460 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+06-05-17:18:18.5805 15912 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+06-05-17:18:18.5955 14460 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+06-05-17:20:14.0971 1816 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+06-05-17:20:15.3002 1816 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+06-05-17:27:14.9002 1816 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+06-05-17:27:14.9172 14460 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+06-05-20:42:55.4627 14452 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+06-05-20:44:47.0681 14452 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+06-05-20:44:47.1051 14460 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+06-05-20:50:24.2004 18028 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+06-05-20:50:43.5385 18028 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+06-05-20:51:44.6180 18028 SceneServer::CSSHero::ChangeCurHP:1641 Not Find killer hero.
+06-05-20:52:32.4367 18028 SceneServer::CSSBattle::CheckPlayTimeout:409 all users offline, so finish it.
+06-05-20:52:32.4467 14460 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510

@@ -1,0 +1,49 @@
+05-02-09:10:34.1789 5320 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+05-02-09:10:34.2239 5320 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+05-02-09:10:35.1629 5320 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:49999
+05-02-09:12:19.1559 5320 CClientSession::OnRealEstablish:38 client(4)(10.10.10.6:4451) connected.
+05-02-09:12:19.1649 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(asdf)(FB155B94171C477484C22C32FA98AF0C)
+05-02-09:12:45.1304 5320 CClientSession::OnClose:46 client(4)(10.10.10.6:4451) disconnected.
+05-02-09:12:56.0750 5320 CClientSession::OnRealEstablish:38 client(5)(10.10.10.6:4524) connected.
+05-02-09:12:56.0800 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(asdf)(A1AC8D727E3044D4BD015F559B091F57)
+05-02-10:03:34.0297 5320 CClientSession::OnClose:46 client(5)(10.10.10.6:4524) disconnected.
+05-02-10:25:01.6824 5320 CClientSession::OnRealEstablish:38 client(6)(10.10.10.6:9137) connected.
+05-02-10:25:01.6944 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(zxc)(02868BE432FF40EE87309A5CC1BEE05D)
+05-02-10:25:13.9321 5320 CClientSession::OnClose:46 client(6)(10.10.10.6:9137) disconnected.
+05-02-10:25:25.8088 5320 CClientSession::OnRealEstablish:38 client(7)(10.10.10.6:9162) connected.
+05-02-10:25:25.8128 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxc)(B01DF9F30E1A4850AB85E47F4D6393C9)
+05-02-10:33:59.5672 5320 CClientSession::OnClose:46 client(7)(10.10.10.6:9162) disconnected.
+05-02-11:27:21.1253 5320 CClientSession::OnRealEstablish:38 client(8)(10.10.10.6:14132) connected.
+05-02-11:27:21.1413 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(zxc)(7960BD202FFA4BEF8F04325B926F8E93)
+05-02-11:29:11.4366 5320 CClientSession::OnClose:46 client(8)(10.10.10.6:14132) disconnected.
+05-02-11:34:21.6503 5320 CClientSession::OnRealEstablish:38 client(9)(10.10.10.6:14439) connected.
+05-02-11:34:21.6553 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(zxc)(20CAD770BF3F41B0B56FB68831AF111C)
+05-02-11:46:12.9610 5320 CClientSession::OnClose:46 client(9)(10.10.10.6:14439) disconnected.
+05-02-13:00:45.1888 5320 CClientSession::OnRealEstablish:38 client(10)(10.10.10.6:18890) connected.
+05-02-13:00:45.1968 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(10) ask login(zxc)(FBB1C9270F8846C8AF4C0A80D3344C7D)
+05-02-13:04:04.6252 5320 CClientSession::OnClose:46 client(10)(10.10.10.6:18890) disconnected.
+05-02-15:19:30.4300 5320 CClientSession::OnRealEstablish:38 client(11)(10.10.10.6:25208) connected.
+05-02-15:19:30.4330 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(11) ask login(zxc)(0BC085698CE741B7A25D74D225EA0DFC)
+05-02-15:25:45.8855 5320 CClientSession::OnClose:46 client(11)(10.10.10.6:25208) disconnected.
+05-02-15:26:00.6043 5320 CClientSession::OnRealEstablish:38 client(12)(10.10.10.6:25475) connected.
+05-02-15:26:00.6063 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(12) ask login(zxc)(46FAAAE720544CB4B7875801D83D129F)
+05-02-15:26:18.3803 5320 CClientSession::OnClose:46 client(12)(10.10.10.6:25475) disconnected.
+05-02-15:27:06.0970 5320 CClientSession::OnRealEstablish:38 client(13)(10.10.10.6:25516) connected.
+05-02-15:27:06.1001 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(13) ask login(zxc)(9F8D1DC83D9249B99CCEA768831E175B)
+05-02-15:31:07.4059 5320 CClientSession::OnClose:46 client(13)(10.10.10.6:25516) disconnected.
+05-02-15:31:19.1105 5320 CClientSession::OnRealEstablish:38 client(14)(10.10.10.6:25797) connected.
+05-02-15:31:19.1385 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(14) ask login(zxc)(5116863F5904411D992BD5FBC6240043)
+05-02-15:31:38.4286 5320 CClientSession::OnClose:46 client(14)(10.10.10.6:25797) disconnected.
+05-02-15:31:59.2968 5320 CClientSession::OnRealEstablish:38 client(15)(10.10.10.6:25836) connected.
+05-02-15:31:59.3198 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(15) ask login(zxc)(A7F227BF77214DE8A500EBA80E579093)
+05-02-15:33:17.2633 5320 CClientSession::OnClose:46 client(15)(10.10.10.6:25836) disconnected.
+05-02-16:25:13.2775 5320 CClientSession::OnRealEstablish:38 client(16)(10.10.10.6:29287) connected.
+05-02-16:25:13.2845 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(16) ask login(zxc)(88FA015E3F4549A9B5EF94F799E9C838)
+05-02-16:32:57.1460 5320 CClientSession::OnClose:46 client(16)(10.10.10.6:29287) disconnected.
+05-02-16:37:29.5026 5320 CClientSession::OnRealEstablish:38 client(17)(10.10.10.6:29656) connected.
+05-02-16:37:29.5056 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(17) ask login(zxc)(42A90040F27247F9A1BCB46BCD187FF9)
+05-02-16:41:10.7203 5320 CClientSession::OnClose:46 client(17)(10.10.10.6:29656) disconnected.
+05-02-16:43:05.2618 5320 CClientSession::OnRealEstablish:38 client(18)(10.10.10.6:29900) connected.
+05-02-16:43:05.3918 5320 GateServer::CGSKernel::OnMsgFromGC:57 client(18) ask login(zxc)(CEC0261E2AC149EDB200D71944B1AB30)
+05-02-16:44:20.2641 5320 CClientSession::OnClose:46 client(18)(10.10.10.6:29900) disconnected.
+05-02-17:21:34.4259 5320 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002

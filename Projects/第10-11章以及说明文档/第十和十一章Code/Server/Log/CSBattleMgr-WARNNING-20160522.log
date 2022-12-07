@@ -1,0 +1,25 @@
+05-22-16:46:04.2090 7476 CentralServer::CCSUserMgr::CDKThreadBeginCallback:101 --errorCode:2006,errorStr:MySQL server has gone away
+05-22-16:46:19.0899 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-16:46:22.5391 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-16:46:30.7975 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-16:46:51.7227 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-16:49:46.2227 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-16:55:00.0627 12748 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-17:48:39.1228 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-17:50:13.7132 12748 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-19:43:42.1816 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-19:44:45.1782 12748 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-21:12:26.4581 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-21:12:56.6669 12748 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-21:16:07.2748 4408 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-21:29:10.7546 12748 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+-11:33:55.4958 6800 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-11:35:13.8753 9948 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-14:39:34.4809 6800 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-14:45:10.4191 9948 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-14:45:34.0975 6800 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-14:45:34.1005 9948 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-14:49:19.9094 6800 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+05-22-14:49:19.9174 9948 CentralServer::CCSGuideBattle::CaculateResult:41 there exist taskId:1001, or  has guide end!
+05-22-16:45:49.9272 9948 CRedisSession::OnClose:59 与Redis断开连接!
+05-22-16:45:49.9472 9948 CLogicRedisSession::OnClose:49 与Redis断开连接!

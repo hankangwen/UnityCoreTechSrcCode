@@ -1,0 +1,40 @@
+04-17-10:46:04.1708 1756 CentralServer::CCSCfgMgr::LoadNewSkillCfg:815 Load 268 Skill cfg.
+04-17-10:46:04.2628 1756 CentralServer::CCSCfgMgr::LoadSkillModelAccountCfg:905 Load 322 Skill cfg.
+04-17-10:46:04.2948 1756 CentralServer::CCSCfgMgr::LoadSkillModelEmitCfg:1023 Load 96 Skill cfg.
+04-17-10:46:04.3298 1756 CentralServer::CCSCfgMgr::LoadSkillModelRangeCfg:1098 Load 123 Skill cfg.
+04-17-10:46:04.3348 1756 CentralServer::CCSCfgMgr::LoadSkillModelLeadingCfg:959  Load 17 Skill cfg.
+04-17-10:46:04.4378 1756 CentralServer::CCSCfgMgr::LoadSkillModelBufCfg:1183  Load 302 Skill cfg.
+04-17-10:46:04.4458 1756 CentralServer::CCSCfgMgr::LoadSkillModelSummonCfg:1288  Load 5 Skill cfg.
+04-17-10:46:04.4528 1756 CentralServer::CCSCfgMgr::LoadSkillModelMoveCfg:1355  Load 26 Skill cfg.
+04-17-10:46:04.4548 1756 CentralServer::CCSCfgMgr::LoadSkillModelSwitchCfg:1414  Load 26 Skill cfg.
+04-17-10:46:04.4558 1756 CentralServer::CCSCfgMgr::LoadSkillModelPurifactionCfg:1477  Load 1 Skill cfg.
+04-17-10:46:04.4568 1756 CentralServer::CCSCfgMgr::LoadSkillModelLinkCfg:1542  Load 1 Skill cfg.
+04-17-10:46:04.4958 1756 CentralServer::CCSCfgMgr::LoadPassitiveSkillCfg:1635  Load 126 Skill cfg.
+04-17-10:46:04.4988 1756 CentralServer::CCSCfgMgr::LoadPassitiveEffectBloodSeekCfg:1682  Load 6 Skill cfg.
+04-17-10:46:04.5008 1756 CentralServer::CCSCfgMgr::LoadPassitiveEffectReboundCfg:1729  Load 4 Skill cfg.
+04-17-10:46:04.5028 1756 CentralServer::CCSCfgMgr::LoadPassitiveEffectReliveCfg:1777 Load 1 Skill cfg.
+04-17-10:46:04.5298 1756 CentralServer::CCSCfgMgr::LoadNPCCfg:224 Load 52 NPC cfg.
+04-17-10:46:04.5438 1756 CentralServer::CCSCfgMgr::LoadHeroCfg:353  Load 22 hero cfg.
+04-17-10:46:04.5828 1756 CentralServer::CCSCfgMgr::LoadGoodsCfg:628 Load 103 goods cfg.
+04-17-10:46:04.5838 1756 CentralServer::CCSCfgMgr::LoadShopCfg:710 Load 3 shop cfg.
+04-17-10:46:04.5858 1756 CentralServer::CCSCfgMgr::LoadMapCfg:419  load 4 map.
+04-17-10:46:04.5888 1756 CentralServer::CCSCfgMgr::LoadHeroChooseCfg:1998 Load 22 herochoose cfg.
+04-17-10:46:04.6378 1756 CentralServer::CCSCfgMgr::LoadRobotAICfg:2058 Load 609 RobotAI cfg.
+04-17-10:46:04.6568 1756 CentralServer::CCSCfgMgr::LoadRobotAIPathCfg:2107 Load 197 RobotAI cfg.
+04-17-10:46:04.6688 1756 CentralServer::CCSCfgMgr::LoadRunesCfg:101 Load 75 runes cfg.
+04-17-10:46:04.6708 1756 CentralServer::CCSCfgMgr::LoadRunesSlotCfg:345 Load 19 runesslot cfg.
+04-17-10:46:04.6818 1756 CentralServer::CCSCfgMgr::LoadHeroBuyCfg:466 Load 63 hero buy cfg.
+04-17-10:46:04.6848 1756 CentralServer::CCSCfgMgr::LoadDiscountCfg:527 Load 0 discount cfg.
+04-17-10:46:04.6858 1756 CentralServer::CCSCfgMgr::LoadHotAndNewGoodsCfg:777 Load NewCfg:1 and HotCfg:1
+04-17-10:46:04.7288 1756 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10002, ReuseAddr 1
+04-17-10:46:04.7308 1756 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10001, ReuseAddr 1
+04-17-10:46:04.7328 1756 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:10010, ReuseAddr 1
+04-17-10:46:05.7299 1756 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234
+04-17-10:46:26.0831 1756 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(4)
+04-17-14:20:41.4513 1756 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(5)
+04-17-14:49:42.8109 1756 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(6)
+04-17-17:17:36.9765 1756 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(7)
+04-17-17:23:54.7851 1756 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(8)
+04-17-17:23:54.7901 1756 CentralServer::CCSUserMgr::RemoveUserFromRedisLRU:340 É¾³ýRedis Cache guid:3001
+04-17-17:36:11.5863 1756 CentralServer::CCSUserMgr::OnUserOnline:157 Add user netinfo(9)
+04-17-22:17:22.2872 1756 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234

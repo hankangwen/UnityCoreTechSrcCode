@@ -1,0 +1,31 @@
+05-28-15:08:25.3845 11792 SceneServer::CSSCfgMgr::LoadMapObjCfg:901  Load 38 map obj cfg.
+05-28-15:08:25.4685 11792 SceneServer::CSSCfgMgr::LoadMapCfg:787  load 4 map.
+05-28-15:08:25.6005 11792 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:20001, ReuseAddr 1
+05-28-15:08:55.1352 11792 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 0 battle
+05-28-15:09:15.0544 8688 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+05-28-15:51:07.2391 8688 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:4
+05-28-15:51:07.2421 8688 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-28-15:51:07.2601 8688 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 1
+05-28-17:04:17.0822 11792 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 0 battle
+05-28-17:36:10.6876 11864 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:5
+05-28-17:36:10.7196 11864 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-28-17:36:10.8956 11864 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 2
+05-28-20:13:49.5196 11792 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 2 actor and now it hv 0 battle
+05-28-20:24:52.2245 12240 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:6
+05-28-20:24:52.2275 12240 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-28-20:24:52.2765 12240 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 3
+05-28-20:57:55.5540 11792 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 0 battle
+05-28-20:58:36.0293 7104 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+05-28-21:07:12.0778 7104 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:7
+05-28-21:07:12.0808 7104 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-28-21:07:12.1258 7104 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 4
+05-28-21:09:17.8630 11792 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 1 battle
+05-28-21:09:44.1385 8688 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+05-28-21:26:01.2784 8688 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:8
+05-28-21:26:01.2804 8688 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-28-21:26:01.3154 8688 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 5
+05-28-21:26:35.7924 11792 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 1 battle
+05-28-21:26:54.3774 11864 SceneServer::CSSHero::SynGoodsUseStateToGC:1357 un8GridID:0, num:1, eOT:30001 n32RemainCoolTime:0
+05-28-21:32:01.2870 11864 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:9
+05-28-21:32:01.3100 11864 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+05-28-21:32:01.5970 11864 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 6

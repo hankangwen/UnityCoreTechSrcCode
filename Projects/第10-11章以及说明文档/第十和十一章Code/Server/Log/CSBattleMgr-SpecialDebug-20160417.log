@@ -1,0 +1,16 @@
+04-17-10:46:26.0741 1756 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!xzc--
+04-17-10:46:31.8274 1756 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:xzc, nickName:法威契约
+04-17-14:20:41.4483 1756 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!nbn--
+04-17-14:25:12.7649 1756 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:nbn, nickName:黯狼皇子
+04-17-14:49:42.8069 1756 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxczc--
+04-17-14:59:21.2380 1756 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxczc, nickName:焰云浩劫
+04-17-17:17:36.9715 1756 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxcz--
+04-17-17:23:54.7821 1756 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxczc--
+04-17-17:36:11.5633 1756 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!xcv--
+04-17-17:36:17.7236 1756 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:xcv, nickName:独死怒吼
+04-17-17:37:01.5431 1756 CentralServer::CCSBattle::CCSBattle:33 create battle(1)
+04-17-17:37:01.5621 1756 CentralServer::CCSBattle::CCSBattle:43 battle(1) add user(5001)
+04-17-17:37:26.9206 1756 CentralServer::CCSBattle::OnFinish:236 destory battle(1)
+04-17-17:37:26.9246 1756 CentralServer::CCSBattle::OnFinish:242 battle(1) remove user(5001)
+04-17-17:37:26.9416 1756 CentralServer::CCSUserBattleInfo::Clear:64 user(xcv) clear by reason(2)
+04-17-17:37:26.9456 1756 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 ɾ�����!

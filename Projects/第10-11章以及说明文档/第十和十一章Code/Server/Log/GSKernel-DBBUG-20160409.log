@@ -1,0 +1,21 @@
+04-09-21:30:20.7677 9480 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+04-09-21:30:21.2817 9480 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+04-09-21:30:21.7557 9480 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:49999
+04-09-21:31:25.4944 9480 CClientSession::OnRealEstablish:38 client(4)(10.10.10.8:6557) connected.
+04-09-21:31:25.5014 9480 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(aaaa)(EA851B522E2046F2A17E7E3E28557AD0)
+04-09-21:31:36.5700 9480 CClientSession::OnClose:46 client(4)(10.10.10.8:6557) disconnected.
+04-09-21:46:20.2735 9480 CClientSession::OnRealEstablish:38 client(5)(10.10.10.8:6861) connected.
+04-09-21:46:20.2805 9480 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(rwrr)(F81C5335CCD347F48FCB57FEF7D54FD5)
+04-09-21:46:28.6530 9480 CClientSession::OnClose:46 client(5)(10.10.10.8:6861) disconnected.
+04-09-21:55:02.6744 9480 CClientSession::OnRealEstablish:38 client(6)(10.10.10.8:7986) connected.
+04-09-21:55:02.6814 9480 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(zxc)(76215C37CD1C49FA80AFA9D88228A2F0)
+04-09-22:08:04.3991 9480 CClientSession::OnClose:46 client(6)(10.10.10.8:7986) disconnected.
+04-09-22:08:49.1107 9480 CClientSession::OnRealEstablish:38 client(7)(10.10.10.8:8356) connected.
+04-09-22:08:49.1137 9480 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(asasd)(0F5C7704644B4F3A98700EE50A31EC7D)
+04-09-22:14:02.9616 9480 CClientSession::OnClose:46 client(7)(10.10.10.8:8356) disconnected.
+04-09-22:15:29.5046 9480 CClientSession::OnRealEstablish:38 client(8)(10.10.10.8:8521) connected.
+04-09-22:15:29.5086 9480 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(ssss)(79441EF3DD8B4E6F9954A2AA0BB67D2D)
+04-09-22:18:00.6552 9480 CClientSession::OnClose:46 client(8)(10.10.10.8:8521) disconnected.
+04-09-22:18:59.9826 9480 CClientSession::OnRealEstablish:38 client(9)(10.10.10.8:8574) connected.
+04-09-22:18:59.9866 9480 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(8989)(792059935EE647EC8772703070EA1627)
+04-09-22:23:05.1977 9480 CClientSession::OnClose:46 client(9)(10.10.10.8:8574) disconnected.

@@ -1,0 +1,10 @@
+04-24-16:38:50.1095 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+04-24-16:38:50.1725 8960 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+04-24-16:44:39.6045 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+04-24-16:44:39.6755 2316 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+04-24-21:14:26.4074 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+04-24-21:14:26.4234 7656 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+04-24-22:26:42.8134 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+04-24-22:26:42.8644 9128 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+04-24-22:33:52.7350 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+04-24-22:33:52.7550 8960 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.

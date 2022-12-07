@@ -1,0 +1,16 @@
+04-16-19:40:42.1376 10852 CentralServer::CCSUserMgr::CDKThreadBeginCallback:101 --errorCode:2006,errorStr:MySQL server has gone away
+04-16-19:40:56.0754 4044 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-19:41:01.7988 4044 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-19:49:53.9552 4044 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;2001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-19:49:57.8654 4044 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;2001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-22:14:37.9429 10504 CLogicRedisSession::OnClose:49 与Redis断开连接!
+04-16-22:14:38.0449 10504 CRedisSession::OnClose:59 与Redis断开连接!
+
+04-16-15:57:16.5539 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;2001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-15:59:05.3141 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;3001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-15:59:12.2165 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;3001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-17:11:38.0261 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;4001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-17:11:42.6773 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;4001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-17:24:21.8647 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;5001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-17:24:24.9049 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;5001, crrorcode:2006, msg:MySQL server has gone away!
+04-16-17:30:49.3109 8028 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!

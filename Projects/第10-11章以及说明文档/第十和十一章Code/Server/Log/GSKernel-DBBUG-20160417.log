@@ -1,0 +1,20 @@
+04-17-10:46:05.0709 9212 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+04-17-10:46:05.0979 9212 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+04-17-10:46:26.0741 9212 CClientSession::OnRealEstablish:38 client(4)(10.10.10.10:2864) connected.
+04-17-10:46:26.0781 9212 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(xzc)(46F97B8407F744DD8F6600D59351E9D7)
+04-17-11:07:52.4236 9212 CClientSession::OnClose:46 client(4)(10.10.10.10:2864) disconnected.
+04-17-14:20:41.4473 9212 CClientSession::OnRealEstablish:38 client(5)(10.10.10.10:11282) connected.
+04-17-14:20:41.4513 9212 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(nbn)(918D8FD11EF54C40A4BCF35F26D15371)
+04-17-14:25:37.9213 9212 CClientSession::OnClose:46 client(5)(10.10.10.10:11282) disconnected.
+04-17-14:49:42.8059 9212 CClientSession::OnRealEstablish:38 client(6)(10.10.10.10:12174) connected.
+04-17-14:49:42.8089 9212 GateServer::CGSKernel::OnMsgFromGC:57 client(6) ask login(zxczc)(45D04FE8420242A2993003AA66886075)
+04-17-15:01:27.2722 9212 CClientSession::OnClose:46 client(6)(10.10.10.10:12174) disconnected.
+04-17-17:17:36.9705 9212 CClientSession::OnRealEstablish:38 client(7)(10.10.10.10:19274) connected.
+04-17-17:17:36.9715 9212 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxcz)(500AE3E7F6F24BD2884A02C251BC4705)
+04-17-17:22:59.0539 9212 CClientSession::OnClose:46 client(7)(10.10.10.10:19274) disconnected.
+04-17-17:23:54.7811 9212 CClientSession::OnRealEstablish:38 client(8)(10.10.10.10:19540) connected.
+04-17-17:23:54.7821 9212 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(zxczc)(E3577A7A770846429AF0437EAA72BAB9)
+04-17-17:31:22.1287 9212 CClientSession::OnClose:46 client(8)(10.10.10.10:19540) disconnected.
+04-17-17:36:11.5623 9212 CClientSession::OnRealEstablish:38 client(9)(10.10.10.10:20164) connected.
+04-17-17:36:11.6073 9212 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(xcv)(D82597492FB94987B8DF330D4BAC4AF2)
+04-17-17:37:26.8256 9212 CClientSession::OnClose:46 client(9)(10.10.10.10:20164) disconnected.

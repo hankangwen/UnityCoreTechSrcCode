@@ -1,0 +1,4 @@
+05-08-17:27:10.1273 6676 GateServer::CGSKernel::OnMsgFromGC:69 user zxc can't login with token 23BFEC8E916D47AEB81BAA460F801EA8
+05-08-18:16:47.5256 6676 GateServer::CGSKernel::OnMsgFromGC:69 user zxc can't login with token 91B68F749DDE480C985D9DD0E5ED5FF0
+05-08-18:22:07.7069 6676 GateServer::CGSKernel::OnMsgFromGC:120 nsid(21) send msg(16520) error, can't get ssinfo.
+05-08-19:49:24.8564 6676 GateServer::CGSKernel::OnMsgFromGC:69 user zxc can't login with token 0F417DBA8B4343978F147341C08DD204

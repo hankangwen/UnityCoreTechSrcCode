@@ -1,0 +1,12 @@
+09-04-19:27:56.0896 15904 CentralServer::CCSCfgMgr::LoadFilterWordsCfg:1950 Success!
+09-04-19:27:56.8287 15904 CentralServer::CCSCfgMgr::LoadAiRobotName:2130 LoadAiRobotName Success!
+09-04-19:27:56.8777 15904 CentralServer::CCSKernel::Start:169 success!
+09-04-19:27:56.8877 15904 CRedisSession::SendInitData:23 连接上Redis
+09-04-19:27:56.8897 15904 CLogicRedisSession::SendInitData:14 连接上Redis
+09-04-19:27:57.1077 15904 CGateSession::OnRealEstablish:57 GS(30001) Connected
+09-04-19:27:57.1927 15904 CSceneSession::OnRealEstablish:60 SS(20001) Connected
+09-04-19:27:57.2467 15904 CentralServer::CCSBattleMgr::PostMsgToSS_NotifyGameLogSwitch:570 -------cs send switch to ss ok------------
+09-04-19:27:57.9057 15904 CCSLogSession::SendInitData:26  LogServer Connected, try to register me.
+09-04-19:44:00.7688 15904 CCSLogSession::OnClose:34 DisConnect.
+09-04-19:44:03.3689 15904 CGateSession::OnClose:65 GS(30001) DisConnected
+09-04-19:44:04.1700 15904 CSceneSession::OnClose:67 SS(20001) DisConnected

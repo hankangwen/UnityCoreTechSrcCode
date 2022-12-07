@@ -1,0 +1,26 @@
+04-24-10:31:24.8776 8056 SceneServer::CSSCfgMgr::LoadMapObjCfg:901  Load 38 map obj cfg.
+04-24-10:31:24.9466 8056 SceneServer::CSSCfgMgr::LoadMapCfg:787  load 4 map.
+04-24-10:31:25.0896 8056 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:20001, ReuseAddr 1
+04-24-10:31:26.0877 8056 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10001
+04-24-10:31:26.0917 8056 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:1234
+04-24-16:38:44.1402 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 0 battle
+04-24-16:38:50.1045 8960 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:5
+04-24-16:38:50.1065 8960 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+04-24-16:38:50.1745 8960 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 1
+04-24-16:44:37.1824 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 1 actor and now it hv 0 battle
+04-24-16:44:39.6005 2316 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:6
+04-24-16:44:39.6025 2316 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+04-24-16:44:39.6775 2316 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 2
+04-24-21:14:22.0811 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 2 actor and now it hv 0 battle
+04-24-21:14:26.3964 7656 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:12
+04-24-21:14:26.3994 7656 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+04-24-21:14:26.4264 7656 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 3
+04-24-22:26:32.2458 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 3 actor and now it hv 0 battle
+04-24-22:26:42.8074 9128 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:16
+04-24-22:26:42.8104 9128 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+04-24-22:26:42.8664 9128 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 4
+04-24-22:31:13.1679 8056 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:49 Send To 0 actor and now it hv 1 battle
+04-24-22:33:52.7310 8960 SceneServer::CSSUser::ClearNetInfo:71 clear nsid:17
+04-24-22:33:52.7330 8960 SceneServer::CSSBattle::PostMsgToCS_BattleEnd:127 herokills:0.
+04-24-22:33:52.7580 8960 SceneServer::CSSBattle::~CSSBattle:72 Destroy a battle : 5
+04-24-22:35:14.7977 8056 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10001

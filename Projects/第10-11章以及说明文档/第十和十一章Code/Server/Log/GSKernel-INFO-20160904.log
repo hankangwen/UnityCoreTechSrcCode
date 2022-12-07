@@ -1,0 +1,16 @@
+09-04-19:27:56.5997 18400 GateServer::CGSKernel::Initialize:107 CGSKernel Initialize success
+09-04-19:27:57.1067 18400 CM2CSession::SendInitData:34 CS Connected, try to register me.
+09-04-19:27:57.1287 18400 CM2CSession::OnRealEstablish:46 CS Connected and register ok
+09-04-19:27:57.1917 18400 GateServer::CGSKernel::OnMsgFromCS_AskPingRet:41 Ping CS returned, tick span 4.
+09-04-19:27:57.2207 18400 CM2SSession::SendInitData:36 SS(20001) Connected, try to register me.
+09-04-19:27:57.2467 18400 CM2SSession::Msg_Handle_Init:92 register to SS 20001 success at session 4.
+09-04-19:27:57.2517 18400 CM2SSession::OnRealEstablish:52 SS(20001) Connected and register ok.
+09-04-19:27:57.5957 18400 CM2BSession::SendInitData:33 BS Connected, try to register me.
+09-04-19:27:57.6007 18400 CM2BSession::OnRealEstablish:42 BS Connected and register ok.
+09-04-19:30:37.1938 18400 GateServer::CGSKernel::OnMsgFromCS_AskPingRet:41 Ping CS returned, tick span 2.
+09-04-19:33:17.2250 18400 GateServer::CGSKernel::OnMsgFromCS_AskPingRet:41 Ping CS returned, tick span 2.
+09-04-19:35:57.2651 18400 GateServer::CGSKernel::OnMsgFromCS_AskPingRet:41 Ping CS returned, tick span 3.
+09-04-19:38:37.2893 18400 GateServer::CGSKernel::OnMsgFromCS_AskPingRet:41 Ping CS returned, tick span 2.
+09-04-19:41:17.2914 18400 GateServer::CGSKernel::OnMsgFromCS_AskPingRet:41 Ping CS returned, tick span 1.
+09-04-19:43:57.3806 18400 GateServer::CGSKernel::OnMsgFromCS_AskPingRet:41 Ping CS returned, tick span 2.
+09-04-19:44:02.5329 18400 CM2BSession::OnClose:47 BS DisConnect.

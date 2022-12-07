@@ -1,0 +1,7 @@
+04-10-21:42:40.4607 10860 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+
+04-10-16:17:32.7929 5332 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asd--
+04-10-16:29:54.9783 5332 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asd--
+04-10-17:58:31.7834 5332 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asdd--
+04-10-18:08:15.5618 5332 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxcxz--
+04-10-18:08:32.8938 5332 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxcxz, nickName:复刺法师

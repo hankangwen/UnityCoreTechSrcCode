@@ -1,0 +1,60 @@
+05-15-09:47:28.6245 1840 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49997, ReuseAddr 1
+05-15-09:47:28.6295 1840 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:49996, ReuseAddr 1
+05-15-09:52:57.8123 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(2), sessionid:123, platform:0
+05-15-09:52:57.8693 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-09:52:57.8703 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-09:52:58.9664 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-09:53:34.9715 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(3), sessionid:123, platform:0
+05-15-09:53:34.9765 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-09:53:34.9785 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-09:53:37.6986 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-09:54:37.7950 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(4), sessionid:123, platform:0
+05-15-09:54:37.8000 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-09:54:37.8020 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-09:54:38.9461 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-09:58:21.1858 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(5), sessionid:123, platform:0
+05-15-09:58:21.2018 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-09:58:21.2038 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-09:58:23.3639 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-10:03:54.7229 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(6), sessionid:123, platform:0
+05-15-10:03:54.7319 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-10:03:54.7349 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-10:04:24.1906 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(7), sessionid:123, platform:0
+05-15-10:04:24.2066 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-10:04:24.2086 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-10:04:26.4677 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-10:05:46.0813 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(8), sessionid:123, platform:0
+05-15-10:05:46.0903 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-10:05:46.0923 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-10:05:48.6364 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-10:07:29.5362 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(9), sessionid:123, platform:0
+05-15-10:07:29.5422 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-10:07:29.5442 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-10:07:33.7994 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-10:38:36.4050 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(10), sessionid:123, platform:0
+05-15-10:38:36.6310 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-10:38:36.6410 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-10:41:18.2422 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(11), sessionid:123, platform:0
+05-15-10:41:18.3822 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-10:41:18.4142 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-10:41:21.6194 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-16:27:51.2695 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(12), sessionid:123, platform:0
+05-15-16:27:51.2785 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-16:27:51.2815 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-16:27:53.3926 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-16:32:35.7728 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(13), sessionid:123, platform:0
+05-15-16:32:35.7878 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-16:32:35.7928 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-16:32:37.8399 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-16:34:18.3587 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(14), sessionid:123, platform:0
+05-15-16:34:18.3687 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-16:34:18.3717 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-16:34:21.2618 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-16:37:05.2272 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(15), sessionid:123, platform:0
+05-15-16:37:05.2372 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-16:37:05.2412 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-16:37:08.6474 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc
+05-15-21:33:46.1104 1840 SDKAsynHandler::CheckLogin:690 GC Try To Login with uin:zxc(16), sessionid:123, platform:0
+05-15-21:33:46.1174 1840 SdkConnector::Update:610 Add uid:zxc, sessionid:0zxc
+05-15-21:33:46.1204 1840 SdkConnector::PostMsgToGC_NotifyServerList:713 Post Server List To User.
+05-15-21:33:49.3825 1840 CBalanceSession::Msg_Handle_OneClientLoginCheck:104 Erase uid:zxc

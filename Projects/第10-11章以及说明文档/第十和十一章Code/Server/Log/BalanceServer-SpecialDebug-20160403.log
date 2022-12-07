@@ -1,0 +1,8 @@
+04-03-16:28:26.8199 3952 CClientSession::MSG_OneClientLogin:58 user(test)(123)(3) ask login bs
+04-03-16:28:26.8589 3952 CB2LSession::Msg_User_Login:61 user(test)(123)(3) ask login ret
+04-03-16:28:57.3717 3952 CClientSession::MSG_OneClientLogin:58 user(test)(123)(4) ask login bs
+04-03-16:28:57.3837 3952 CB2LSession::Msg_User_Login:61 user(test)(123)(4) ask login ret
+04-03-17:28:22.1995 3952 CClientSession::MSG_OneClientLogin:58 user(test)(123)(5) ask login bs
+04-03-17:28:22.2025 3952 CB2LSession::Msg_User_Login:61 user(test)(123)(5) ask login ret
+04-03-20:38:26.2168 3952 CClientSession::MSG_OneClientLogin:58 user(test)(123)(6) ask login bs
+04-03-20:38:26.2198 3952 CB2LSession::Msg_User_Login:61 user(test)(123)(6) ask login ret

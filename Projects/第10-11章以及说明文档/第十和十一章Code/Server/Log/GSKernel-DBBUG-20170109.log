@@ -1,0 +1,7 @@
+01-09-21:09:25.5191 10836 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+01-09-21:09:26.5292 10836 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002
+01-09-21:09:27.4992 10836 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002
+01-09-21:09:36.5348 10836 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+01-09-21:09:56.3089 10836 CClientSession::OnRealEstablish:38 client(4)(10.10.10.6:12626) connected.
+01-09-21:09:56.3139 10836 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(test)(9D10ECAF16BE4A2A9B05B70F07A44DD4)
+01-09-21:10:18.8622 10836 CClientSession::OnClose:46 client(4)(10.10.10.6:12626) disconnected.

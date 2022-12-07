@@ -1,0 +1,16 @@
+04-04-17:35:47.6151 9348 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+04-04-17:35:47.6321 9348 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+04-04-17:36:39.0620 9348 CClientSession::OnRealEstablish:38 client(4)(10.10.10.7:11356) connected.
+04-04-17:36:39.0650 9348 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(test)(18EED3B7D6D645308428331CB35A5890)
+04-04-17:36:41.7112 9348 CClientSession::OnClose:46 client(4)(10.10.10.7:11356) disconnected.
+04-04-20:16:53.5889 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002
+04-04-20:16:55.5770 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:20001
+04-04-20:16:57.9692 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:49999
+04-04-20:17:03.6025 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002
+04-04-20:17:05.4916 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:20001
+04-04-20:17:08.0228 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:49999
+04-04-20:17:13.6191 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002
+04-04-20:17:15.5172 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:20001
+04-04-20:17:17.9953 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:49999
+04-04-20:17:23.6946 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:10002
+04-04-20:17:25.5328 9348 INetSessionMgr::LogText:42 [CRT] OnConnectErr:Address:127.0.0.1:20001

@@ -1,0 +1,6 @@
+09-07-20:57:59.6721 10396 CentralServer::CCSUserMgr::CDKThreadBeginCallback:101 --errorCode:2006,errorStr:MySQL server has gone away
+09-07-20:58:32.5760 10392 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+09-07-20:58:37.0252 10392 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+09-07-21:03:55.5725 10392 CentralServer::CCSUserMgr::DBAsynUpdateUserCallback:52 error:begin;1001, crrorcode:2006, msg:MySQL server has gone away!
+09-07-21:19:01.2273 10024 CRedisSession::OnClose:59 与Redis断开连接!
+09-07-21:19:01.2373 10024 CLogicRedisSession::OnClose:49 与Redis断开连接!

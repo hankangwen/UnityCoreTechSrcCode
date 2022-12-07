@@ -1,0 +1,199 @@
+06-05-15:56:35.4080 17952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+06-05-15:56:41.4264 17952 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxc, nickName:鐏噾鑷冲皧
+06-05-15:56:45.2576 17952 CentralServer::CCSBattle::CCSBattle:33 create battle(1)
+06-05-15:56:45.2616 17952 CentralServer::CCSBattle::CCSBattle:43 battle(1) add user(1001)
+06-05-15:56:56.6853 17952 CentralServer::CCSBattle::OnFinish:236 destory battle(1)
+06-05-15:56:56.6943 17952 CentralServer::CCSBattle::OnFinish:242 battle(1) remove user(1001)
+06-05-15:56:56.6983 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+06-05-15:56:56.7003 17952 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+06-05-17:00:20.8659 17952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+06-05-17:00:25.5981 17952 CentralServer::CCSUser::AskBuyGoods:505 购买花费金币2500，剩余:40
+06-05-17:00:43.0341 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:86 房间号1：开始时间Sun Jun 05 17:00:43 2016
+
+06-05-17:00:43.0381 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:87 房间号1：至少2人时间Sun Jun 05 17:00:44 2016
+
+06-05-17:00:43.0411 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:88 房间号1：至少3人时间Sun Jun 05 17:00:45 2016
+
+06-05-17:00:43.0441 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:89 房间号1：至少4人时间Sun Jun 05 17:00:46 2016
+
+06-05-17:00:43.0461 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:90 房间号1：至少5人时间Sun Jun 05 17:00:50 2016
+
+06-05-17:00:43.0491 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:91 房间号1：结束时间Sun Jun 05 17:00:53 2016
+
+06-05-17:00:45.0902 17952 CCSMatchRoom_Nomal::Update:165 房间号1：跳转时间Sun Jun 05 17:00:45 2016
+
+06-05-17:00:46.0903 17952 CCSMatchRoom_Nomal::Update:165 房间号1：跳转时间Sun Jun 05 17:00:46 2016
+
+06-05-17:00:47.0914 17952 CCSMatchRoom_Nomal::Update:165 房间号1：跳转时间Sun Jun 05 17:00:47 2016
+
+06-05-17:00:51.0916 17952 CCSMatchRoom_Nomal::Update:165 房间号1：跳转时间Sun Jun 05 17:00:51 2016
+
+06-05-17:00:54.0948 17952 CCSMatchRoom_Nomal::Update:165 房间号1：跳转时间Sun Jun 05 17:00:54 2016
+
+06-05-17:00:54.1958 17952 CentralServer::CCSBattle::CCSBattle:33 create battle(2)
+06-05-17:00:54.2038 17952 CentralServer::CCSBattle::CCSBattle:43 battle(2) add user(1001)
+06-05-17:03:54.7411 17952 CentralServer::CCSBattle::CaculateExp:363 ExpAddition:0.
+06-05-17:03:54.7451 17952 CentralServer::CCSBattle::CaculateGold:400 GoldAddition:0.
+06-05-17:03:54.7541 17952 CentralServer::CCSBattle::OnFinish:236 destory battle(2)
+06-05-17:03:54.7581 17952 CentralServer::CCSBattle::OnFinish:242 battle(2) remove user(1001)
+06-05-17:03:54.7611 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+06-05-17:03:54.7641 17952 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+06-05-17:04:50.9473 17952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+06-05-17:05:00.2658 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:86 房间号2：开始时间Sun Jun 05 17:05:00 2016
+
+06-05-17:05:00.2708 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:87 房间号2：至少2人时间Sun Jun 05 17:05:07 2016
+
+06-05-17:05:00.2758 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:88 房间号2：至少3人时间Sun Jun 05 17:05:10 2016
+
+06-05-17:05:00.2778 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:89 房间号2：至少4人时间Sun Jun 05 17:05:16 2016
+
+06-05-17:05:00.2808 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:90 房间号2：至少5人时间Sun Jun 05 17:05:22 2016
+
+06-05-17:05:00.2828 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:91 房间号2：结束时间Sun Jun 05 17:05:30 2016
+
+06-05-17:05:08.0933 17952 CCSMatchRoom_Nomal::Update:165 房间号2：跳转时间Sun Jun 05 17:05:08 2016
+
+06-05-17:05:11.0945 17952 CCSMatchRoom_Nomal::Update:165 房间号2：跳转时间Sun Jun 05 17:05:11 2016
+
+06-05-17:05:17.0958 17952 CCSMatchRoom_Nomal::Update:165 房间号2：跳转时间Sun Jun 05 17:05:17 2016
+
+06-05-17:05:23.0981 17952 CCSMatchRoom_Nomal::Update:165 房间号2：跳转时间Sun Jun 05 17:05:23 2016
+
+06-05-17:05:31.0046 17952 CCSMatchRoom_Nomal::Update:165 房间号2：跳转时间Sun Jun 05 17:05:31 2016
+
+06-05-17:05:31.1046 17952 CentralServer::CCSBattle::CCSBattle:33 create battle(3)
+06-05-17:05:31.1156 17952 CentralServer::CCSBattle::CCSBattle:43 battle(3) add user(1001)
+06-05-17:06:01.2653 17952 CentralServer::CCSBattle::CaculateExp:363 ExpAddition:0.
+06-05-17:06:01.2683 17952 CentralServer::CCSBattle::CaculateGold:400 GoldAddition:0.
+06-05-17:06:01.2743 17952 CentralServer::CCSBattle::OnFinish:236 destory battle(3)
+06-05-17:06:01.2763 17952 CentralServer::CCSBattle::OnFinish:242 battle(3) remove user(1001)
+06-05-17:06:01.2803 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+06-05-17:06:01.2853 17952 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+06-05-17:15:05.4514 17952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+06-05-17:15:15.5360 17952 CCSBattleRoom::AddPlayer:65 玩家zxc创建房间(1)
+06-05-17:15:19.9543 17952 CCSBattleRoom::RemoverPlayer:138 玩家zxc离开房间(1)
+06-05-17:15:19.9613 17952 CentralServer::CCSBattleMgr::OnBattleRoomAbort:273 房间(1)无房主而中止
+06-05-17:15:19.9663 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(5)
+06-05-17:15:26.8047 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:86 房间号3：开始时间Sun Jun 05 17:15:26 2016
+
+06-05-17:15:26.8097 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:87 房间号3：至少2人时间Sun Jun 05 17:15:30 2016
+
+06-05-17:15:26.8117 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:88 房间号3：至少3人时间Sun Jun 05 17:15:32 2016
+
+06-05-17:15:26.8147 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:89 房间号3：至少4人时间Sun Jun 05 17:15:33 2016
+
+06-05-17:15:26.8177 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:90 房间号3：至少5人时间Sun Jun 05 17:15:38 2016
+
+06-05-17:15:26.8197 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:91 房间号3：结束时间Sun Jun 05 17:15:47 2016
+
+06-05-17:15:31.0849 17952 CCSMatchRoom_Nomal::Update:165 房间号3：跳转时间Sun Jun 05 17:15:31 2016
+
+06-05-17:15:33.0850 17952 CCSMatchRoom_Nomal::Update:165 房间号3：跳转时间Sun Jun 05 17:15:33 2016
+
+06-05-17:15:34.0851 17952 CCSMatchRoom_Nomal::Update:165 房间号3：跳转时间Sun Jun 05 17:15:34 2016
+
+06-05-17:15:39.0844 17952 CCSMatchRoom_Nomal::Update:165 房间号3：跳转时间Sun Jun 05 17:15:39 2016
+
+06-05-17:15:48.0869 17952 CCSMatchRoom_Nomal::Update:165 房间号3：跳转时间Sun Jun 05 17:15:48 2016
+
+06-05-17:15:48.1869 17952 CentralServer::CCSBattle::CCSBattle:33 create battle(4)
+06-05-17:15:48.1949 17952 CentralServer::CCSBattle::CCSBattle:43 battle(4) add user(1001)
+06-05-17:18:18.5825 17952 CentralServer::CCSBattle::CaculateExp:363 ExpAddition:0.
+06-05-17:18:18.5855 17952 CentralServer::CCSBattle::CaculateGold:400 GoldAddition:0.
+06-05-17:18:18.5935 17952 CentralServer::CCSBattle::OnFinish:236 destory battle(4)
+06-05-17:18:18.5965 17952 CentralServer::CCSBattle::OnFinish:242 battle(4) remove user(1001)
+06-05-17:18:18.6005 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+06-05-17:18:18.6035 17952 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+06-05-17:18:25.4999 17952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+06-05-17:18:32.7703 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:86 房间号4：开始时间Sun Jun 05 17:18:32 2016
+
+06-05-17:18:32.7723 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:87 房间号4：至少2人时间Sun Jun 05 17:18:32 2016
+
+06-05-17:18:32.7743 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:88 房间号4：至少3人时间Sun Jun 05 17:18:33 2016
+
+06-05-17:18:32.7763 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:89 房间号4：至少4人时间Sun Jun 05 17:18:34 2016
+
+06-05-17:18:32.7783 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:90 房间号4：至少5人时间Sun Jun 05 17:18:37 2016
+
+06-05-17:18:32.7803 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:91 房间号4：结束时间Sun Jun 05 17:18:42 2016
+
+06-05-17:18:33.0683 17952 CCSMatchRoom_Nomal::Update:165 房间号4：跳转时间Sun Jun 05 17:18:33 2016
+
+06-05-17:18:34.0724 17952 CCSMatchRoom_Nomal::Update:165 房间号4：跳转时间Sun Jun 05 17:18:34 2016
+
+06-05-17:18:35.0734 17952 CCSMatchRoom_Nomal::Update:165 房间号4：跳转时间Sun Jun 05 17:18:35 2016
+
+06-05-17:18:38.0786 17952 CCSMatchRoom_Nomal::Update:165 房间号4：跳转时间Sun Jun 05 17:18:38 2016
+
+06-05-17:18:43.0879 17952 CCSMatchRoom_Nomal::Update:165 房间号4：跳转时间Sun Jun 05 17:18:43 2016
+
+06-05-17:18:43.1879 17952 CentralServer::CCSBattle::CCSBattle:33 create battle(5)
+06-05-17:18:43.1909 17952 CentralServer::CCSBattle::CCSBattle:43 battle(5) add user(1001)
+06-05-17:27:14.9022 17952 CentralServer::CCSBattle::CaculateExp:363 ExpAddition:0.
+06-05-17:27:14.9062 17952 CentralServer::CCSBattle::CaculateGold:400 GoldAddition:0.
+06-05-17:27:14.9122 17952 CentralServer::CCSBattle::OnFinish:236 destory battle(5)
+06-05-17:27:14.9142 17952 CentralServer::CCSBattle::OnFinish:242 battle(5) remove user(1001)
+06-05-17:27:14.9152 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+06-05-17:27:14.9172 17952 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+06-05-20:41:23.9545 17952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+06-05-20:41:33.9340 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:86 房间号5：开始时间Sun Jun 05 20:41:33 2016
+
+06-05-20:41:33.9360 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:87 房间号5：至少2人时间Sun Jun 05 20:41:38 2016
+
+06-05-20:41:33.9380 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:88 房间号5：至少3人时间Sun Jun 05 20:41:39 2016
+
+06-05-20:41:33.9410 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:89 房间号5：至少4人时间Sun Jun 05 20:41:45 2016
+
+06-05-20:41:33.9470 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:90 房间号5：至少5人时间Sun Jun 05 20:41:48 2016
+
+06-05-20:41:33.9490 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:91 房间号5：结束时间Sun Jun 05 20:41:55 2016
+
+06-05-20:41:39.0723 17952 CCSMatchRoom_Nomal::Update:165 房间号5：跳转时间Sun Jun 05 20:41:39 2016
+
+06-05-20:41:40.0694 17952 CCSMatchRoom_Nomal::Update:165 房间号5：跳转时间Sun Jun 05 20:41:40 2016
+
+06-05-20:41:46.0077 17952 CCSMatchRoom_Nomal::Update:165 房间号5：跳转时间Sun Jun 05 20:41:46 2016
+
+06-05-20:41:49.0269 17952 CCSMatchRoom_Nomal::Update:165 房间号5：跳转时间Sun Jun 05 20:41:49 2016
+
+06-05-20:41:56.0713 17952 CCSMatchRoom_Nomal::Update:165 房间号5：跳转时间Sun Jun 05 20:41:56 2016
+
+06-05-20:41:56.1713 17952 CentralServer::CCSBattle::CCSBattle:33 create battle(6)
+06-05-20:41:56.1883 17952 CentralServer::CCSBattle::CCSBattle:43 battle(6) add user(1001)
+06-05-20:44:47.0741 17952 CentralServer::CCSBattle::CaculateExp:363 ExpAddition:0.
+06-05-20:44:47.0801 17952 CentralServer::CCSBattle::CaculateGold:400 GoldAddition:0.
+06-05-20:44:47.0861 17952 CentralServer::CCSBattle::OnFinish:236 destory battle(6)
+06-05-20:44:47.0881 17952 CentralServer::CCSBattle::OnFinish:242 battle(6) remove user(1001)
+06-05-20:44:47.0921 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+06-05-20:44:47.1181 17952 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!
+06-05-20:48:50.4410 17952 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+06-05-20:48:58.9395 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:86 房间号6：开始时间Sun Jun 05 20:48:58 2016
+
+06-05-20:48:58.9575 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:87 房间号6：至少2人时间Sun Jun 05 20:49:00 2016
+
+06-05-20:48:58.9605 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:88 房间号6：至少3人时间Sun Jun 05 20:49:01 2016
+
+06-05-20:48:58.9625 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:89 房间号6：至少4人时间Sun Jun 05 20:49:04 2016
+
+06-05-20:48:58.9645 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:90 房间号6：至少5人时间Sun Jun 05 20:49:06 2016
+
+06-05-20:48:58.9655 17952 CCSMatchRoom_Nomal::CCSMatchRoom_Nomal:91 房间号6：结束时间Sun Jun 05 20:49:10 2016
+
+06-05-20:49:01.0866 17952 CCSMatchRoom_Nomal::Update:165 房间号6：跳转时间Sun Jun 05 20:49:01 2016
+
+06-05-20:49:02.0027 17952 CCSMatchRoom_Nomal::Update:165 房间号6：跳转时间Sun Jun 05 20:49:02 2016
+
+06-05-20:49:05.0548 17952 CCSMatchRoom_Nomal::Update:165 房间号6：跳转时间Sun Jun 05 20:49:05 2016
+
+06-05-20:49:07.0599 17952 CCSMatchRoom_Nomal::Update:165 房间号6：跳转时间Sun Jun 05 20:49:07 2016
+
+06-05-20:49:11.0632 17952 CCSMatchRoom_Nomal::Update:165 房间号6：跳转时间Sun Jun 05 20:49:11 2016
+
+06-05-20:49:11.1622 17952 CentralServer::CCSBattle::CCSBattle:33 create battle(7)
+06-05-20:49:11.1652 17952 CentralServer::CCSBattle::CCSBattle:43 battle(7) add user(1001)
+06-05-20:52:32.4387 17952 CentralServer::CCSBattle::CaculateExp:363 ExpAddition:0.
+06-05-20:52:32.4407 17952 CentralServer::CCSBattle::CaculateGold:400 GoldAddition:0.
+06-05-20:52:32.4447 17952 CentralServer::CCSBattle::OnFinish:236 destory battle(7)
+06-05-20:52:32.4457 17952 CentralServer::CCSBattle::OnFinish:242 battle(7) remove user(1001)
+06-05-20:52:32.4477 17952 CentralServer::CCSUserBattleInfo::Clear:64 user(zxc) clear by reason(2)
+06-05-20:52:32.4517 17952 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 删除玩家!

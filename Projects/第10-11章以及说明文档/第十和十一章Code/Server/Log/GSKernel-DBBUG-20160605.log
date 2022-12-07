@@ -1,0 +1,25 @@
+06-05-15:56:20.2042 7208 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:40001, ReuseAddr 1
+06-05-15:56:21.2692 7208 CM2CSession::Msg_Handle_Init:77 m_un32MaxSSNum:15
+06-05-15:56:35.4070 7208 CClientSession::OnRealEstablish:38 client(4)(10.10.10.3:32186) connected.
+06-05-15:56:35.4150 7208 GateServer::CGSKernel::OnMsgFromGC:57 client(4) ask login(zxc)(70A0A1B9D20B4EB0A9480CDB32068F6D)
+06-05-15:56:56.6823 7208 CClientSession::OnClose:46 client(4)(10.10.10.3:32186) disconnected.
+06-05-17:00:20.8649 7208 CClientSession::OnRealEstablish:38 client(5)(10.10.10.3:35857) connected.
+06-05-17:00:20.8749 7208 GateServer::CGSKernel::OnMsgFromGC:57 client(5) ask login(zxc)(28BB60F08B284E3388D01023A416A228)
+06-05-17:03:43.8305 7208 CClientSession::OnClose:46 client(5)(10.10.10.3:35857) disconnected.
+06-05-17:04:30.5021 7208 CClientSession::OnRealEstablish:38 client(6)(10.10.10.3:36111) connected.
+06-05-17:04:39.6887 7208 CClientSession::OnClose:46 client(6)(10.10.10.3:36111) disconnected.
+06-05-17:04:50.9463 7208 CClientSession::OnRealEstablish:38 client(7)(10.10.10.3:36144) connected.
+06-05-17:04:50.9533 7208 GateServer::CGSKernel::OnMsgFromGC:57 client(7) ask login(zxc)(A90570DA71424B3AAD3947E3E18928C5)
+06-05-17:05:49.1796 7208 CClientSession::OnClose:46 client(7)(10.10.10.3:36144) disconnected.
+06-05-17:15:05.4514 7208 CClientSession::OnRealEstablish:38 client(8)(10.10.10.3:36696) connected.
+06-05-17:15:05.4714 7208 GateServer::CGSKernel::OnMsgFromGC:57 client(8) ask login(zxc)(CA2CC51341034A16A9BC19DE7D150314)
+06-05-17:18:00.8155 7208 CClientSession::OnClose:46 client(8)(10.10.10.3:36696) disconnected.
+06-05-17:18:25.4999 7208 CClientSession::OnRealEstablish:38 client(9)(10.10.10.3:36866) connected.
+06-05-17:18:25.5109 7208 GateServer::CGSKernel::OnMsgFromGC:57 client(9) ask login(zxc)(D51BED2193C54B179E9615A84D78C864)
+06-05-17:27:01.5284 7208 CClientSession::OnClose:46 client(9)(10.10.10.3:36866) disconnected.
+06-05-20:41:23.9535 7208 CClientSession::OnRealEstablish:38 client(10)(10.10.10.3:51550) connected.
+06-05-20:41:24.0365 7208 GateServer::CGSKernel::OnMsgFromGC:57 client(10) ask login(zxc)(3852B384527B46C2925A30AF4CC69929)
+06-05-20:44:35.5854 7208 CClientSession::OnClose:46 client(10)(10.10.10.3:51550) disconnected.
+06-05-20:48:50.4400 7208 CClientSession::OnRealEstablish:38 client(11)(10.10.10.3:51890) connected.
+06-05-20:48:50.4650 7208 GateServer::CGSKernel::OnMsgFromGC:57 client(11) ask login(zxc)(CF3B07F7AF8747C0B764055CF302B083)
+06-05-20:52:12.9646 7208 CClientSession::OnClose:46 client(11)(10.10.10.3:51890) disconnected.

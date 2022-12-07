@@ -1,0 +1,7 @@
+04-04-17:35:49.7242 8184 INetSessionMgr::LogText:42 [WRN] CUCODEListener::Start Listen 0:1234, ReuseAddr 1
+04-04-17:36:39.0650 8184 CClientSession::Msg_Handle_Dispath:47 
+04-04-17:36:39.0670 8184 CLogHandler::HandleLogMsg:25 
+04-04-17:36:41.7132 8184 CClientSession::Msg_Handle_Dispath:47 
+04-04-17:36:41.7152 8184 CLogHandler::HandleLogMsg:25 
+04-04-17:36:41.7172 8184 CClientSession::Msg_Handle_Dispath:47 
+04-04-17:36:41.7192 8184 CLogHandler::HandleLogMsg:25 

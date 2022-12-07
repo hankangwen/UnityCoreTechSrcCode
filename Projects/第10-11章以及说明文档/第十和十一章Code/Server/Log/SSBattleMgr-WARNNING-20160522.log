@@ -1,0 +1,20 @@
+05-22-16:46:30.8015 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-16:46:30.8575 9224 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-16:55:00.3607 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-16:55:00.5977 3484 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-17:50:13.7322 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-17:50:13.7692 3880 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-19:44:45.1912 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-19:44:45.2062 8020 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-21:12:56.6789 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-21:12:56.7469 9224 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-21:29:10.7696 8856 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-21:29:10.8496 3484 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-11:35:13.9313 8020 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-11:35:13.9343 9224 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-14:45:10.4271 8020 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-14:45:10.4981 3484 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-14:45:34.1055 8020 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-14:45:34.1135 9704 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.
+05-22-14:49:19.9294 8020 SceneServer::CSSWorkThreadMgr::SendCSMsgToLogicThread:135 Not handle cs msgid:16510
+05-22-14:49:19.9924 8588 SceneServer::CSSGuideBattle::CheckPlayTimeout:503 all users offline, so finish it.

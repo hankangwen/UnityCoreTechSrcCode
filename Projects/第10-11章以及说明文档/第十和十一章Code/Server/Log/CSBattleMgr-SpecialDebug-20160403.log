@@ -1,0 +1,11 @@
+04-03-16:28:26.9459 7372 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!test--
+04-03-16:28:57.5247 7372 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!test--
+04-03-16:29:07.9543 7372 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:test, nickName:ÁªùÁ•ûÂ§©‰Ωø
+04-03-16:29:16.2907 7372 CentralServer::CCSBattle::CCSBattle:33 create battle(1)
+04-03-16:29:16.3417 7372 CentralServer::CCSBattle::CCSBattle:43 battle(1) add user(1001)
+04-03-16:29:56.6130 7372 CentralServer::CCSBattle::OnFinish:236 destory battle(1)
+04-03-16:29:56.6170 7372 CentralServer::CCSBattle::OnFinish:242 battle(1) remove user(1001)
+04-03-16:29:56.6470 7372 CentralServer::CCSUserBattleInfo::Clear:64 user(test) clear by reason(2)
+04-03-16:29:56.6810 7372 CentralServer::CCSUserMgr::CheckIfCanRemoveUser:663 …æ≥˝ÕÊº“!
+04-03-17:28:22.2576 7372 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!test--
+04-03-20:38:26.2738 7372 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!test--

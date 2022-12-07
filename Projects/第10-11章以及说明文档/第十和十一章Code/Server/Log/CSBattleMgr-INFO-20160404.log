@@ -1,0 +1,9 @@
+04-04-17:35:46.7130 9056 CentralServer::CCSCfgMgr::LoadFilterWordsCfg:1950 Success!
+04-04-17:35:47.4421 9056 CentralServer::CCSCfgMgr::LoadAiRobotName:2130 LoadAiRobotName Success!
+04-04-17:35:47.5591 9056 CentralServer::CCSKernel::Start:169 success!
+04-04-17:35:47.5751 9056 CRedisSession::SendInitData:23 连接上Redis
+04-04-17:35:47.5781 9056 CLogicRedisSession::SendInitData:14 连接上Redis
+04-04-17:35:47.6311 9056 CGateSession::OnRealEstablish:57 GS(30001) Connected
+04-04-17:35:48.0101 9056 CSceneSession::OnRealEstablish:60 SS(20001) Connected
+04-04-17:35:48.0221 9056 CentralServer::CCSBattleMgr::PostMsgToSS_NotifyGameLogSwitch:570 -------cs send switch to ss ok------------
+04-04-17:35:58.5607 9056 CCSLogSession::SendInitData:26  LogServer Connected, try to register me.

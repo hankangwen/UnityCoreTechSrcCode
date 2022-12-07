@@ -1,0 +1,10 @@
+09-24-21:01:15.1282 11364 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(3) ask login bs
+09-24-21:01:15.2532 11364 CB2LSession::Msg_User_Login:61 user(asd)(123)(3) ask login ret
+09-24-21:02:15.4266 11364 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(4) ask login bs
+09-24-21:02:15.4976 11364 CB2LSession::Msg_User_Login:61 user(asd)(123)(4) ask login ret
+09-24-21:05:27.2436 11364 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(5) ask login bs
+09-24-21:05:27.3036 11364 CB2LSession::Msg_User_Login:61 user(asd)(123)(5) ask login ret
+09-24-21:09:41.5701 11364 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(6) ask login bs
+09-24-21:09:41.6301 11364 CB2LSession::Msg_User_Login:61 user(asd)(123)(6) ask login ret
+09-24-21:14:29.3136 11364 CClientSession::MSG_OneClientLogin:58 user(asd)(123)(7) ask login bs
+09-24-21:14:29.4086 11364 CB2LSession::Msg_User_Login:61 user(asd)(123)(7) ask login ret

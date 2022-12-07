@@ -1,0 +1,13 @@
+04-16-19:40:56.0634 10504 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!qw--
+04-16-19:41:01.7938 10504 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:qw, nickName:星渊之源
+04-16-19:49:53.7862 10504 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zxc--
+04-16-19:49:57.8254 10504 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zxc, nickName:永力领袖
+405 10140 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!zzz--
+04-16-15:56:06.9159 10140 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:zzz, nickName:静破之刺
+04-16-15:59:05.3061 10140 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!adfa--
+04-16-15:59:12.2105 10140 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:adfa, nickName:灰毒皇子
+04-16-17:11:38.0181 10140 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!111--
+04-16-17:11:42.6693 10140 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:111, nickName:灵魂刀锋
+04-16-17:24:21.8557 10140 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!lll--
+04-16-17:24:24.8969 10140 CentralServer::CCSUserMgr::ChangeUserNickName:115 user szUserName:lll, nickName:魅晓男爵
+04-16-17:29:50.8296 10140 CentralServer::CCSUserMgr::OnMgrFromGC_AskLogin:102 --new login msg!asd--
