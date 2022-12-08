@@ -1,0 +1,81 @@
+﻿using UnityEngine;
+using LuaInterface;
+using System.Collections;
+using System.Collections.Generic;
+using System;
+using UnityEngine.UI;
+
+//	LuaBehavior.cs
+//	Author: Jxw
+//	2015-10-16
+
+namespace BIEFramework {
+    public class LuaBehaviour : MonoBehaviour {
+        private string data = null;
+        private List<LuaFunction> buttons = new List<LuaFunction>();
+        protected static bool initialize = false;
+
+        protected void Awake() {
+            CallMethod("Awake", gameObject);
+        }
+
+        protected void Start() {
+            if ( Facade.Instance.LuaManager != null && initialize) {
+                LuaState l = Facade.Instance.LuaManager.lua;
+                l[name + ".transform"] = transform;
+                l[name + ".gameObject"] = gameObject;
+
+            }
+            CallMethod("Start");
+        }
+
+        protected void OnClick() {
+            CallMethod("OnClick");
+        }
+
+        protected void OnClickEvent(GameObject go) {
+            CallMethod("OnClick", go);
+        }
+
+        /// <summary>
+        /// 添加单击事件
+        /// </summary>
+        public void AddClick(GameObject go, LuaFunction luafunc) {
+            if (go == null) return;
+            buttons.Add(luafunc);
+            go.GetComponent<Button>().onClick.AddListener(
+                delegate() {
+                    luafunc.Call(go);
+                }
+            );
+        }
+
+        /// <summary>
+        /// 清除单击事件
+        /// </summary>
+        public void ClearClick() {
+            for (int i = 0; i < buttons.Count; i++) {
+                if (buttons[i] != null) {
+                    buttons[i].Dispose();
+                    buttons[i] = null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 执行Lua方法
+        /// </summary>
+        protected object[] CallMethod(string func, params object[] args) {
+            if (!initialize) return null;
+            return Util.CallMethod(name, func, args);
+        }
+
+        //-----------------------------------------------------------------
+        protected void OnDestroy() {
+            ClearClick();
+            Facade.Instance.LuaManager = null;
+            Util.ClearMemory();
+            Debug.Log("~" + name + " was destroy!");
+        }
+    }
+}
