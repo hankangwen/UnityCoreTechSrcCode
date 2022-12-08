@@ -1,0 +1,141 @@
+package clientmsg;
+import "common.proto";
+
+message c2s_initchar
+{
+	//客户端发起初始化char
+	optional uint32 uaid = 1;
+};
+
+message s2c_initchar
+{
+	optional uint32 uaid = 1;
+	optional bool   newchar = 2;  //[true 需要客户端创建角色] [false 直接用字段charinfo]
+	optional msgcharinfo charinfo = 3;
+	repeated CharHeroSaveData heros = 4;    // 英雄列表
+	repeated uint32 openmaps = 5;           //开通的关卡
+	repeated CharSaveItem items = 6;        //物品
+	optional CharQuestData quests = 7;      //任务
+	repeated CharSaveRune runes = 8;       //符文
+	repeated uint32 summonids = 9;         //抽过的id
+};
+
+message c2s_createchar
+{
+	//创建角色
+	optional uint32 uaid = 1;
+	optional msgnewchar newchar = 2;
+};
+message s2c_createchar
+{
+	optional uint32 uaid = 1;
+	optional enum_createchar result = 2;
+	optional msgcharinfo charinfo = 3;
+};
+//---------------进入世界---------------------
+message c2s_intomainworld
+{
+	optional uint32 uaid = 1;
+};
+
+message s2c_intomainworld
+{
+	optional uint32 uaid = 1;
+	optional enum_userintox  result = 2;
+};
+//--------------进入副本-------------------
+message c2s_intodungeon
+{
+	optional uint32 uaid = 1;
+	optional uint32 dungeonid = 2;
+};
+message s2c_intodungeon
+{
+	optional uint32 uaid = 1;
+	optional uint32 dungeonid = 2;
+	optional enum_userintox result = 3;
+};
+//-----------进入关卡--------------------
+message c2s_intolevels
+{
+	optional uint32 uaid = 1;
+	optional uint32 levelsid = 2;
+};
+message s2c_intolevels
+{
+	optional uint32 uaid = 1;
+	optional uint32 levelsid = 2;
+	optional enum_userintox result = 3;
+};
+//------------进入排兵布阵----------------
+message c2s_intoembattle
+{
+	optional uint32 uaid = 1;
+	optional uint32 levelsid = 2; //排兵布阵id = 关卡id
+	 
+};
+message s2c_intoembattle
+{
+	optional uint32 uaid = 1;
+	optional uint32 levelsid = 2; //排兵布阵id = 关卡id
+	optional enum_userintox result = 3; //into结果
+};
+
+message c2s_summon
+{
+	optional uint32 uaid = 1;
+	optional uint32 summonid = 2;
+	optional enum_summon summontype = 3; //抽卡类型 单次抽 10连抽 首抽
+};
+
+message s2c_summon
+{
+	optional uint32 uaid = 1;
+	optional uint32 summonid = 2;
+	optional enum_summon summontype = 3;
+	repeated CharHeroSaveData heros = 4;   //抽到的英雄
+};
+message c2s_myhero
+{
+	optional uint32 uaid = 1;
+};
+message s2c_myhero
+{
+	optional uint32 uaid = 1;
+	optional uint32 heronum = 2; //英雄数量 
+	repeated msghero herolist = 3;  
+};
+
+message s2c_mynewhero
+{
+	optional uint32 uaid = 1;
+	optional uint32 heronum = 2; //英雄数量 
+	repeated msghero herolist = 3; 
+};
+
+message s2c_createhero
+{
+	optional uint32 uaid = 1;
+};
+
+message c2s_fightbegin
+{
+	optional uint32 uaid = 1;
+	optional uint32 enemyid = 2;
+}; 
+
+message s2c_fightbegin
+{
+	optional uint32 uaid = 1;
+	optional uint32 enemygruop = 2;
+	repeated string enemylist = 3;
+};
+ 
+
+
+
+
+
+
+
+

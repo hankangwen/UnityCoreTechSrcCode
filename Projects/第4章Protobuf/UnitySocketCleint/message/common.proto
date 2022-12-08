@@ -1,0 +1,712 @@
+//角色信息结构
+message msgcharinfo
+{
+	optional uint32 uaid = 1;   
+	optional uint32 charid = 2;
+	optional uint32 kind = 3;
+	optional string name = 4;    
+	optional string head = 5;   
+	optional uint32 level = 6; 
+	optional uint32 exp = 7; 
+	optional uint32 phypower = 8;     
+	optional uint32 leadership = 9;  
+	optional uint32 friendnum = 10;      
+	optional uint32 gamecoin = 11;   
+	optional uint32 diamond = 12;      
+	optional uint32 friendshipoint = 13;    
+	optional uint32 reservecur = 14; 
+	optional uint32 nativepoint = 15; 
+	optional uint32 summonupper = 16; 
+	optional uint32 summonupperlimit = 17;
+	optional string createtime = 18;
+	optional uint32 guildid = 19;
+	optional uint32 victory = 20;
+	optional uint32 fail = 21;
+	optional uint32 max_gamecoin = 22;
+	optional uint32 max_diamond = 23;
+	optional uint32 protectedtime = 24;
+	optional uint32 totalcost = 25;
+};
+
+message msgnewchar
+{
+	optional uint32 uaid = 1;
+	optional string headimage = 2;
+	optional string name = 3;
+}
+//英雄结构
+message msgcharhero
+{
+	optional uint32 uaid = 1;
+	optional string herolist = 2;
+	
+};
+message msgsummon
+{
+	optional uint32 heroid = 1;
+	optional uint32 herostar = 2;
+	optional uint32 heropot = 3; 
+};
+//英雄战斗相关的数值
+
+message msgherofight
+{
+
+}; 
+
+
+//用户登录游戏服务器结果
+enum enum_begingameresult
+{
+	begingame_success = 0;
+	begingame_error = 1;
+};
+enum enum_createchar
+{
+	createchar_success = 0;
+	createchar_fail = 1;
+	createchar_charexist = 2;
+	
+};
+//用户类型
+enum enum_usertype 
+{
+	user_normal = 1;  //正常玩家
+	user_guest = 2;   //游客
+};	
+
+enum enum_userintox
+{
+	intox_success = 0;
+	intox_fail = 1;
+};
+
+enum enum_summon
+{
+	summon_one = 1;
+	summon_ten = 2;
+	summon_first = 3;
+};
+
+//**************************************************************************************************************************************************************
+//地图角色信息
+message MapCharInfo
+{
+	optional msgcharinfo charinfo = 1;	//角色基本信息
+	optional uint32 x = 2;			//位置x
+	optional uint32 y = 3;			//位置y
+	optional uint32 dir = 4;		//方向
+};
+
+//上线初始化角色信息
+enum enumGetCharResult
+{
+	Response_Success  = 0;			//成功获取角色
+	Response_SystemError = 1;		//系统错误
+	Response_NewChar = 2;			//创建新角色，需要设置新手信息
+};
+
+//初始化角色奖励信息
+enum enumGetCharRewardResult
+{
+	Success  = 0;			//成功获取角色
+	SystemError = 1;		//系统错误
+	NewChar = 2;	        //创建新角色奖励信息
+};
+
+//保存背包信息
+enum enumGetPackageResult
+{
+	Package_Find_Success = 0;
+	Package_SystemError = 1;
+	Package_Change_Success = 2;
+
+};
+
+
+
+enum CommonConst
+{	
+	MAX_NAMESIZE = 32;
+};
+
+//屏的长和宽
+enum SCREEN_CONST
+{
+	SCREEN_WIDTH	=	50;
+	SCREEN_HEIGHT	=	50;
+};
+
+//移动的方向
+enum DIR
+{
+	DIR_UP			= 0;
+	DIR_UPRIGHT		= 1;
+	DIR_RIGHT		= 2;
+	DIR_DOWNRIGHT	= 3;
+	DIR_DOWN		= 4;
+	DIR_DOWNLEFT	= 5;
+	DIR_LEFT		= 6;
+	DIR_UPLEFT		= 7;
+	DIR_ERROR		= 8;
+};
+
+// move flags
+enum MoveFlags
+{
+	MF_Moving = 1;	// i'm moving...
+	MF_Idle = 0;	// idle now!
+
+};
+//创建角色是否成功
+enum CreateCharResult
+{
+	enumCreateChar_Success = 1;
+	enumCreateChar_Failed = 2;
+};
+
+//分组
+//zxb
+enum enumGroupType
+{
+	enumGroup_Friend = 3;    //交友分组
+	enumGroup_Shop = 4;       //商城分组
+	enumGroup_Recruit = 2;     //招聘分组
+	enumGroup_Blacklist = 5;    //黑名单分组
+	enumGroup_ToBlacklist = 6;    //被拉黑名单分组
+	enumGroup_CommonFriend = 1;  //普通好友
+};
+//世界窗口消息类型
+enum enumWordmsgType
+{
+	enumWordmsg_ComanyNeed = 1;
+	enumWordmsg_Sys = 2;
+};
+//评价的类型
+enum enumAssessType
+{
+	enumAssess_Person_Resumeinfo = 1;   //个人简历信息
+	enumAssess_Person_Friendinfo = 2;   //个人交友信息
+	enumAssess_Person_Shoppinginfo = 3;  //个人商贸信息
+	enumAssess_Company_Companyinfo = 4;   //公司信息
+	enumAssess_Company_Proresume = 5;     //公司处理简历
+};
+//公司简历的存放位置
+enum enumCompanyTalentType
+{
+	enumCompanyTalent_Recycle = 3;
+	enumCompanyTalent_Noprocess = 1;
+	enumCompanyTalent_Talentpool = 2;
+};
+
+
+//邮件类型
+enum enumMailType
+{	
+	enumMailType_Sys = 1;
+	enumMailType_RequestAddFriend = 2;	//请求增加好友邮件
+};
+
+//敌舰的类型
+enum enumEnemyType
+{
+	enumEnemyType_Canoe = 1;         //皮划艇
+    enumEnemyType_PatrolBoat = 2;    //巡逻艇 
+	enumEnemyType_CruiserSmall = 3;  //小型巡洋舰
+	enumEnemyType_CruiserBig = 4;    //大型巡洋舰
+	enumEnemyType_Aircraft = 5;      //出云号
+};
+enum enumEnemyFormation
+{
+	enumFormation_cross = 1;     //十字
+	enumFormation_curve = 2;     //回字
+	enumFormation_intersect = 3; //叉字
+	enumFormation_bow = 4;       //弓字
+};
+enum enumAwakeSkillColour
+{
+	enumAwakeSkill_blue = 1;     
+	enumAwakeSkill_purple = 2;     
+	enumAwakeSkill_orange= 3;     
+	enumAwakeSkill_golden = 4;     
+};
+
+message GameLevelFlashMonsterData
+{
+	optional uint32 flash_monsterid = 1;
+	optional string flash_monsterpos = 2;
+	optional string flash_monstergroup = 3;
+};
+
+message EnemyCharInfo
+{
+	optional uint32 EnemyType = 1; //船类型
+	optional int32 x = 2; //敌舰的x坐标
+	optional int32 y = 3; //敌舰的y坐标
+};
+
+//以下为了兼容
+//玩家建筑存档信息
+message CharBuildSaveData
+{
+	optional uint32 build_id = 1;								//建筑ID
+	optional uint32 build_level = 2;							//建筑等级
+	optional uint32 build_type = 3;								//建筑类型
+	optional uint32 build_status = 4;							//建筑当前状态
+	optional uint64 start_time = 5;								//开始时间
+	optional uint32 build_static_id = 6;						//建筑的静态ID
+	repeated CharSoldierMakeSaveData make_soldiers = 7;			//生产中的士兵
+	optional uint64 need_time = 8;								//建筑操作需要的时间
+	optional uint32 build_placex = 9;							//建筑坐标
+	optional uint32 build_placey = 10;							//建筑坐标
+	optional uint64 build_production_time = 11;					//建筑生产资源的记录时间
+	repeated CropData crop = 12;								//保存农牧场土地上的作物信息
+};
+
+//玩家生产中士兵NPC信息
+message CharSoldierMakeSaveData
+{
+	optional uint32 npc_static_id = 1;				//NPC静态ID
+	optional uint32 npc_num = 2;					//士兵生产数量
+	optional uint64 start_time = 4;					//士兵生产开始时间
+	optional uint32 npc_status = 5;					//士兵状态（生产中/完成）
+	optional uint64 need_time = 6;					//士兵需要的时间
+};
+message CharHeroSkill
+{
+	optional uint32 skill_id = 1;
+	optional uint32 Skill_level = 2;
+};
+message CharAwakeSkill
+{
+	optional enumAwakeSkillColour colour = 1;
+	repeated CharHeroSkill awakeskill = 2;
+	
+};
+//玩家英雄NPC信息
+message CharHeroSaveData
+{
+	optional uint32 id = 1;					//英雄静态ID
+	optional uint32 npc_status = 2;			//英雄状态（健康/虚弱/治疗中/战斗中等）
+	optional uint32 level = 3;				//英雄等级
+	optional uint32 exp = 4;						//英雄当前经验
+	optional uint32 npc_curr_hp = 5;					//英雄当前HP
+	optional uint64 start_time = 6;						//英雄治疗开始时间
+	optional uint32 build_id = 7;						//
+	optional uint64 need_time = 8;						//英雄治疗需要的时间
+	repeated uint32 skill_id = 9;						//英雄拥有的技能ID
+	optional uint32 max_hp = 10;					    //英雄当前最大HP
+	optional bool	Dirty_mark = 11;					//脏标记
+	optional uint32 fighttimes = 12;					//战斗的次数
+	optional CharHeroSkillLearn learn_skill = 13;		//学习中的技能数据
+	repeated CharHeroSkill skill_normal = 14;           //普通技能
+	repeated CharHeroSkill skill_special = 15;          //绝技
+	repeated CharAwakeSkill skill_awakening = 16;        //觉醒技能
+	repeated CharHeroSkill skill_leader = 17;           //队长技能
+	repeated uint32 rune_id = 18;                       //英雄拥有的符文id
+	optional uint32 rarity = 19;                         //品质
+	optional uint32 star = 20;                           //星级
+	optional string icon = 21;                           //头像
+	optional uint32 index = 22;                          //在序列中的索引
+	optional uint32 pot = 23;                            //英雄的潜力附加值
+	
+};
+message msghero
+{
+	optional uint32 id = 1;
+	optional uint32 lv = 2;
+	optional uint32 rarity = 3;
+	optional uint32 star = 4;
+	optional uint32 exp = 5;
+	optional uint32 pot = 6;
+	optional string icon = 7;
+	optional uint32 index = 8;
+};
+message CharHeroFightValue
+{
+	optional uint32 attack = 1;  // 攻击
+	optional uint32 defence = 2; // 防御
+	optional uint32 max_health = 3;  // 生命
+	optional uint32 max_mana = 4;  // 法力
+	
+	optional uint32 end_critical = 5;  // 最终暴击
+	optional uint32 end_critical_hurt = 6;  // 最终暴击伤害
+	optional uint32 end_toughness = 7;  //最终韧性
+	optional uint32 end_hit = 8;  //最终命中
+	optional uint32 end_dodge = 9;  //最终闪避
+	optional uint32 end_attackspeed = 10;  //最终攻击速度
+	
+	
+	optional uint32 movespeed = 11;  //移动速度
+	optional float normal_attack_damage_per = 12;  //普通攻击吸血比例
+	optional float hurt_percent_factor = 13; //伤害加成系数 
+	
+	optional float avoid_harming_factor_fire = 14;// 火免伤系数
+	optional float avoid_harming_factor_water = 15;// 水免伤系数
+	optional float avoid_harming_factor_ground = 16;// 地免伤系数
+	optional float avoid_harming_factor_light = 17;// 光免伤系数
+	optional float avoid_harming_factor_dark = 18;// 暗免伤系数
+	optional float avoid_harming_factor_whole = 19;// 全免伤系数
+	
+	optional float bounce_hurt_fire = 20;// 全免伤系数
+	optional float bounce_hurt_water = 21;// 全免伤系数
+	optional float bounce_hurt_ground = 22;// 全免伤系数
+	optional float bounce_hurt_light = 23;// 全免伤系数
+	optional float bounce_hurt_dark = 24;// 全免伤系数
+	
+	optional float cure_factor = 25;// 全免伤系数
+	
+	optional float exempt_factor_dizzy = 26;// 眩晕减免系数
+	optional float exempt_factor_cutspeed = 27;// 减速减免系数
+	optional float exempt_factor_restriction = 28;// 禁足减免系数
+	optional float exempt_factor_silent = 29;// 沉默减免系数
+	optional float exempt_factor_chaos = 30;// 混乱减免系数
+	optional float exempt_factor_charm = 31;// 魅惑减免系数
+	optional float exempt_factor_frozen = 32;// 冰冻减免系数
+	optional float exempt_factor_palsy = 33;// 麻痹减免系数
+	optional float exempt_factor_whole = 34;// 全部减免系数
+			
+};
+//玩家士兵NPC信息
+message CharSoldierSaveData
+{
+	optional uint32 npc_static_id = 1;				//NPC静态ID
+	optional uint32 npc_num = 2;					//士兵可用数量
+	optional bool	Dirty_mark = 3;				//脏标记
+};
+
+//任务变量存档
+message QuestVar
+{
+	optional uint32 type = 1;
+	repeated uint32 value = 2;
+};
+
+//任务
+message DoingQuestData
+{
+	optional uint32   questid = 1; 	 //任务ID
+	optional uint32   status = 2;	//任务当前状态 QuestStatus::Type
+	repeated QuestVar vars = 3;	 	//任务参数
+};
+
+//最近一次战斗上场单位ID
+message QuestFighterInfoNum
+{
+	optional uint32 npcid = 1;
+	optional uint32 num = 2;
+};
+
+//上场英雄打怪经验
+message HeroExpInfo
+{
+	optional uint32 heroid = 1;
+	optional uint32 exp = 2;
+};
+
+//限制次数的任务ID
+message LimitTimesQuest
+{
+	optional uint32 questid = 1;
+	optional uint32 num = 2;
+};
+
+//完成任务通知结果
+enum enumQuestFightResult
+{
+	enumQuestFightResult_None = 0;
+	enumQuestFight_PVPWin = 1;		//PVP胜利
+	enumQuestFight_PVPFailed = 2;	//PVP失败
+	enumQuestFight_PVEWin = 3;		//PVE胜利
+	enumQuestFight_PVEFailed = 4;	//PVE失败
+	enumQuestFight_Max = 5;	
+};
+
+//任务数据
+message CharQuestData
+{
+	repeated uint32 finish_lordquests = 1;			//已经完成的领主任务
+	repeated uint32 finish_dailyquests = 2;			//已经完成的重复任务ID
+	repeated LimitTimesQuest limittime_quests = 3;  //限制次数的任务数据
+	repeated DoingQuestData doing_quests = 4;		//正在进行中的任务ID
+	repeated uint32 fight_heros = 5;				//最近一次战斗上场单位信息
+	repeated QuestFighterInfoNum quest_npcnum = 6;  //任务杀怪数量
+	repeated HeroExpInfo hero_explist = 7;			//英雄经验列表, 暂时不用了
+	optional enumQuestFightResult fightresult = 8;	//最近一次战斗胜利
+	repeated DoingQuestData achivement_quests = 9;	//成就任务
+};
+
+enum enumPairSaveType
+{
+	enumPair_FightWinGold = 1;
+	enumPair_FightWinCrystal = 2;
+	enumPair_FightWinTrophy = 3;
+	enumPair_FightDefWin = 4;
+	enumPair_AidSoldierNum = 5;
+	enumPair_FightAttackWin = 6;
+	enumPair_FinishTutorialID = 7;	
+	enumPair_DayTrophyNum = 8;		//天榜
+	enumPair_WeekTrophyNum = 9;		//周榜
+	enumPair_GrabResNum = 10;		//抢夺资源
+	enumPair_DayGrabResNum = 11;	//当天抢夺资源
+	enumPair_WeekGrabResNum = 12;	//本周抢夺资源
+	enumPair_DayWinTimesNum = 13;	//玩家胜利次数一天总数
+	enumPair_WeekWinTimesNum = 14;	//玩家胜利次数一周总数
+	enumPair_DayDefWinTimes = 15;	//玩家防御胜利次数天榜
+	enumPair_WeekDefWinTimes = 16;	//玩家防御胜利次数周榜
+	enumPair_NewCharacterCard = 17;	//新手卡
+};
+
+//通用的键值对
+message CharPairSaveData
+{
+	required enumPairSaveType type = 1;
+	required uint32 var = 2;
+};
+
+//分享
+message CharSocialShareTimes
+{
+	required uint32 id = 1;
+	required uint32 times = 2;
+};
+
+//战前Buff
+message FightPreBuff
+{
+	optional uint32 type = 1;
+	optional uint32 effect = 2;
+};
+//抽卡id
+message CharSummonid
+{
+	optional uint32 summonid = 1;
+};
+message CharGameSaveData
+{
+	repeated CharHeroSaveData heros = 1;               //英雄
+	repeated CharSaveItem items = 2;                   //物品
+	repeated uint32 openmaps = 3;                      //开通的关卡
+	optional CharQuestData quests = 4;                 //任务
+	repeated CharSaveStatus	status = 5;                //玩家状态
+	repeated CharAidSoldier aidsoldier = 6;            //玩家援兵
+	repeated CharPairSaveData pairvalues = 7;          //
+	repeated CharSocialShareTimes socialtimes = 8;     // 
+	optional FightPreBuff fightperbuff = 9;            //战前buff
+	optional CharRandomNpc randomnpc = 10;
+	optional CharEverydayGift everydaygift = 11;
+	repeated CharSaveRune runes = 12;                  //符文
+	repeated uint32 summonids = 13;              //抽过的id
+};
+
+//玩家资源结构
+message CharResourceSaveData
+{
+	optional uint32 gold = 1;					//金币
+	optional uint32 wood = 2;					//木头
+	optional uint32 crystal = 3;				//水晶	
+};
+
+//状态
+message SkillStatusElement
+{
+	message Pos
+	{
+		optional uint32 x = 1;
+		optional uint32 y = 2;
+	}
+	optional uint64		keyid = 1;			// 技能效果key 
+	optional uint32		skillid = 2;		// 技能id 
+	optional uint32		id = 3;				// 技能状态ID 
+	optional uint32		state = 4;			// 角色状态编号
+	optional uint32		percent = 5;		// 状态发生几率
+	optional int32		value = 6;			// 影响数值 
+	repeated int32		valuelist = 7;		// 影响数值列表
+	optional uint64		lastround = 8;		// 持续回合
+	optional uint32 	step = 10;			// 执行步骤 
+	optional uint32		damagetype = 11;	// 伤害的类型
+	optional uint32		attackid = 12;		// 攻击者ID, TempID
+	optional uint32		targetType = 13;	// 目标类型 
+	optional bool		refresh = 14;		// 是否刷新Npc属性 
+};
+
+//玩家士兵强化信息
+message CharSoldierIntensifyData
+{
+	optional uint32 npc_static_id = 1;				//
+	optional uint32 npc_level = 2;					//强化等级
+	optional uint64 start_time = 3;					//士兵强化开始时间
+	optional uint64 need_time = 4;					//士兵强化需要的时间
+	optional uint32 build_id = 5;					//强化士兵所在建筑ID
+	optional bool intensifying = 6;					//士兵是否在强化中
+};
+
+//农作物信息
+message CropData
+{
+	optional uint32 land_id = 1;					//所在土地的ID
+	optional uint32 crop_static_id = 2;				//农作物静态ID
+	optional uint64 start_time = 3;					//生产作物开始时间
+	optional uint64 need_time = 4;					//生产作物需要的时间
+	optional uint32 num = 5;						//当前生产数量(预计产量减去被偷数量)
+	optional uint32 crop_status = 6;				//农作物状态(生产中，可收获)
+};
+
+//道具信息
+message CharSaveItem
+{
+	optional uint32 pos = 1;			//仓库格子ID
+	optional uint32 packid = 2;			//包裹类型ID
+	optional uint32 item_id = 3;		//道具ID
+	optional uint32 item_num = 4;		//道具数量
+};
+
+//符文信息
+message CharSaveRune
+{
+	optional uint32 pos = 1;     //符文格子
+	optional uint32 runekid = 2; //符文类型id
+	optional uint32 runeid = 3;  //符文id
+	optional uint32 runenum = 4; //符文数量
+};
+
+message GuildBinaryData
+{
+	optional GuildViceInfo viceinfo = 1;
+	repeated GuildTrophyData trophydata = 2;
+	repeated GuildTrophyData day_trophydata = 3;
+	repeated GuildTrophyData week_trophydata = 4;
+};
+
+//公会成员奖杯信息
+message GuildTrophyData
+{
+	optional uint32 id = 1;
+	optional uint32 num = 2;
+};
+
+//公会副会长信息
+message GuildViceInfo
+{
+	repeated uint32 id = 1;                   //副会长ID
+};
+
+//玩家状态
+message CharSaveStatus
+{
+	optional uint32 id = 1;                   //物品表id
+	optional uint64 last_time = 2;			  //持续时间
+	optional uint64 start_time = 3;			  //开始时间
+	optional uint64 factor = 4;				  //系数
+};
+//玩家英雄技能学习信息
+message CharHeroSkillLearn
+{
+	optional uint32 skill_id = 1;			  //技能id
+	optional uint64 start_time = 2;			  //开始时间
+};
+//玩家援兵
+message CharAidSoldier
+{
+	optional uint32 npc_static_id = 1;				//NPC静态ID
+	optional uint32 npc_num = 2;					//援军数量
+	optional uint32	npc_level = 3;					//援军等级
+};
+//抽取NPC
+message CharRandomNpc
+{
+	optional uint64 base_time = 1;			  //基本抽取时间
+	optional uint64 base_tag = 2;			  //基本抽取（首抽标记）
+	optional uint64 advanced_time = 3;		  //高级抽取时间
+	optional uint64 advanced_tag = 4;		  //高级抽取（首抽标记）
+	optional uint64 event_time = 5;			  //活动充值抽取（免费次数）
+	optional uint64 event_tag = 6;		      //活动充值抽取（首抽标记）
+	optional uint64 event_stage = 7;		  //活动充值抽取进行到多少期
+	optional uint64 event_cost = 8;		      //活动期间累计的充值额度
+};
+
+message CharEverydayGift
+{
+	repeated bool isget = 1;			//是否领取
+	optional uint32	day = 2;			//起始天数
+};
+
+
+
+//怪物属性
+message MsgMonsterProperty
+{
+	optional uint32 monsid = 1;
+	optional uint32 monsmodelid = 2;
+	optional uint32 monslevel = 3;
+	optional uint32 monsbasehp = 4;
+	optional uint32 monsapcc = 5;
+	optional uint32 monsdefence = 6;
+	optional uint32 monsdodge = 7;
+	optional uint32 monscrit = 8;
+	optional uint32 monsresist = 9;
+	optional uint32 monsmovespeed = 10;
+	optional uint32 monsturnspeed = 11;
+	optional string monsskill = 12;
+	optional string monsdropitem = 13;
+	optional uint32 monsdropprobability = 14;
+	optional uint32 monsgold = 15;
+	optional string monsdescription = 16;
+	optional uint32 monshit = 17;
+	
+};
+//英雄属性
+message MsgRoleProperty
+{
+	optional uint32 roleid = 1;
+	optional uint32 rolebasehp =2;
+	optional uint32 roleapcc = 3;
+	optional uint32 roledefence = 4;
+	optional uint32 rolehit = 5;
+	optional uint32 roledodge = 6;
+	optional uint32 rolecrit = 7;
+	optional uint32 roleresist = 8;
+	optional uint32 rolemovespeed = 9;
+	optional uint32 roleturnspeed = 10;
+	optional string roleequipment = 11;
+	optional string roledescription = 12;
+};
+
+//英雄成长
+message MsgRoleUpgrade
+{
+	optional uint32 roleid = 1;
+	optional uint32 rolehp = 2;
+	optional uint32 roleapcc = 3;
+	optional uint32 roledefence = 4;
+	optional uint32 rolehit = 5;
+	optional uint32 roledodge = 6;
+	optional uint32 rolecrit = 7;
+	optional uint32 roleresist = 8;
+	optional string rodescription = 9;
+	
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

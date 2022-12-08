@@ -1,0 +1,200 @@
+package clientmsg;
+import "common.proto";
+enum enum_loginresult
+{
+	login_success = 0;
+	login_fail = 1;
+	login_accounterror = 2;
+	login_relogin = 3;	//已经登录
+};
+
+message c2s_login
+{
+	optional string name = 1;
+	optional string pwd = 2;
+};
+
+message s2c_login
+{
+	optional uint32 uaid = 1;		//账号ID
+	optional string gsip = 2;
+	optional uint32 gsport = 3;
+	optional enum_loginresult loginresult = 4;	//登录结果
+};
+
+message c2s_begingame
+{
+	required uint32 uaid = 1;	
+	optional enum_usertype type = 2;
+};
+
+message s2c_begingame
+{
+	required uint32 uaid = 1;
+	optional enum_begingameresult result = 3;
+}
+
+
+//**************************************************************************************************************************************************************
+message GuestLoginReq
+{
+};
+
+//登录结果枚举
+
+
+//名字是否重复
+message C2SNameRepetition
+{
+	optional msgcharinfo charinfo = 1;	  //创建角色
+	optional uint32 mapid = 2;
+	optional uint32 cityid = 3;
+};
+
+
+
+
+
+
+
+
+//玩家创建角色
+message ClientSelectChar
+{
+	optional uint32 uaid = 1;
+	optional uint32 charid = 2;
+}
+
+message SaveCharInfo
+{
+	optional uint32 uaid = 1;
+	optional uint32 charid = 2;
+	optional msgcharinfo charinfo = 3;
+	optional enumGetCharResult result = 4;
+}
+
+//客户端更新创建角色信息
+message CreateChar
+{
+	optional msgcharinfo charinfo = 1;	  //创建角色
+	optional uint32 mapid = 2;
+	optional uint32 cityid = 3;
+};
+
+//玩家进入游戏场景(战斗场景)
+message RequestIntoFightScene
+{
+	optional uint32 island = 1;  //岛屿id(1-8)
+	optional uint32 mapid = 2;   //mapid 实际上是登陆点的id(1-43)
+};
+
+//离开服务器
+message ClientExit
+{
+	optional uint32 charid = 1;
+	optional uint32 user_account = 2;
+};
+
+
+//消息的类型
+enum enumChatType
+{
+	Chat_User = 1;		//点对点聊天
+	Chat_World = 2;		//世界聊天
+	Chat_Sys = 3;		//系统消息
+};
+
+//聊天消息, 客户端发送给服务器，服务器再广播出去
+message SendChat
+{
+	optional enumChatType type  = 1;
+	optional uint32 charid = 2;  //对方的id
+	optional string msg = 3;
+};
+//打招呼
+message  SendGreet
+{
+	optional uint32 charid = 1; //对方的角色id
+	optional string greet = 2;  //招呼
+};
+//公司急聘
+message WordWindow
+{
+	optional enumWordmsgType type = 1;
+	optional string content =2;
+};
+//切换服装消息
+message C2SChangeCloth
+{
+	optional uint32 clothid = 1;
+};
+//玩家受到切换服装消息
+message S2CChangeCloth
+{
+	optional uint32 clothid = 1;   //服装id
+	optional uint32 charid = 2;    //换服装的角色id
+};
+//对公司评价
+message AssessCompany
+{
+	optional enumAssessType assesstype = 1;
+	optional uint32 id = 2;  //评价公司的id
+	optional uint32 stationid = 3;
+	optional uint32 rank =4;
+};
+//对个人评价
+message AssessPerson
+{
+	optional enumAssessType assesstype = 1;
+	optional uint32 id = 2;    //被评价人的id  
+	optional uint32 rank = 3;
+};
+//收到评价提醒
+message InformAssess
+{
+	optional uint32 rank =1;
+};
+
+//创建角色是否成功
+message isCreateCharSuccess
+{
+	optional uint32 result = 1;
+};
+//修改签名法状态
+message C2SChangeSignature
+{
+	optional string signature = 1;
+};
+
+//提示客户端比人修改了签名
+message S2CChangeSignature
+{
+	optional string signature =1;
+	optional uint32 charid = 2;
+};
+
+//服务器端返回给客户端已领取的登陆奖励
+message ResponseLoginReward
+{
+	optional string loginserven = 1; //7天已经领取的
+	optional string loginadd = 2; //累加已经领取的
+	optional uint32 loginfive = 3; //5天 当天翻牌的张数
+	optional uint32 loginday = 4; //登陆的总天数
+};
+
+//登陆奖励枚举类型
+enum LoginType
+{
+	Login_Add = 1;
+	Login_Five = 2;
+	Login_Seven = 3;
+};
+
+//点击领取发给服务端的登录奖励信息
+message RequestLoginReward
+{
+	optional uint32 uaid = 1;   // 用户id
+	optional uint32 charid = 2;  //角色id
+	optional string loginid = 3; //编号：比如801001
+	optional LoginType logintype = 4; //奖励登陆类型是枚举类型
+};
