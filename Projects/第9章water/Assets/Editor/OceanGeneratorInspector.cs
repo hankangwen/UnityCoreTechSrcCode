@@ -201,8 +201,8 @@ public class OceanGeneratorInspector : Editor
 				MeshFilter m=tile.AddComponent<MeshFilter>();
 				m.mesh=CreateMesh(size.x,size.z);
 
-				tile.AddComponent ("MeshRenderer");
-				tile.renderer.material = ocean.material;
+				tile.AddComponent <MeshRenderer>();
+				tile.GetComponent<Renderer>().material = ocean.material;
 				
 				//Make child of this object, so we don't clutter up the
 				//scene hierarchy more than necessary.

@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // Upgrade NOTE: now shader work on mobile
 // Upgrade NOTE: now shader have 2 lods, just disable reflection in inspector to see first lod
 
@@ -50,14 +52,14 @@ Shader "Mobile/Ocean"
     
     			o.bumpTexCoord.xy = v.vertex.xz/float2(_Size.x, _Size.z)*5;
     
-    			o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+    			o.pos = UnityObjectToClipPos (v.vertex);
     
     			o.foamStrengthAndDistance.x = v.tangent.w;
     			o.foamStrengthAndDistance.y = clamp(o.pos.z, 0, 1.0);
     
     
   				float4 projSource = float4(v.vertex.x, 0.0, v.vertex.z, 1.0);
-    			float4 tmpProj = mul( UNITY_MATRIX_MVP, projSource);
+    			float4 tmpProj = UnityObjectToClipPos( projSource);
     			o.projTexCoord = tmpProj;
 
     			float3 objSpaceViewDir = ObjSpaceViewDir(v.vertex);
@@ -151,14 +153,14 @@ Shader "Mobile/Ocean"
     
     			o.bumpTexCoord.xy = v.vertex.xz/float2(_Size.x, _Size.z)*5;
     
-    			o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+    			o.pos = UnityObjectToClipPos (v.vertex);
     
     			o.foamStrengthAndDistance.x = v.tangent.w;
     			o.foamStrengthAndDistance.y = clamp(o.pos.z, 0, 1.0);
     
     
   				float4 projSource = float4(v.vertex.x, 0.0, v.vertex.z, 1.0);
-    			float4 tmpProj = mul( UNITY_MATRIX_MVP, projSource);
+    			float4 tmpProj = UnityObjectToClipPos( projSource);
 
     			float3 objSpaceViewDir = ObjSpaceViewDir(v.vertex);
     			float3 binormal = cross( normalize(v.normal), normalize(v.tangent.xyz) );

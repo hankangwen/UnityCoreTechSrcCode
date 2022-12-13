@@ -18,7 +18,7 @@ public class Boyancy : MonoBehaviour
 
     void Start()
     {
-        rigidbody.centerOfMass = new Vector3(0.0f, -0.5f, 0.0f);
+        GetComponent<Rigidbody>().centerOfMass = new Vector3(0.0f, -0.5f, 0.0f);
         Vector3 bounds = GetComponent<BoxCollider>().size;
         float length = bounds.z;
         float width = bounds.x;
@@ -60,7 +60,7 @@ public class Boyancy : MonoBehaviour
         foreach (Vector3 blob in blobs)
         {
             Vector3 wpos = transform.TransformPoint(blob);
-            float damp = rigidbody.GetPointVelocity(wpos).y;
+            float damp = GetComponent<Rigidbody>().GetPointVelocity(wpos).y;
             Vector3 sinkForce = new Vector3(0, 0, 0);
             float buyancy = mag * (wpos.y);
             if(ocean.enabled && !sink)
@@ -70,7 +70,7 @@ public class Boyancy : MonoBehaviour
             if (sink)
                 buyancy = Mathf.Max(buyancy, -3) + sinkForces[index];
 
-            rigidbody.AddForceAtPosition(-Vector3.up * (buyancy + dampCoeff * damp), wpos);
+            GetComponent<Rigidbody>().AddForceAtPosition(-Vector3.up * (buyancy + dampCoeff * damp), wpos);
         }
 
     }
