@@ -71,7 +71,7 @@ public class Ocean : MonoBehaviour
 
     public float choppy_scale = 2.0f;
 
-    public Material material;
+    public Material material;   //海水材质
     public bool followMainCamera = true;
     private int max_LOD = 4;
     private ComplexF[] h0;
@@ -116,7 +116,7 @@ public class Ocean : MonoBehaviour
     public Color iceWaterColor = new Color(0.3f, 0.4f, 0.3f);
     public Color darkWaterColor = new Color(0.3f, 0.4f, 0.3f);
     public Color islandsWaterColor = new Color(0.3f, 0.4f, 0.3f);
-    public Shader oceanShader;
+    public Shader oceanShader;  //海水渲染的Shader
     public bool renderReflection = true;
 
     private float prevValue = 0;

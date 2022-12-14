@@ -44,12 +44,12 @@ public class OceanGeneratorInspector : Editor
 		
 		EditorGUILayout.Separator();
 		
-		    EditorGUILayout.LabelField("Chunks count");
+		    EditorGUILayout.LabelField("Chunks count");	//设置的网格数量
 			ocean.tiles = (int)EditorGUILayout.Slider(ocean.tiles, 1, 9);
 		    
-		    ocean.size = EditorGUILayout.Vector3Field("Chunk size",ocean.size);
+		    ocean.size = EditorGUILayout.Vector3Field("Chunk size", ocean.size);	//网格大小
 		
-		    EditorGUILayout.LabelField("Chunk poly count");
+		    EditorGUILayout.LabelField("Chunk poly count");	//每块网格的三角形数量，数量越大网格越精细
 		    EditorGUILayout.BeginHorizontal();
 		    EditorGUILayout.LabelField("Width");
 		    GUILayout.Space(-80);
@@ -65,13 +65,13 @@ public class OceanGeneratorInspector : Editor
 		
 		EditorGUILayout.Separator();
 		
-		    EditorGUILayout.LabelField("Scale");
+		    EditorGUILayout.LabelField("Scale");	//海浪大小
 			ocean.scale = (float)EditorGUILayout.Slider(ocean.scale, 0, 9);
 		
-		    EditorGUILayout.LabelField("Choppy scale");
+		    EditorGUILayout.LabelField("Choppy scale");	//柏林噪音的程度
 			ocean.choppy_scale = (float)EditorGUILayout.Slider(ocean.choppy_scale, 0, 9);
 		
-		    EditorGUILayout.LabelField("Waves speed");
+		    EditorGUILayout.LabelField("Waves speed");	//海浪移动的速度，数值小时，波浪滚动缓慢
 			ocean.speed = (float)EditorGUILayout.Slider(ocean.speed, 0.1f, 3f);
 		
 		    EditorGUILayout.LabelField("Wake distance");
