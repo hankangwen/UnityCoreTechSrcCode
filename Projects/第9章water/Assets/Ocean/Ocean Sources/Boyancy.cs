@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+// Buoyancy : 浮力
 public class Boyancy : MonoBehaviour
 {
 
@@ -42,6 +43,7 @@ public class Boyancy : MonoBehaviour
                 i++;
             }
         }
+        //标准化浮力
         for (int j = 0; j < sinkForces.Count; j++ )
         {
             sinkForces[j] = sinkForces[j] / totalSink * sinkForce;
