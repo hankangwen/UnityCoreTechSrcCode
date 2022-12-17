@@ -30,17 +30,23 @@ namespace Game.GameState
 
         public void Enter()
         {
+            //设置当前状态
             SetStateTo(GameStateType.GS_Continue);
+            
+            //面板的实例化
             ResourceUnit sceneRootUnit = ResourcesManager.Instance.loadImmediate(GameConstDefine.GameLogin, ResourceType.PREFAB);
             mScenesRoot = GameObject.Instantiate(sceneRootUnit.Asset) as GameObject;
 
+            //显示View层的UI
             LoginCtrl.Instance.Enter();
         
+            //加载音效及其他逻辑
             ResourceUnit audioClipUnit = ResourcesManager.Instance.loadImmediate(AudioDefine.PATH_UIBGSOUND, ResourceType.ASSET);
             AudioClip clip = audioClipUnit.Asset as AudioClip;       
 
             AudioManager.Instance.PlayBgAudio(clip);
 
+            //添加事件的监听
             EventCenter.AddListener<CEvent>(EGameEvent.eGameEvent_InputUserData, OnEvent);
             EventCenter.AddListener<CEvent>(EGameEvent.eGameEvent_IntoLobby, OnEvent);
             EventCenter.AddListener(EGameEvent.eGameEvent_SdkLogOff, SdkLogOff);            

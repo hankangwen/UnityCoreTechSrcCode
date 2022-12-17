@@ -637,7 +637,7 @@ namespace Game.Resource
                 //加载场景assetbundle     
                 int scenAssetBundleSize = 0;
                 byte[] binary = ResourceCommon.getAssetBundleFileBytes(path, ref scenAssetBundleSize);
-                AssetBundle assetBundle = AssetBundle.CreateFromMemoryImmediate(binary);
+                AssetBundle assetBundle = AssetBundle.LoadFromMemory(binary);
                 if (!assetBundle)
                     DebugEx.LogError("create scene assetbundle " + path + "in _LoadImmediate failed");
 
@@ -785,11 +785,11 @@ namespace Game.Resource
                 //资源大小
                 int assetBundleSize = 0;
                 byte[] binary = ResourceCommon.getAssetBundleFileBytes(fileName, ref assetBundleSize);
-                AssetBundle assetBundle = AssetBundle.CreateFromMemoryImmediate(binary);
+                AssetBundle assetBundle = AssetBundle.LoadFromMemory(binary);
                 if (!assetBundle)
                     DebugEx.LogError("create assetbundle " + fileName + "in _LoadImmediate failed");
 
-                Object asset = assetBundle.Load(fileName);
+                Object asset = assetBundle.LoadAsset(fileName);
                 if (!asset)
                     DebugEx.LogError("load assetbundle " + fileName + "in _LoadImmediate failed");
 

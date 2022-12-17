@@ -55,8 +55,6 @@ public class BuildProjectAssets
         string platformPath = "";
         switch (bTarget)
         {
-            case BuildTarget.WebPlayerStreamed:
-            case BuildTarget.WebPlayer:
             case BuildTarget.StandaloneWindows:
                 {
                     platformPath = "Windows";
@@ -67,7 +65,7 @@ public class BuildProjectAssets
                     platformPath = "Android";
                 }
                 break;
-            case BuildTarget.iPhone:
+            case BuildTarget.iOS:
                 {
                     platformPath = "Ios";
                 }
@@ -165,7 +163,7 @@ public class BuildProjectAssets
             MeshRenderer render = o as MeshRenderer;
             if (render != null && render.sharedMaterial != null)
             {
-                lightmapIndexList.Add(render.gameObject.GetInstanceID() + "," + render.lightmapIndex + "," + string.Format("{0},{1},{2},{3}", render.lightmapTilingOffset.x, render.lightmapTilingOffset.y, render.lightmapTilingOffset.z, render.lightmapTilingOffset.w));
+                lightmapIndexList.Add(render.gameObject.GetInstanceID() + "," + render.lightmapIndex + "," + string.Format("{0},{1},{2},{3}", render.lightmapScaleOffset.x, render.lightmapScaleOffset.y, render.lightmapScaleOffset.z, render.lightmapScaleOffset.w));
                 //Game.Resource.LightmapHelper[] olds = render.gameObject.GetComponents<Game.Resource.LightmapHelper>();
                 //foreach (Game.Resource.LightmapHelper helper in olds)
                 //{
@@ -210,9 +208,9 @@ public class BuildProjectAssets
                 }
             }
             ParticleSystem particle = o as ParticleSystem;
-            if (particle != null && particle.renderer != null && particle.renderer.sharedMaterials != null)
+            if (particle != null && particle.GetComponent<Renderer>() != null && particle.GetComponent<Renderer>().sharedMaterials != null)
             {
-                foreach (Material m in particle.renderer.sharedMaterials)
+                foreach (Material m in particle.GetComponent<Renderer>().sharedMaterials)
                 {
                     UnityEngine.Object[] renderRefObjs = EditorUtility.CollectDependencies(new UnityEngine.Object[] { m });
                     /////////////////////////////////////////////////////////////////////////
@@ -388,7 +386,7 @@ public class BuildProjectAssets
         {
             string fullPath = Application.dataPath + "/Scenes/scenes/" + sceneName + "/" + sceneName + ".unity";
             EditorApplication.OpenScene(fullPath);
-            ExportScene(fullPath, BuildTarget.iPhone);
+            ExportScene(fullPath, BuildTarget.iOS);
             //EditorApplication.
             Debug.LogError("load scene" + sceneName);
         }
@@ -611,7 +609,7 @@ public class BuildProjectAssets
     static private void BuildIosCharacter()
     {
         checkAndCreateFolder();
-        ExportAllCharacterAssetBundles(BuildTarget.iPhone);
+        ExportAllCharacterAssetBundles(BuildTarget.iOS);
     }
     //
     static void ExportAllCharacterAssetBundles(BuildTarget bTarget)
@@ -620,8 +618,6 @@ public class BuildProjectAssets
         string platformPath = "";
         switch (bTarget)
         {
-            case BuildTarget.WebPlayerStreamed:
-            case BuildTarget.WebPlayer:
             case BuildTarget.StandaloneWindows:
                 {
                     platformPath = "Windows";
@@ -632,7 +628,7 @@ public class BuildProjectAssets
                     platformPath = "Android";
                 }
                 break;
-            case BuildTarget.iPhone:
+            case BuildTarget.iOS:
                 {
                     platformPath = "Ios";
                 }
@@ -728,9 +724,9 @@ public class BuildProjectAssets
                     }
                 }
                 ParticleSystem particle = o as ParticleSystem;
-                if (particle != null && particle.renderer != null && particle.renderer.sharedMaterials != null)
+                if (particle != null && particle.GetComponent<Renderer>() != null && particle.GetComponent<Renderer>().sharedMaterials != null)
                 {
-                    foreach (Material m in particle.renderer.sharedMaterials)
+                    foreach (Material m in particle.GetComponent<Renderer>().sharedMaterials)
                     {
                         UnityEngine.Object[] renderRefObjs = EditorUtility.CollectDependencies(new UnityEngine.Object[] { m });
                         /////////////////////////////////////////////////////////////////////////
@@ -832,7 +828,7 @@ public class BuildProjectAssets
     static private void BuildIosEffect()
     {
         checkAndCreateFolder();
-        ExportAllEffectsAssetBundles(BuildTarget.iPhone);
+        ExportAllEffectsAssetBundles(BuildTarget.iOS);
     }
     static void ExportAllEffectsAssetBundles(BuildTarget bTarget)
     {
@@ -840,8 +836,6 @@ public class BuildProjectAssets
         string platformPath = "";
         switch (bTarget)
         {
-            case BuildTarget.WebPlayerStreamed:
-            case BuildTarget.WebPlayer:
             case BuildTarget.StandaloneWindows:
                 {
                     platformPath = "Windows";
@@ -852,7 +846,7 @@ public class BuildProjectAssets
                     platformPath = "Android";
                 }
                 break;
-            case BuildTarget.iPhone:
+            case BuildTarget.iOS:
                 {
                     platformPath = "Ios";
                 }
@@ -981,9 +975,9 @@ public class BuildProjectAssets
                         }
                     }
                     ParticleSystem particle = o as ParticleSystem;
-                    if (particle != null && particle.renderer != null && particle.renderer.sharedMaterials != null)
+                    if (particle != null && particle.GetComponent<Renderer>() != null && particle.GetComponent<Renderer>().sharedMaterials != null)
                     {
-                        foreach (Material m in particle.renderer.sharedMaterials)
+                        foreach (Material m in particle.GetComponent<Renderer>().sharedMaterials)
                         {
                             UnityEngine.Object[] renderRefObjs = EditorUtility.CollectDependencies(new UnityEngine.Object[] { m });
                             /////////////////////////////////////////////////////////////////////////

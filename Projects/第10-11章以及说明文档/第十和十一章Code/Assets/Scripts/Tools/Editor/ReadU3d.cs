@@ -17,7 +17,7 @@ public class ReadU3d :MonoBehaviour {
 		yield return www;
 		AssetBundle bundle = www.assetBundle;
 
-		GameObject go = bundle.Load("panel_npc" , typeof(GameObject)) as GameObject;
+		GameObject go = bundle.LoadAsset("panel_npc" , typeof(GameObject)) as GameObject;
 		Instantiate(go);
 //		string writePath = Path.Combine(Application.persistentDataPath , url);
 

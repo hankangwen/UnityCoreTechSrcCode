@@ -22,6 +22,6 @@ public class SM_UVScroller : MonoBehaviour {
     {
         timeWentY += Time.deltaTime*speedY;
         timeWentX += Time.deltaTime*speedX;
-        renderer.materials[targetMaterialSlot].SetTextureOffset ("_MainTex", new Vector2(timeWentX, timeWentY));	
+        GetComponent<Renderer>().materials[targetMaterialSlot].SetTextureOffset ("_MainTex", new Vector2(timeWentX, timeWentY));	
 	}
 }

@@ -270,7 +270,7 @@ namespace Game.GameEntity
         public static Entity AddBuildEntityComponent(Ientity entity)
         {
             //添加Entity组件
-            Entity syncEntity = (Entity)entity.realObject.AddComponent("Entity");         
+            Entity syncEntity = (Entity)entity.realObject.AddComponent<Entity>();         
             entity.RealEntity = syncEntity;
             syncEntity.SyncEntity = entity;
             syncEntity.CampType = entity.EntityCamp;

@@ -58,6 +58,7 @@ namespace Game.GameState
             return currentState;
         }
 
+        //状态变换
         public void ChangeGameStateTo(GameStateType stateType)
         {
             if (currentState != null && currentState.GetStateType() != GameStateType.GS_Loading && currentState.GetStateType() == stateType)

@@ -29,13 +29,13 @@ public class BytesAdd{
 				{
 					localPath += filePath;
 				}
-				Object t =AssetDatabase.LoadMainAssetAtPath(localPath);
+				Object t = AssetDatabase.LoadMainAssetAtPath(localPath);
 
 				if(t != null)
 				{ 
 					string bundlepath = "Assets/" + path + "/" +t.name + ".bytes";
-					
-					BuildPipeline.BuildAssetBundle(t,null,bundlepath, option);
+
+					// BuildPipeline.BuildAssetBundles(t, null, bundlepath, option);
 				}
 			}	 
 		}

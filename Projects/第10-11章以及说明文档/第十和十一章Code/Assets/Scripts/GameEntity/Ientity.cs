@@ -855,7 +855,7 @@ namespace Game.GameEntity
                 {
                     {
                         RealEntity.PlayerAnimation(skillManagerConfig.rAnimation);
-                        if (RealEntity.animation[skillManagerConfig.rAnimation] != null && RealEntity.animation[skillManagerConfig.rAnimation].wrapMode != WrapMode.Loop)
+                        if (RealEntity.GetComponent<Animation>()[skillManagerConfig.rAnimation] != null && RealEntity.GetComponent<Animation>()[skillManagerConfig.rAnimation].wrapMode != WrapMode.Loop)
                         {
                             RealEntity.CrossFadeSqu("free");
                         }
@@ -935,7 +935,7 @@ namespace Game.GameEntity
 
         public virtual void OnCreateShadow()
         {
-            if (this.realObject.transform.FindChild("shadow(Clone)"))
+            if (this.realObject.transform.Find("shadow(Clone)"))
                 return;
 
             int id = (int)ObjTypeID;

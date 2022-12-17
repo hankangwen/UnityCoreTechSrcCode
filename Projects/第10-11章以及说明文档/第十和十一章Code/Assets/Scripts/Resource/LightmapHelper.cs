@@ -16,7 +16,7 @@ namespace Game.Resource
             if (render != null)
             {
                 render.lightmapIndex = lightmapIndex;
-                render.lightmapTilingOffset = new Vector4(x, y, z, w);
+                render.lightmapScaleOffset = new Vector4(x, y, z, w);
             }
         }
     }

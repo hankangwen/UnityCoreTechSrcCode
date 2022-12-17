@@ -98,7 +98,7 @@ public class EditorTools : MonoBehaviour {
             RecusionParticleSystemObject(asset, ref pss);
             foreach(ParticleSystem ps in pss)
             {
-                if (ps.renderer.castShadows || ps.renderer.receiveShadows)
+                if (ps.GetComponent<Renderer>().castShadows || ps.GetComponent<Renderer>().receiveShadows)
                 {
                     Debug.Log(asset.name + " " + ps.name + "is cast shadow or receive shadow");
                 }         

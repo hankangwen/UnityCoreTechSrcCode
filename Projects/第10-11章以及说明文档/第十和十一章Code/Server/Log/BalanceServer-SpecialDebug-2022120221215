@@ -1,0 +1,4 @@
+12-15-09:38:21.4865 51520 CClientSession::MSG_OneClientLogin:58 user(test)(123)(3) ask login bs
+12-15-09:38:21.4925 51520 CB2LSession::Msg_User_Login:61 user(test)(123)(3) ask login ret
+12-15-09:44:10.7647 51520 CClientSession::MSG_OneClientLogin:58 user(test)(123)(4) ask login bs
+12-15-09:44:10.7711 51520 CB2LSession::Msg_User_Login:61 user(test)(123)(4) ask login ret

@@ -36,7 +36,7 @@ public class U3dAdd{
 				if(t != null)
 				{ 
 					string bundlepath = "Assets/" + path + "/" +t.name + ".unity3d";
-					BuildPipeline.BuildAssetBundle(t,null,bundlepath, option);
+					// BuildPipeline.BuildAssetBundle(t,null,bundlepath, option);
 				}
 			}	 
 		}

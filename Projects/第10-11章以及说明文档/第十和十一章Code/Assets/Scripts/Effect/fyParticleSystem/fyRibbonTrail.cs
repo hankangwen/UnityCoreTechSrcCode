@@ -402,7 +402,7 @@ public class fyRibbonTrail : MonoBehaviour
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
        
-        mesh.Optimize();       
+        ;       
     }
 
     //更新变换矩阵
@@ -613,7 +613,7 @@ public class fyRibbonTrail : MonoBehaviour
 
         mMesh.RecalculateNormals();
         mMesh.RecalculateBounds();
-        mMesh.Optimize();   
+        ;   
 
         //刷新矩阵数据
         mMatrix = Matrix4x4.identity;

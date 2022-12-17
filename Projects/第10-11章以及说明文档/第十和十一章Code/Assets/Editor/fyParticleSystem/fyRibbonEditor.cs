@@ -88,10 +88,10 @@ public class fyRibbonEditor : Editor
 
                 //编辑器
                 if (!Application.isPlaying)
-                    ribbon.renderer.sharedMaterial.shader = ribbon.mShader;
+                    ribbon.GetComponent<Renderer>().sharedMaterial.shader = ribbon.mShader;
                 //运行
                 else
-                    ribbon.renderer.material.shader = ribbon.mShader;
+                    ribbon.GetComponent<Renderer>().material.shader = ribbon.mShader;
             }
 
             EditorGUI.BeginChangeCheck();
@@ -198,10 +198,10 @@ public class fyRibbonEditor : Editor
 
             //编辑器
             if (!Application.isPlaying)
-                ribbon.renderer.sharedMaterial.shader = ribbon.mShader;
+                ribbon.GetComponent<Renderer>().sharedMaterial.shader = ribbon.mShader;
             //运行
             else
-                ribbon.renderer.material.shader = ribbon.mShader;
+                ribbon.GetComponent<Renderer>().material.shader = ribbon.mShader;
 
             //普通寻址
             if (ribbon.mMaterialType == fyRibbonTrail.MaterialAddressType.Common_Type)

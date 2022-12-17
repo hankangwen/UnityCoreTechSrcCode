@@ -42,6 +42,6 @@ public class SM_TransRimShaderIrisator : MonoBehaviour
 
         var currStr = timeGoes;
 
-        renderer.material.SetFloat("_AllPower", currStr);	
+        GetComponent<Renderer>().material.SetFloat("_AllPower", currStr);	
 	}
 }

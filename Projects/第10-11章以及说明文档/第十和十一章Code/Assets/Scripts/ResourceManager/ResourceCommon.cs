@@ -216,7 +216,7 @@ namespace Game.Resource
         public static IEnumerator _CreateFromMemory(string path, Handle_CreateFromMemory handle)
         {
             int size = 0;
-            AssetBundleCreateRequest bundleRequest = AssetBundle.CreateFromMemory(ResourceCommon.getAssetBundleFileBytes(path, ref size));
+            AssetBundleCreateRequest bundleRequest = AssetBundle.LoadFromMemoryAsync(ResourceCommon.getAssetBundleFileBytes(path, ref size));
             yield return bundleRequest;
             handle(bundleRequest, size);
         }
@@ -224,7 +224,7 @@ namespace Game.Resource
         public delegate void HandleFinishLoadAsyncFromAssetBundle(AssetBundleRequest request);
         public static IEnumerator LoadAsyncFromAssetBundle(AssetBundle assetbundle, string name, System.Type type, HandleFinishLoadAsyncFromAssetBundle handle)
         {
-            AssetBundleRequest request = assetbundle.LoadAsync(name, type);
+            AssetBundleRequest request = assetbundle.LoadAssetAsync(name, type);
             yield return request;
             handle(request);
         }

@@ -21,7 +21,7 @@ public class ParticleAdditiveColor : MonoBehaviour
 
                 //meshRender.sharedMaterial.SetVector("_TintColor", new Vector4(1, 0, 0, 1));
                 MaterialPropertyBlock block = new MaterialPropertyBlock();
-                block.AddVector("_TintColor", new Vector4(color.r, color.g, color.b, 1));
+                block.SetVector("_TintColor", new Vector4(color.r, color.g, color.b, 1));
                 meshRender.SetPropertyBlock(block);
                 //Debug.Log("run" + color.ToString());
             }
@@ -42,7 +42,7 @@ public class ParticleAdditiveColor : MonoBehaviour
 
                 //meshRender.sharedMaterial.SetVector("_TintColor", new Vector4(1, 0, 0, 1));
                 MaterialPropertyBlock block = new MaterialPropertyBlock();
-                block.AddVector("_TintColor", new Vector4(color.r, color.g, color.b, 1));
+                block.SetVector("_TintColor", new Vector4(color.r, color.g, color.b, 1));
                 meshRender.SetPropertyBlock(block);
                 //Debug.Log("editor" + color.ToString());
             }

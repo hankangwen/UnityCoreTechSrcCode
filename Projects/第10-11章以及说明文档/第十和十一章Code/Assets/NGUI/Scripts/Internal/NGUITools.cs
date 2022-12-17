@@ -50,12 +50,11 @@ static public class NGUITools
 	/// Helper function -- whether the disk access is allowed.
 	/// </summary>
 
-	static public bool fileAccess
+	public static  bool fileAccess
 	{
 		get
 		{
-			return Application.platform != RuntimePlatform.WindowsWebPlayer &&
-				Application.platform != RuntimePlatform.OSXWebPlayer;
+			return true;
 		}
 	}
 
@@ -382,13 +381,13 @@ static public class NGUITools
 			if (w != null)
 			{
 				Vector3[] corners = w.localCorners;
-				box.center = Vector3.Lerp(corners[0], corners[2], 0.5f);
+				box.offset = Vector3.Lerp(corners[0], corners[2], 0.5f);
 				box.size = corners[2] - corners[0];
 			}
 			else
 			{
 				Bounds b = NGUIMath.CalculateRelativeWidgetBounds(go.transform, considerInactive);
-				box.center = b.center;
+				box.offset = b.center;
 				box.size = new Vector2(b.size.x, b.size.y);
 			}
 #if UNITY_EDITOR
@@ -550,7 +549,7 @@ static public class NGUITools
 			for (int i = 0, imax = widgets.Length; i < imax; ++i)
 			{
 				UIWidget w = widgets[i];
-				if (w.cachedGameObject != go && (w.collider != null || w.GetComponent<Collider2D>() != null)) continue;
+				if (w.cachedGameObject != go && (w.GetComponent<Collider>() != null || w.GetComponent<Collider2D>() != null)) continue;
 				depth = Mathf.Max(depth, w.depth);
 			}
 			return depth + 1;
@@ -758,7 +757,7 @@ static public class NGUITools
 		{
 			UICamera cam = root.GetComponentInChildren<UICamera>();
 
-			if (cam != null && cam.camera.isOrthoGraphic == advanced3D)
+			if (cam != null && cam.GetComponent<Camera>().orthographic == advanced3D)
 			{
 				trans = null;
 				root = null;
@@ -1473,7 +1472,7 @@ static public class NGUITools
 
 	static public Vector3[] GetSides (this Camera cam, float depth, Transform relativeTo)
 	{
-		if (cam.isOrthoGraphic)
+		if (cam.orthographic)
 		{
 			float os = cam.orthographicSize;
 			float x0 = -os;
@@ -1548,7 +1547,7 @@ static public class NGUITools
 
 	static public Vector3[] GetWorldCorners (this Camera cam, float depth, Transform relativeTo)
 	{
-		if (cam.isOrthoGraphic)
+		if (cam.orthographic)
 		{
 			float os = cam.orthographicSize;
 			float x0 = -os;

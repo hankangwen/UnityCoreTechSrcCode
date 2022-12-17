@@ -13,7 +13,7 @@ public class NewBehaviourScript : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        renderer.material.SetFloat("_AllPower", currStr);	
+        GetComponent<Renderer>().material.SetFloat("_AllPower", currStr);	
 	}
 	
 	// Update is called once per frame
@@ -37,6 +37,6 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         //currStr=startStr-timeGoes;
-        renderer.material.SetFloat("_AllPower", currStr);	
+        GetComponent<Renderer>().material.SetFloat("_AllPower", currStr);	
 	}
 }

@@ -35,7 +35,7 @@ public class LoadUiResource
 		return objLoad;
 	}
 
-    //´´½¨´°¿Ú×Ó¶ÔÏó£¬²»¼ÓÈë×ÊÔ´¹ÜÀí
+    //åˆ›å»ºçª—å£å­å¯¹è±¡ï¼Œä¸åŠ å…¥èµ„æºç®¡ç†
     public static GameObject AddChildObject(Transform parent, string path)
     {
         GameObject objLoad = null;

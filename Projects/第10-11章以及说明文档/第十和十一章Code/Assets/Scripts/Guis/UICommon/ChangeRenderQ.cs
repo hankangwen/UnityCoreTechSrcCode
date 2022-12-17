@@ -17,12 +17,12 @@ public class ChangeRenderQ : MonoBehaviour {
 	{
         if (!change)
         {
-            Renderer ren = renderer;
+            Renderer ren = GetComponent<Renderer>();
             if (ren == null)
             {
                 ParticleSystem sys = GetComponent<ParticleSystem>();
                 if (sys != null)
-                    ren = sys.renderer;
+                    ren = sys.GetComponent<Renderer>();
             }
 
             //克隆材质

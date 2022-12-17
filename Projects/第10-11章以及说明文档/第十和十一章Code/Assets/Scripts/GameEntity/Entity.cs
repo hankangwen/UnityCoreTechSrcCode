@@ -85,7 +85,7 @@ public class Entity : MonoBehaviour
 		get;
 	}
 
-    public NavMeshAgent NavAgent
+    public UnityEngine.AI.NavMeshAgent NavAgent
     {
         private set;
         get;
@@ -118,10 +118,10 @@ public class Entity : MonoBehaviour
 
     public virtual void Awake()
     {
-        NavAgent = this.transform.GetComponent<NavMeshAgent>();
-        objAttackPoint = transform.FindChild("hitpoint");
-        objBuffPoint = transform.FindChild("buffpoint");
-        objPoint = transform.FindChild("point");
+        NavAgent = this.transform.GetComponent<UnityEngine.AI.NavMeshAgent>();
+        objAttackPoint = transform.Find("hitpoint");
+        objBuffPoint = transform.Find("buffpoint");
+        objPoint = transform.Find("point");
         if (objAttackPoint == null || objBuffPoint == null || objPoint == null)
         {
             //Debug.LogError("Entity  hitpoint or buffpoint or point is null");
@@ -135,19 +135,19 @@ public class Entity : MonoBehaviour
     public virtual void Start() 
     {
 		if (SyncEntity != null && SyncEntity.entityType == EntityType.Player) {
-			if (this.animation == null)
+			if (this.GetComponent<Animation>() == null)
 			{
 				return;
 			}
 			List<string> aniList = ConfigReader.HeroXmlInfoDict[SyncEntity.NpcGUIDType].n32RandomAttack;
 			foreach(string ani in aniList)
 			{
-				if (animation.GetClip(ani))
+				if (GetComponent<Animation>().GetClip(ani))
 				{
 					AnimationEvent skillEvent = new AnimationEvent();
 					skillEvent.time = getAnimationTime(ani);
 					skillEvent.functionName = "OnAttackEnd";
-					animation.GetClip(ani).AddEvent(skillEvent);
+					GetComponent<Animation>().GetClip(ani).AddEvent(skillEvent);
 				}
 
 			}
@@ -157,7 +157,7 @@ public class Entity : MonoBehaviour
 
 	public void OnAttackEnd()
 	{
-		if (this.animation == null) {
+		if (this.GetComponent<Animation>() == null) {
 			return;
 		}
 
@@ -170,15 +170,15 @@ public class Entity : MonoBehaviour
 		string aniName = ConfigReader.HeroXmlInfoDict [SyncEntity.NpcGUIDType].n32RandomAttack [id];
 
 
-        if (Type == EntityType.Player && animation.IsPlaying(aniName))
-            animation.Stop();
+        if (Type == EntityType.Player && GetComponent<Animation>().IsPlaying(aniName))
+            GetComponent<Animation>().Stop();
 
         PlayerAnimation(aniName);
 	}
 	
 	public void SetAttackAnimationLoop(bool b)
 	{
-		if (animation == null)
+		if (GetComponent<Animation>() == null)
 		{
 			return;
 		}
@@ -188,7 +188,7 @@ public class Entity : MonoBehaviour
             List<string> aniList = ConfigReader.HeroXmlInfoDict[SyncEntity.NpcGUIDType].n32RandomAttack;
             foreach (string ani in aniList)
             {
-                AnimationState aSt = animation[ani];
+                AnimationState aSt = GetComponent<Animation>()[ani];
                 if (aSt != null)
                 {
                     if (b == true)
@@ -206,12 +206,12 @@ public class Entity : MonoBehaviour
         {
             if (b == true)
             {
-                AnimationState state = animation["attack"];
+                AnimationState state = GetComponent<Animation>()["attack"];
                 state.wrapMode = WrapMode.Loop;
             }
             else
             {
-                AnimationState state = animation["attack"];
+                AnimationState state = GetComponent<Animation>()["attack"];
                 state.wrapMode = WrapMode.Once;
             }
         }
@@ -224,11 +224,11 @@ public class Entity : MonoBehaviour
 	/// <param name="spd"></param>
 	public void SetMoveAnimationSpd(float spd)
 	{
-		if (animation == null)
+		if (GetComponent<Animation>() == null)
 		{
 			return;
 		}
-		AnimationState aState = animation["walk"];
+		AnimationState aState = GetComponent<Animation>()["walk"];
 		if (aState != null)
 		{
 			aState.speed = spd;
@@ -241,7 +241,7 @@ public class Entity : MonoBehaviour
 	/// <param name="spd">Spd.</param>
 	public void SetAttackAnimationSpd(float spd)
 	{
-        if (animation == null || SyncEntity == null)
+        if (GetComponent<Animation>() == null || SyncEntity == null)
 		{
 			return;
 		}
@@ -249,14 +249,14 @@ public class Entity : MonoBehaviour
 			List<string> aniList = ConfigReader.HeroXmlInfoDict[SyncEntity.NpcGUIDType].n32RandomAttack;
 			foreach(string ani in aniList)
 			{
-				AnimationState aSt = animation[ani];
+				AnimationState aSt = GetComponent<Animation>()[ani];
 				if (aSt != null)
 				{
 					aSt.speed = spd;
 				}
 			}
 		} else {
-			AnimationState aState = animation["attack"];
+			AnimationState aState = GetComponent<Animation>()["attack"];
 			if (aState != null)
 			{
 				aState.speed = spd;
@@ -292,7 +292,7 @@ public class Entity : MonoBehaviour
 	}
     public void CrossFadeSqu(string name)
     {
-        animation.CrossFadeQueued(name);
+        GetComponent<Animation>().CrossFadeQueued(name);
     }
 
     public void PlayerAnimation(string name)
@@ -301,28 +301,28 @@ public class Entity : MonoBehaviour
         {
             return;
         }
-        if (this.animation == null)
+        if (this.GetComponent<Animation>() == null)
         {
             return;
         }
 
-        animation.CrossFade(name);
+        GetComponent<Animation>().CrossFade(name);
     }
 
     public void PlayerIdleAnimation()
     {
-        if (this.animation == null)
+        if (this.GetComponent<Animation>() == null)
         {
             return;
         }
 
         PlayerAnimation("idle");
-        this.animation.PlayQueued("free");
+        this.GetComponent<Animation>().PlayQueued("free");
     }
 
 	public void PlayerFreeAnimation()
     {
-        if (this.animation == null)
+        if (this.GetComponent<Animation>() == null)
         {
             return;
         }
@@ -331,7 +331,7 @@ public class Entity : MonoBehaviour
 	}
 
 	public void PlayerRunAnimation(){
-		if (this.animation == null) {
+		if (this.GetComponent<Animation>() == null) {
 			return;
 		}
         PlayerAnimation("walk");
@@ -339,7 +339,7 @@ public class Entity : MonoBehaviour
 
     public void PlayeAttackAnimation()
     {
-        if (this.animation == null)
+        if (this.GetComponent<Animation>() == null)
         {
             return;
         }
@@ -351,25 +351,25 @@ public class Entity : MonoBehaviour
             aniName = ConfigReader.HeroXmlInfoDict[SyncEntity.NpcGUIDType].n32RandomAttack[id];
         }
 
-        if (Type == EntityType.Player && animation.IsPlaying(aniName))
-            animation.Stop();
+        if (Type == EntityType.Player && GetComponent<Animation>().IsPlaying(aniName))
+            GetComponent<Animation>().Stop();
 
         PlayerAnimation(aniName);
     }
 
 	public void PlayerDeadAnimation()
 	{
-		if (this.animation == null) {
+		if (this.GetComponent<Animation>() == null) {
 			return;
 		}
-        this.animation.cullingType = AnimationCullingType.AlwaysAnimate;
+        this.GetComponent<Animation>().cullingType = AnimationCullingType.AlwaysAnimate;
         PlayerAnimation("death");
 	}
 
 
 	public float getAnimationTime(string name)
 	{
-		AnimationClip clip = animation.GetClip(name);
+		AnimationClip clip = GetComponent<Animation>().GetClip(name);
 		if(clip != null)
 		{
 			return clip.length;

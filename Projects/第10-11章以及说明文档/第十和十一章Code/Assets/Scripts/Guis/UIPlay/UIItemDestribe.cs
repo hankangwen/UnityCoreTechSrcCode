@@ -34,15 +34,16 @@ public class UIItemDestribe : MonoBehaviour
         desObj.transform.localScale = Vector3.one;
         desObj.transform.localPosition = Vector3.zero;
 
-        ItemName = desObj.transform.FindChild("Item_Name").GetComponent<UILabel>();
-        ItemDes = desObj.transform.FindChild("Item_Describe").GetComponent<UILabel>();
-        ItemCost = desObj.transform.FindChild("Item_Gold").GetComponent<UILabel>();
+        ItemName = desObj.transform.Find("Item_Name").GetComponent<UILabel>();
+        ItemDes = desObj.transform.Find("Item_Describe").GetComponent<UILabel>();
+        ItemCost = desObj.transform.Find("Item_Gold").GetComponent<UILabel>();
 
-        active = false;
+        SetSelfActive(false);
     }
 
-    void OnEnable()
+    void SetSelfActive(bool value)
     {
+        gameObject.SetActive(value);
     }
 
     public void OpenItemDestribe(bool show, int id)
@@ -56,12 +57,12 @@ public class UIItemDestribe : MonoBehaviour
                 ItemCost.text = item.n32CPCost.ToString();
                 ItemDes.text = item.sDescribe;
 
-                active = true;
+                SetSelfActive(true);
             }
         }
         else
         {
-            active = false;
+            SetSelfActive(false);
         }
     }
 }

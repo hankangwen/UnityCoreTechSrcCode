@@ -58,7 +58,7 @@ namespace Game.Resource
                         {
                             if (l.createReq == null)
                             {
-                                l.createReq = AssetBundle.CreateFromMemory(l.www.bytes);
+                                l.createReq = AssetBundle.LoadFromMemoryAsync(l.www.bytes);
                             }
                             if (l.createReq.isDone == true)
                             {
@@ -168,7 +168,7 @@ namespace Game.Resource
                                 (resPath) =>
                                 {
                                     AssetBundle ab = ResourceManager.Instance.GetPhyRes(path).assetBundle;
-                                    StringScriptableObject holder = (StringScriptableObject)ab.Load("DependentBundleNames");
+                                    StringScriptableObject holder = (StringScriptableObject)ab.LoadAsset("DependentBundleNames");
                                     LogicResourceBuilder logicBuilder = new LogicResourceBuilder();
                                     logicBuilder.resPath = resPath;
                                     logicBuilder.logicResType = type;

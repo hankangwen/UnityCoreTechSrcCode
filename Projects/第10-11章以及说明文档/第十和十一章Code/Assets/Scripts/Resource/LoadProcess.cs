@@ -118,7 +118,7 @@ namespace Game.Resource
                                 (path) =>
                                 {
                                     AssetBundle ab = ResourceManager.Instance.GetPhyRes(path).assetBundle;
-                                    StringScriptableObject holder = (StringScriptableObject)ab.Load("DependentBundleNames");
+                                    StringScriptableObject holder = (StringScriptableObject)ab.LoadAsset("DependentBundleNames");
                                     LogicResourceBuilder logicBuilder = new LogicResourceBuilder();
                                     logicBuilder.resPath = logicLoadReq.resPath;
                                     logicBuilder.logicResType = logicLoadReq.resType;
@@ -203,8 +203,8 @@ namespace Game.Resource
         {
             LogicResouce lRes = ResourceManager.Instance.GetLogicRes(SceneRes);
             //LogicResourceBuilder builder = null;
-            LightmapSettings.lightmapsMode = LightmapsMode.Single;
-            LightmapSettings.lightmapsMode = LightmapsMode.Single;
+            LightmapSettings.lightmapsMode = LightmapsMode.NonDirectional;
+            LightmapSettings.lightmapsMode = LightmapsMode.NonDirectional;
 
 
             Dictionary<int, Texture2D> lightMapDic = new Dictionary<int, Texture2D>();
@@ -240,7 +240,7 @@ namespace Game.Resource
             foreach (KeyValuePair<int, Texture2D> kv in lightMapDic)
             {
                 LightmapData ld = new LightmapData();
-                ld.lightmapFar = kv.Value;
+                ld.lightmapColor = kv.Value;
                 ldarr[kv.Key] = ld;
             }
             LightmapSettings.lightmaps = ldarr;
