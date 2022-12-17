@@ -21,8 +21,10 @@ public static class DelegateFactory
 		dict.Add(typeof(Camera.CameraCallback), new DelegateValue(Camera_CameraCallback));
 		dict.Add(typeof(AudioClip.PCMReaderCallback), new DelegateValue(AudioClip_PCMReaderCallback));
 		dict.Add(typeof(AudioClip.PCMSetPositionCallback), new DelegateValue(AudioClip_PCMSetPositionCallback));
-		dict.Add(typeof(Application.LogCallback), new DelegateValue(Application_LogCallback));
+		dict.Add(typeof(Application.LowMemoryCallback), new DelegateValue(Application_LowMemoryCallback));
 		dict.Add(typeof(Application.AdvertisingIdentifierCallback), new DelegateValue(Application_AdvertisingIdentifierCallback));
+		dict.Add(typeof(Application.LogCallback), new DelegateValue(Application_LogCallback));
+		dict.Add(typeof(Action<AsyncOperation>), new DelegateValue(Action_AsyncOperation));
 	}
 
 	[NoToLuaAttribute]
@@ -166,6 +168,30 @@ public static class DelegateFactory
 		return d;
 	}
 
+	public static Delegate Application_LowMemoryCallback(LuaFunction func)
+	{
+		Application.LowMemoryCallback d = () =>
+		{
+			func.Call();
+		};
+		return d;
+	}
+
+	public static Delegate Application_AdvertisingIdentifierCallback(LuaFunction func)
+	{
+		Application.AdvertisingIdentifierCallback d = (param0, param1, param2) =>
+		{
+			int top = func.BeginPCall();
+			IntPtr L = func.GetLuaState();
+			LuaScriptMgr.Push(L, param0);
+			LuaScriptMgr.Push(L, param1);
+			LuaScriptMgr.Push(L, param2);
+			func.PCall(top, 3);
+			func.EndPCall(top);
+		};
+		return d;
+	}
+
 	public static Delegate Application_LogCallback(LuaFunction func)
 	{
 		Application.LogCallback d = (param0, param1, param2) =>
@@ -181,16 +207,14 @@ public static class DelegateFactory
 		return d;
 	}
 
-	public static Delegate Application_AdvertisingIdentifierCallback(LuaFunction func)
+	public static Delegate Action_AsyncOperation(LuaFunction func)
 	{
-		Application.AdvertisingIdentifierCallback d = (param0, param1, param2) =>
+		Action<AsyncOperation> d = (param0) =>
 		{
 			int top = func.BeginPCall();
 			IntPtr L = func.GetLuaState();
-			LuaScriptMgr.Push(L, param0);
-			LuaScriptMgr.Push(L, param1);
-			LuaScriptMgr.Push(L, param2);
-			func.PCall(top, 3);
+			LuaScriptMgr.PushObject(L, param0);
+			func.PCall(top, 1);
 			func.EndPCall(top);
 		};
 		return d;

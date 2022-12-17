@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections.Generic;
 using LuaInterface;
 using Object = UnityEngine.Object;
 
@@ -9,10 +10,14 @@ public class AssetBundleWrap
 	{
 		LuaMethod[] regs = new LuaMethod[]
 		{
+			new LuaMethod("UnloadAllAssetBundles", UnloadAllAssetBundles),
+			new LuaMethod("GetAllLoadedAssetBundles", GetAllLoadedAssetBundles),
 			new LuaMethod("LoadFromFileAsync", LoadFromFileAsync),
 			new LuaMethod("LoadFromFile", LoadFromFile),
 			new LuaMethod("LoadFromMemoryAsync", LoadFromMemoryAsync),
 			new LuaMethod("LoadFromMemory", LoadFromMemory),
+			new LuaMethod("LoadFromStreamAsync", LoadFromStreamAsync),
+			new LuaMethod("LoadFromStream", LoadFromStream),
 			new LuaMethod("Contains", Contains),
 			new LuaMethod("LoadAsset", LoadAsset),
 			new LuaMethod("LoadAssetAsync", LoadAssetAsync),
@@ -31,6 +36,7 @@ public class AssetBundleWrap
 		LuaField[] fields = new LuaField[]
 		{
 			new LuaField("mainAsset", get_mainAsset, null),
+			new LuaField("isStreamedSceneAssetBundle", get_isStreamedSceneAssetBundle, null),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.AssetBundle", typeof(AssetBundle), regs, fields, typeof(Object));
@@ -89,6 +95,48 @@ public class AssetBundleWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_isStreamedSceneAssetBundle(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		AssetBundle obj = (AssetBundle)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name isStreamedSceneAssetBundle");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index isStreamedSceneAssetBundle on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.isStreamedSceneAssetBundle);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int UnloadAllAssetBundles(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		bool arg0 = LuaScriptMgr.GetBoolean(L, 1);
+		AssetBundle.UnloadAllAssetBundles(arg0);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int GetAllLoadedAssetBundles(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 0);
+		IEnumerable<AssetBundle> o = AssetBundle.GetAllLoadedAssetBundles();
+		LuaScriptMgr.PushObject(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int LoadFromFileAsync(IntPtr L)
 	{
 		int count = LuaDLL.lua_gettop(L);
@@ -105,6 +153,15 @@ public class AssetBundleWrap
 			string arg0 = LuaScriptMgr.GetLuaString(L, 1);
 			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
 			AssetBundleCreateRequest o = AssetBundle.LoadFromFileAsync(arg0,arg1);
+			LuaScriptMgr.PushObject(L, o);
+			return 1;
+		}
+		else if (count == 3)
+		{
+			string arg0 = LuaScriptMgr.GetLuaString(L, 1);
+			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
+			ulong arg2 = (ulong)LuaScriptMgr.GetNumber(L, 3);
+			AssetBundleCreateRequest o = AssetBundle.LoadFromFileAsync(arg0,arg1,arg2);
 			LuaScriptMgr.PushObject(L, o);
 			return 1;
 		}
@@ -133,6 +190,15 @@ public class AssetBundleWrap
 			string arg0 = LuaScriptMgr.GetLuaString(L, 1);
 			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
 			AssetBundle o = AssetBundle.LoadFromFile(arg0,arg1);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 3)
+		{
+			string arg0 = LuaScriptMgr.GetLuaString(L, 1);
+			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
+			ulong arg2 = (ulong)LuaScriptMgr.GetNumber(L, 3);
+			AssetBundle o = AssetBundle.LoadFromFile(arg0,arg1,arg2);
 			LuaScriptMgr.Push(L, o);
 			return 1;
 		}
@@ -195,6 +261,80 @@ public class AssetBundleWrap
 		else
 		{
 			LuaDLL.luaL_error(L, "invalid arguments to method: AssetBundle.LoadFromMemory");
+		}
+
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadFromStreamAsync(IntPtr L)
+	{
+		int count = LuaDLL.lua_gettop(L);
+
+		if (count == 1)
+		{
+			System.IO.Stream arg0 = (System.IO.Stream)LuaScriptMgr.GetNetObject(L, 1, typeof(System.IO.Stream));
+			AssetBundleCreateRequest o = AssetBundle.LoadFromStreamAsync(arg0);
+			LuaScriptMgr.PushObject(L, o);
+			return 1;
+		}
+		else if (count == 2)
+		{
+			System.IO.Stream arg0 = (System.IO.Stream)LuaScriptMgr.GetNetObject(L, 1, typeof(System.IO.Stream));
+			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
+			AssetBundleCreateRequest o = AssetBundle.LoadFromStreamAsync(arg0,arg1);
+			LuaScriptMgr.PushObject(L, o);
+			return 1;
+		}
+		else if (count == 3)
+		{
+			System.IO.Stream arg0 = (System.IO.Stream)LuaScriptMgr.GetNetObject(L, 1, typeof(System.IO.Stream));
+			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
+			uint arg2 = (uint)LuaScriptMgr.GetNumber(L, 3);
+			AssetBundleCreateRequest o = AssetBundle.LoadFromStreamAsync(arg0,arg1,arg2);
+			LuaScriptMgr.PushObject(L, o);
+			return 1;
+		}
+		else
+		{
+			LuaDLL.luaL_error(L, "invalid arguments to method: AssetBundle.LoadFromStreamAsync");
+		}
+
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadFromStream(IntPtr L)
+	{
+		int count = LuaDLL.lua_gettop(L);
+
+		if (count == 1)
+		{
+			System.IO.Stream arg0 = (System.IO.Stream)LuaScriptMgr.GetNetObject(L, 1, typeof(System.IO.Stream));
+			AssetBundle o = AssetBundle.LoadFromStream(arg0);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 2)
+		{
+			System.IO.Stream arg0 = (System.IO.Stream)LuaScriptMgr.GetNetObject(L, 1, typeof(System.IO.Stream));
+			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
+			AssetBundle o = AssetBundle.LoadFromStream(arg0,arg1);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 3)
+		{
+			System.IO.Stream arg0 = (System.IO.Stream)LuaScriptMgr.GetNetObject(L, 1, typeof(System.IO.Stream));
+			uint arg1 = (uint)LuaScriptMgr.GetNumber(L, 2);
+			uint arg2 = (uint)LuaScriptMgr.GetNumber(L, 3);
+			AssetBundle o = AssetBundle.LoadFromStream(arg0,arg1,arg2);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else
+		{
+			LuaDLL.luaL_error(L, "invalid arguments to method: AssetBundle.LoadFromStream");
 		}
 
 		return 0;

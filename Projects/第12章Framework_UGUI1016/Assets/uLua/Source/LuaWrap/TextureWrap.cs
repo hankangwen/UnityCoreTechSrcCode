@@ -22,11 +22,16 @@ public class TextureWrap
 			new LuaField("anisotropicFiltering", get_anisotropicFiltering, set_anisotropicFiltering),
 			new LuaField("width", get_width, set_width),
 			new LuaField("height", get_height, set_height),
+			new LuaField("dimension", get_dimension, set_dimension),
 			new LuaField("filterMode", get_filterMode, set_filterMode),
 			new LuaField("anisoLevel", get_anisoLevel, set_anisoLevel),
 			new LuaField("wrapMode", get_wrapMode, set_wrapMode),
+			new LuaField("wrapModeU", get_wrapModeU, set_wrapModeU),
+			new LuaField("wrapModeV", get_wrapModeV, set_wrapModeV),
+			new LuaField("wrapModeW", get_wrapModeW, set_wrapModeW),
 			new LuaField("mipMapBias", get_mipMapBias, set_mipMapBias),
 			new LuaField("texelSize", get_texelSize, null),
+			new LuaField("imageContentsHash", get_imageContentsHash, set_imageContentsHash),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Texture", typeof(Texture), regs, fields, typeof(Object));
@@ -123,6 +128,30 @@ public class TextureWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_dimension(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name dimension");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index dimension on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.dimension);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_filterMode(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -195,6 +224,78 @@ public class TextureWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_wrapModeU(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name wrapModeU");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index wrapModeU on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.wrapModeU);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_wrapModeV(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name wrapModeV");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index wrapModeV on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.wrapModeV);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_wrapModeW(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name wrapModeW");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index wrapModeW on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.wrapModeW);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_mipMapBias(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -239,6 +340,30 @@ public class TextureWrap
 		}
 
 		LuaScriptMgr.Push(L, obj.texelSize);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_imageContentsHash(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name imageContentsHash");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index imageContentsHash on a nil value");
+			}
+		}
+
+		LuaScriptMgr.PushValue(L, obj.imageContentsHash);
 		return 1;
 	}
 
@@ -301,6 +426,30 @@ public class TextureWrap
 		}
 
 		obj.height = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_dimension(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name dimension");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index dimension on a nil value");
+			}
+		}
+
+		obj.dimension = (UnityEngine.Rendering.TextureDimension)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.TextureDimension));
 		return 0;
 	}
 
@@ -377,6 +526,78 @@ public class TextureWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_wrapModeU(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name wrapModeU");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index wrapModeU on a nil value");
+			}
+		}
+
+		obj.wrapModeU = (TextureWrapMode)LuaScriptMgr.GetNetObject(L, 3, typeof(TextureWrapMode));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_wrapModeV(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name wrapModeV");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index wrapModeV on a nil value");
+			}
+		}
+
+		obj.wrapModeV = (TextureWrapMode)LuaScriptMgr.GetNetObject(L, 3, typeof(TextureWrapMode));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_wrapModeW(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name wrapModeW");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index wrapModeW on a nil value");
+			}
+		}
+
+		obj.wrapModeW = (TextureWrapMode)LuaScriptMgr.GetNetObject(L, 3, typeof(TextureWrapMode));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_mipMapBias(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -397,6 +618,30 @@ public class TextureWrap
 		}
 
 		obj.mipMapBias = (float)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_imageContentsHash(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Texture obj = (Texture)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name imageContentsHash");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index imageContentsHash on a nil value");
+			}
+		}
+
+		obj.imageContentsHash = (Hash128)LuaScriptMgr.GetNetObject(L, 3, typeof(Hash128));
 		return 0;
 	}
 

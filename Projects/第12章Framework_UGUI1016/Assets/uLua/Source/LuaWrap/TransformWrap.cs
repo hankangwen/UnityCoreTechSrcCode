@@ -11,6 +11,7 @@ public class TransformWrap
 		LuaMethod[] regs = new LuaMethod[]
 		{
 			new LuaMethod("SetParent", SetParent),
+			new LuaMethod("SetPositionAndRotation", SetPositionAndRotation),
 			new LuaMethod("Translate", Translate),
 			new LuaMethod("Rotate", Rotate),
 			new LuaMethod("RotateAround", RotateAround),
@@ -28,7 +29,6 @@ public class TransformWrap
 			new LuaMethod("GetSiblingIndex", GetSiblingIndex),
 			new LuaMethod("Find", Find),
 			new LuaMethod("IsChildOf", IsChildOf),
-			new LuaMethod("FindChild", FindChild),
 			new LuaMethod("GetEnumerator", GetEnumerator),
 			new LuaMethod("GetChild", GetChild),
 			new LuaMethod("New", _CreateTransform),
@@ -55,6 +55,8 @@ public class TransformWrap
 			new LuaField("childCount", get_childCount, null),
 			new LuaField("lossyScale", get_lossyScale, null),
 			new LuaField("hasChanged", get_hasChanged, set_hasChanged),
+			new LuaField("hierarchyCapacity", get_hierarchyCapacity, set_hierarchyCapacity),
+			new LuaField("hierarchyCount", get_hierarchyCount, null),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Transform", typeof(Transform), regs, fields, typeof(Component));
@@ -485,6 +487,54 @@ public class TransformWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_hierarchyCapacity(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Transform obj = (Transform)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name hierarchyCapacity");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index hierarchyCapacity on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.hierarchyCapacity);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_hierarchyCount(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Transform obj = (Transform)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name hierarchyCount");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index hierarchyCount on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.hierarchyCount);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_position(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -773,6 +823,30 @@ public class TransformWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_hierarchyCapacity(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Transform obj = (Transform)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name hierarchyCapacity");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index hierarchyCapacity on a nil value");
+			}
+		}
+
+		obj.hierarchyCapacity = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int SetParent(IntPtr L)
 	{
 		int count = LuaDLL.lua_gettop(L);
@@ -797,6 +871,17 @@ public class TransformWrap
 			LuaDLL.luaL_error(L, "invalid arguments to method: Transform.SetParent");
 		}
 
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int SetPositionAndRotation(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 3);
+		Transform obj = (Transform)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Transform");
+		Vector3 arg0 = LuaScriptMgr.GetVector3(L, 2);
+		Quaternion arg1 = LuaScriptMgr.GetQuaternion(L, 3);
+		obj.SetPositionAndRotation(arg0,arg1);
 		return 0;
 	}
 
@@ -1235,17 +1320,6 @@ public class TransformWrap
 		Transform obj = (Transform)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Transform");
 		Transform arg0 = (Transform)LuaScriptMgr.GetUnityObject(L, 2, typeof(Transform));
 		bool o = obj.IsChildOf(arg0);
-		LuaScriptMgr.Push(L, o);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int FindChild(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		Transform obj = (Transform)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Transform");
-		string arg0 = LuaScriptMgr.GetLuaString(L, 2);
-		Transform o = obj.FindChild(arg0);
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}

@@ -299,6 +299,27 @@ public class DelegateWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int GetHashCode(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		Delegate obj = (Delegate)LuaScriptMgr.GetNetObjectSelf(L, 1, "Delegate");
+		int o = obj.GetHashCode();
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Equals(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		Delegate obj = LuaScriptMgr.GetVarObject(L, 1) as Delegate;
+		object arg0 = LuaScriptMgr.GetVarObject(L, 2);
+		bool o = obj != null ? obj.Equals(arg0) : arg0 == null;
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int Lua_Sub(IntPtr L)
 	{
         LuaScriptMgr.CheckArgsCount(L, 2);
@@ -343,27 +364,6 @@ public class DelegateWrap
 		Delegate arg0 = LuaScriptMgr.GetLuaObject(L, 1) as Delegate;
 		Delegate arg1 = LuaScriptMgr.GetLuaObject(L, 2) as Delegate;
 		bool o = arg0 == arg1;
-		LuaScriptMgr.Push(L, o);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int GetHashCode(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 1);
-		Delegate obj = (Delegate)LuaScriptMgr.GetNetObjectSelf(L, 1, "Delegate");
-		int o = obj.GetHashCode();
-		LuaScriptMgr.Push(L, o);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int Equals(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		Delegate obj = LuaScriptMgr.GetVarObject(L, 1) as Delegate;
-		object arg0 = LuaScriptMgr.GetVarObject(L, 2);
-		bool o = obj != null ? obj.Equals(arg0) : arg0 == null;
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}

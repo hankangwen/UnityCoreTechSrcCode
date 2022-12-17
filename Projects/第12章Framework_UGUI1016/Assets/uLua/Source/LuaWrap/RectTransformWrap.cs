@@ -13,6 +13,7 @@ public class RectTransformWrap
 			new LuaMethod("GetWorldCorners", GetWorldCorners),
 			new LuaMethod("SetInsetAndSizeFromParentEdge", SetInsetAndSizeFromParentEdge),
 			new LuaMethod("SetSizeWithCurrentAnchors", SetSizeWithCurrentAnchors),
+			new LuaMethod("ForceUpdateRectTransforms", ForceUpdateRectTransforms),
 			new LuaMethod("New", _CreateRectTransform),
 			new LuaMethod("GetClassType", GetClassType),
 			new LuaMethod("__eq", Lua_Eq),
@@ -510,6 +511,15 @@ public class RectTransformWrap
 		RectTransform.Axis arg0 = (RectTransform.Axis)LuaScriptMgr.GetNetObject(L, 2, typeof(RectTransform.Axis));
 		float arg1 = (float)LuaScriptMgr.GetNumber(L, 3);
 		obj.SetSizeWithCurrentAnchors(arg0,arg1);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int ForceUpdateRectTransforms(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		RectTransform obj = (RectTransform)LuaScriptMgr.GetUnityObjectSelf(L, 1, "RectTransform");
+		obj.ForceUpdateRectTransforms();
 		return 0;
 	}
 

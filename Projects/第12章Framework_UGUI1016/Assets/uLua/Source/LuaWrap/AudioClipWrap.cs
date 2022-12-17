@@ -27,6 +27,7 @@ public class AudioClipWrap
 			new LuaField("frequency", get_frequency, null),
 			new LuaField("loadType", get_loadType, null),
 			new LuaField("preloadAudioData", get_preloadAudioData, null),
+			new LuaField("ambisonic", get_ambisonic, null),
 			new LuaField("loadState", get_loadState, null),
 			new LuaField("loadInBackground", get_loadInBackground, null),
 		};
@@ -203,6 +204,30 @@ public class AudioClipWrap
 		}
 
 		LuaScriptMgr.Push(L, obj.preloadAudioData);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_ambisonic(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		AudioClip obj = (AudioClip)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name ambisonic");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index ambisonic on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.ambisonic);
 		return 1;
 	}
 

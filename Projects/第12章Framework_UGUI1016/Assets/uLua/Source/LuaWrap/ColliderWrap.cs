@@ -10,6 +10,7 @@ public class ColliderWrap
 		LuaMethod[] regs = new LuaMethod[]
 		{
 			new LuaMethod("ClosestPointOnBounds", ClosestPointOnBounds),
+			new LuaMethod("ClosestPoint", ClosestPoint),
 			new LuaMethod("Raycast", Raycast),
 			new LuaMethod("New", _CreateCollider),
 			new LuaMethod("GetClassType", GetClassType),
@@ -353,6 +354,17 @@ public class ColliderWrap
 		Collider obj = (Collider)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Collider");
 		Vector3 arg0 = LuaScriptMgr.GetVector3(L, 2);
 		Vector3 o = obj.ClosestPointOnBounds(arg0);
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int ClosestPoint(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		Collider obj = (Collider)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Collider");
+		Vector3 arg0 = LuaScriptMgr.GetVector3(L, 2);
+		Vector3 o = obj.ClosestPoint(arg0);
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}

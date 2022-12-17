@@ -17,16 +17,17 @@ public class ScreenWrap
 		{
 			new LuaField("resolutions", get_resolutions, null),
 			new LuaField("currentResolution", get_currentResolution, null),
+			new LuaField("fullScreen", get_fullScreen, set_fullScreen),
 			new LuaField("width", get_width, null),
 			new LuaField("height", get_height, null),
 			new LuaField("dpi", get_dpi, null),
-			new LuaField("fullScreen", get_fullScreen, set_fullScreen),
+			new LuaField("orientation", get_orientation, set_orientation),
+			new LuaField("sleepTimeout", get_sleepTimeout, set_sleepTimeout),
 			new LuaField("autorotateToPortrait", get_autorotateToPortrait, set_autorotateToPortrait),
 			new LuaField("autorotateToPortraitUpsideDown", get_autorotateToPortraitUpsideDown, set_autorotateToPortraitUpsideDown),
 			new LuaField("autorotateToLandscapeLeft", get_autorotateToLandscapeLeft, set_autorotateToLandscapeLeft),
 			new LuaField("autorotateToLandscapeRight", get_autorotateToLandscapeRight, set_autorotateToLandscapeRight),
-			new LuaField("orientation", get_orientation, set_orientation),
-			new LuaField("sleepTimeout", get_sleepTimeout, set_sleepTimeout),
+			new LuaField("safeArea", get_safeArea, null),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Screen", typeof(Screen), regs, fields, typeof(object));
@@ -75,6 +76,13 @@ public class ScreenWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_fullScreen(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Screen.fullScreen);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_width(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, Screen.width);
@@ -96,9 +104,16 @@ public class ScreenWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_fullScreen(IntPtr L)
+	static int get_orientation(IntPtr L)
 	{
-		LuaScriptMgr.Push(L, Screen.fullScreen);
+		LuaScriptMgr.Push(L, Screen.orientation);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_sleepTimeout(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Screen.sleepTimeout);
 		return 1;
 	}
 
@@ -131,16 +146,9 @@ public class ScreenWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_orientation(IntPtr L)
+	static int get_safeArea(IntPtr L)
 	{
-		LuaScriptMgr.Push(L, Screen.orientation);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_sleepTimeout(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, Screen.sleepTimeout);
+		LuaScriptMgr.PushValue(L, Screen.safeArea);
 		return 1;
 	}
 
@@ -148,6 +156,20 @@ public class ScreenWrap
 	static int set_fullScreen(IntPtr L)
 	{
 		Screen.fullScreen = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_orientation(IntPtr L)
+	{
+		Screen.orientation = (ScreenOrientation)LuaScriptMgr.GetNetObject(L, 3, typeof(ScreenOrientation));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_sleepTimeout(IntPtr L)
+	{
+		Screen.sleepTimeout = (int)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -176,20 +198,6 @@ public class ScreenWrap
 	static int set_autorotateToLandscapeRight(IntPtr L)
 	{
 		Screen.autorotateToLandscapeRight = LuaScriptMgr.GetBoolean(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_orientation(IntPtr L)
-	{
-		Screen.orientation = (ScreenOrientation)LuaScriptMgr.GetNetObject(L, 3, typeof(ScreenOrientation));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_sleepTimeout(IntPtr L)
-	{
-		Screen.sleepTimeout = (int)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 

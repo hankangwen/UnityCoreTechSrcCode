@@ -239,17 +239,6 @@ public class EnumWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int Lua_Eq(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		Enum arg0 = LuaScriptMgr.GetLuaObject(L, 1) as Enum;
-		Enum arg1 = LuaScriptMgr.GetLuaObject(L, 2) as Enum;
-		bool o = arg0 == arg1;
-		LuaScriptMgr.Push(L, o);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int GetHashCode(IntPtr L)
 	{
 		LuaScriptMgr.CheckArgsCount(L, 1);
@@ -266,6 +255,17 @@ public class EnumWrap
 		Enum obj = LuaScriptMgr.GetVarObject(L, 1) as Enum;
 		object arg0 = LuaScriptMgr.GetVarObject(L, 2);
 		bool o = obj != null ? obj.Equals(arg0) : arg0 == null;
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Lua_Eq(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		Enum arg0 = LuaScriptMgr.GetLuaObject(L, 1) as Enum;
+		Enum arg1 = LuaScriptMgr.GetLuaObject(L, 2) as Enum;
+		bool o = arg0 == arg1;
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}

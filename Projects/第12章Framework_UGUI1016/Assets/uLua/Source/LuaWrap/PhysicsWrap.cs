@@ -14,6 +14,8 @@ public class PhysicsWrap
 			new LuaMethod("Linecast", Linecast),
 			new LuaMethod("OverlapSphere", OverlapSphere),
 			new LuaMethod("OverlapSphereNonAlloc", OverlapSphereNonAlloc),
+			new LuaMethod("OverlapCapsule", OverlapCapsule),
+			new LuaMethod("OverlapCapsuleNonAlloc", OverlapCapsuleNonAlloc),
 			new LuaMethod("CapsuleCast", CapsuleCast),
 			new LuaMethod("SphereCast", SphereCast),
 			new LuaMethod("CapsuleCastAll", CapsuleCastAll),
@@ -31,6 +33,11 @@ public class PhysicsWrap
 			new LuaMethod("IgnoreCollision", IgnoreCollision),
 			new LuaMethod("IgnoreLayerCollision", IgnoreLayerCollision),
 			new LuaMethod("GetIgnoreLayerCollision", GetIgnoreLayerCollision),
+			new LuaMethod("ComputePenetration", ComputePenetration),
+			new LuaMethod("ClosestPoint", ClosestPoint),
+			new LuaMethod("Simulate", Simulate),
+			new LuaMethod("SyncTransforms", SyncTransforms),
+			new LuaMethod("RebuildBroadphaseRegions", RebuildBroadphaseRegions),
 			new LuaMethod("New", _CreatePhysics),
 			new LuaMethod("GetClassType", GetClassType),
 		};
@@ -43,9 +50,16 @@ public class PhysicsWrap
 			new LuaField("gravity", get_gravity, set_gravity),
 			new LuaField("defaultContactOffset", get_defaultContactOffset, set_defaultContactOffset),
 			new LuaField("bounceThreshold", get_bounceThreshold, set_bounceThreshold),
-			new LuaField("solverIterationCount", get_solverIterationCount, set_solverIterationCount),
+			new LuaField("defaultSolverIterations", get_defaultSolverIterations, set_defaultSolverIterations),
+			new LuaField("defaultSolverVelocityIterations", get_defaultSolverVelocityIterations, set_defaultSolverVelocityIterations),
 			new LuaField("sleepThreshold", get_sleepThreshold, set_sleepThreshold),
 			new LuaField("queriesHitTriggers", get_queriesHitTriggers, set_queriesHitTriggers),
+			new LuaField("queriesHitBackfaces", get_queriesHitBackfaces, set_queriesHitBackfaces),
+			new LuaField("interCollisionDistance", get_interCollisionDistance, set_interCollisionDistance),
+			new LuaField("interCollisionStiffness", get_interCollisionStiffness, set_interCollisionStiffness),
+			new LuaField("interCollisionSettingsToggle", get_interCollisionSettingsToggle, set_interCollisionSettingsToggle),
+			new LuaField("autoSimulation", get_autoSimulation, set_autoSimulation),
+			new LuaField("autoSyncTransforms", get_autoSyncTransforms, set_autoSyncTransforms),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Physics", typeof(Physics), regs, fields, typeof(object));
@@ -122,9 +136,16 @@ public class PhysicsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_solverIterationCount(IntPtr L)
+	static int get_defaultSolverIterations(IntPtr L)
 	{
-		LuaScriptMgr.Push(L, Physics.solverIterationCount);
+		LuaScriptMgr.Push(L, Physics.defaultSolverIterations);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_defaultSolverVelocityIterations(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Physics.defaultSolverVelocityIterations);
 		return 1;
 	}
 
@@ -139,6 +160,48 @@ public class PhysicsWrap
 	static int get_queriesHitTriggers(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, Physics.queriesHitTriggers);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_queriesHitBackfaces(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Physics.queriesHitBackfaces);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_interCollisionDistance(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Physics.interCollisionDistance);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_interCollisionStiffness(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Physics.interCollisionStiffness);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_interCollisionSettingsToggle(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Physics.interCollisionSettingsToggle);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_autoSimulation(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Physics.autoSimulation);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_autoSyncTransforms(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Physics.autoSyncTransforms);
 		return 1;
 	}
 
@@ -164,9 +227,16 @@ public class PhysicsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_solverIterationCount(IntPtr L)
+	static int set_defaultSolverIterations(IntPtr L)
 	{
-		Physics.solverIterationCount = (int)LuaScriptMgr.GetNumber(L, 3);
+		Physics.defaultSolverIterations = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_defaultSolverVelocityIterations(IntPtr L)
+	{
+		Physics.defaultSolverVelocityIterations = (int)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -181,6 +251,48 @@ public class PhysicsWrap
 	static int set_queriesHitTriggers(IntPtr L)
 	{
 		Physics.queriesHitTriggers = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_queriesHitBackfaces(IntPtr L)
+	{
+		Physics.queriesHitBackfaces = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_interCollisionDistance(IntPtr L)
+	{
+		Physics.interCollisionDistance = (float)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_interCollisionStiffness(IntPtr L)
+	{
+		Physics.interCollisionStiffness = (float)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_interCollisionSettingsToggle(IntPtr L)
+	{
+		Physics.interCollisionSettingsToggle = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_autoSimulation(IntPtr L)
+	{
+		Physics.autoSimulation = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_autoSyncTransforms(IntPtr L)
+	{
+		Physics.autoSyncTransforms = LuaScriptMgr.GetBoolean(L, 3);
 		return 0;
 	}
 
@@ -686,6 +798,95 @@ public class PhysicsWrap
 		else
 		{
 			LuaDLL.luaL_error(L, "invalid arguments to method: Physics.OverlapSphereNonAlloc");
+		}
+
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int OverlapCapsule(IntPtr L)
+	{
+		int count = LuaDLL.lua_gettop(L);
+
+		if (count == 3)
+		{
+			Vector3 arg0 = LuaScriptMgr.GetVector3(L, 1);
+			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);
+			Collider[] o = Physics.OverlapCapsule(arg0,arg1,arg2);
+			LuaScriptMgr.PushArray(L, o);
+			return 1;
+		}
+		else if (count == 4)
+		{
+			Vector3 arg0 = LuaScriptMgr.GetVector3(L, 1);
+			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);
+			int arg3 = (int)LuaScriptMgr.GetNumber(L, 4);
+			Collider[] o = Physics.OverlapCapsule(arg0,arg1,arg2,arg3);
+			LuaScriptMgr.PushArray(L, o);
+			return 1;
+		}
+		else if (count == 5)
+		{
+			Vector3 arg0 = LuaScriptMgr.GetVector3(L, 1);
+			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);
+			int arg3 = (int)LuaScriptMgr.GetNumber(L, 4);
+			QueryTriggerInteraction arg4 = (QueryTriggerInteraction)LuaScriptMgr.GetNetObject(L, 5, typeof(QueryTriggerInteraction));
+			Collider[] o = Physics.OverlapCapsule(arg0,arg1,arg2,arg3,arg4);
+			LuaScriptMgr.PushArray(L, o);
+			return 1;
+		}
+		else
+		{
+			LuaDLL.luaL_error(L, "invalid arguments to method: Physics.OverlapCapsule");
+		}
+
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int OverlapCapsuleNonAlloc(IntPtr L)
+	{
+		int count = LuaDLL.lua_gettop(L);
+
+		if (count == 4)
+		{
+			Vector3 arg0 = LuaScriptMgr.GetVector3(L, 1);
+			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);
+			Collider[] objs3 = LuaScriptMgr.GetArrayObject<Collider>(L, 4);
+			int o = Physics.OverlapCapsuleNonAlloc(arg0,arg1,arg2,objs3);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 5)
+		{
+			Vector3 arg0 = LuaScriptMgr.GetVector3(L, 1);
+			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);
+			Collider[] objs3 = LuaScriptMgr.GetArrayObject<Collider>(L, 4);
+			int arg4 = (int)LuaScriptMgr.GetNumber(L, 5);
+			int o = Physics.OverlapCapsuleNonAlloc(arg0,arg1,arg2,objs3,arg4);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 6)
+		{
+			Vector3 arg0 = LuaScriptMgr.GetVector3(L, 1);
+			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);
+			Collider[] objs3 = LuaScriptMgr.GetArrayObject<Collider>(L, 4);
+			int arg4 = (int)LuaScriptMgr.GetNumber(L, 5);
+			QueryTriggerInteraction arg5 = (QueryTriggerInteraction)LuaScriptMgr.GetNetObject(L, 6, typeof(QueryTriggerInteraction));
+			int o = Physics.OverlapCapsuleNonAlloc(arg0,arg1,arg2,objs3,arg4,arg5);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else
+		{
+			LuaDLL.luaL_error(L, "invalid arguments to method: Physics.OverlapCapsuleNonAlloc");
 		}
 
 		return 0;
@@ -1846,6 +2047,65 @@ public class PhysicsWrap
 		bool o = Physics.GetIgnoreLayerCollision(arg0,arg1);
 		LuaScriptMgr.Push(L, o);
 		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int ComputePenetration(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 8);
+		Collider arg0 = (Collider)LuaScriptMgr.GetUnityObject(L, 1, typeof(Collider));
+		Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+		Quaternion arg2 = LuaScriptMgr.GetQuaternion(L, 3);
+		Collider arg3 = (Collider)LuaScriptMgr.GetUnityObject(L, 4, typeof(Collider));
+		Vector3 arg4 = LuaScriptMgr.GetVector3(L, 5);
+		Quaternion arg5 = LuaScriptMgr.GetQuaternion(L, 6);
+		Vector3 arg6;
+		float arg7;
+		bool o = Physics.ComputePenetration(arg0,arg1,arg2,arg3,arg4,arg5,out arg6,out arg7);
+		LuaScriptMgr.Push(L, o);
+		LuaScriptMgr.Push(L, arg6);
+		LuaScriptMgr.Push(L, arg7);
+		return 3;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int ClosestPoint(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 4);
+		Vector3 arg0 = LuaScriptMgr.GetVector3(L, 1);
+		Collider arg1 = (Collider)LuaScriptMgr.GetUnityObject(L, 2, typeof(Collider));
+		Vector3 arg2 = LuaScriptMgr.GetVector3(L, 3);
+		Quaternion arg3 = LuaScriptMgr.GetQuaternion(L, 4);
+		Vector3 o = Physics.ClosestPoint(arg0,arg1,arg2,arg3);
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Simulate(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		float arg0 = (float)LuaScriptMgr.GetNumber(L, 1);
+		Physics.Simulate(arg0);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int SyncTransforms(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 0);
+		Physics.SyncTransforms();
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int RebuildBroadphaseRegions(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		Bounds arg0 = LuaScriptMgr.GetBounds(L, 1);
+		int arg1 = (int)LuaScriptMgr.GetNumber(L, 2);
+		Physics.RebuildBroadphaseRegions(arg0,arg1);
+		return 0;
 	}
 }
 

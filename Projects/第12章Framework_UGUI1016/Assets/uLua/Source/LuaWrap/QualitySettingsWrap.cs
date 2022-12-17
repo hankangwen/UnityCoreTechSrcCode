@@ -21,29 +21,34 @@ public class QualitySettingsWrap
 		LuaField[] fields = new LuaField[]
 		{
 			new LuaField("names", get_names, null),
+			new LuaField("shadowCascade4Split", get_shadowCascade4Split, set_shadowCascade4Split),
+			new LuaField("anisotropicFiltering", get_anisotropicFiltering, set_anisotropicFiltering),
+			new LuaField("maxQueuedFrames", get_maxQueuedFrames, set_maxQueuedFrames),
+			new LuaField("blendWeights", get_blendWeights, set_blendWeights),
 			new LuaField("pixelLightCount", get_pixelLightCount, set_pixelLightCount),
+			new LuaField("shadows", get_shadows, set_shadows),
 			new LuaField("shadowProjection", get_shadowProjection, set_shadowProjection),
 			new LuaField("shadowCascades", get_shadowCascades, set_shadowCascades),
 			new LuaField("shadowDistance", get_shadowDistance, set_shadowDistance),
+			new LuaField("shadowResolution", get_shadowResolution, set_shadowResolution),
+			new LuaField("shadowmaskMode", get_shadowmaskMode, set_shadowmaskMode),
 			new LuaField("shadowNearPlaneOffset", get_shadowNearPlaneOffset, set_shadowNearPlaneOffset),
 			new LuaField("shadowCascade2Split", get_shadowCascade2Split, set_shadowCascade2Split),
-			new LuaField("shadowCascade4Split", get_shadowCascade4Split, set_shadowCascade4Split),
-			new LuaField("masterTextureLimit", get_masterTextureLimit, set_masterTextureLimit),
-			new LuaField("anisotropicFiltering", get_anisotropicFiltering, set_anisotropicFiltering),
 			new LuaField("lodBias", get_lodBias, set_lodBias),
+			new LuaField("masterTextureLimit", get_masterTextureLimit, set_masterTextureLimit),
 			new LuaField("maximumLODLevel", get_maximumLODLevel, set_maximumLODLevel),
 			new LuaField("particleRaycastBudget", get_particleRaycastBudget, set_particleRaycastBudget),
+			new LuaField("softParticles", get_softParticles, set_softParticles),
 			new LuaField("softVegetation", get_softVegetation, set_softVegetation),
-			new LuaField("realtimeReflectionProbes", get_realtimeReflectionProbes, set_realtimeReflectionProbes),
-			new LuaField("billboardsFaceCameraPosition", get_billboardsFaceCameraPosition, set_billboardsFaceCameraPosition),
-			new LuaField("maxQueuedFrames", get_maxQueuedFrames, set_maxQueuedFrames),
 			new LuaField("vSyncCount", get_vSyncCount, set_vSyncCount),
 			new LuaField("antiAliasing", get_antiAliasing, set_antiAliasing),
-			new LuaField("desiredColorSpace", get_desiredColorSpace, null),
-			new LuaField("activeColorSpace", get_activeColorSpace, null),
-			new LuaField("blendWeights", get_blendWeights, set_blendWeights),
 			new LuaField("asyncUploadTimeSlice", get_asyncUploadTimeSlice, set_asyncUploadTimeSlice),
 			new LuaField("asyncUploadBufferSize", get_asyncUploadBufferSize, set_asyncUploadBufferSize),
+			new LuaField("realtimeReflectionProbes", get_realtimeReflectionProbes, set_realtimeReflectionProbes),
+			new LuaField("billboardsFaceCameraPosition", get_billboardsFaceCameraPosition, set_billboardsFaceCameraPosition),
+			new LuaField("resolutionScalingFixedDPIFactor", get_resolutionScalingFixedDPIFactor, set_resolutionScalingFixedDPIFactor),
+			new LuaField("desiredColorSpace", get_desiredColorSpace, null),
+			new LuaField("activeColorSpace", get_activeColorSpace, null),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.QualitySettings", typeof(QualitySettings), regs, fields, typeof(Object));
@@ -85,9 +90,44 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_shadowCascade4Split(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.shadowCascade4Split);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_anisotropicFiltering(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.anisotropicFiltering);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_maxQueuedFrames(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.maxQueuedFrames);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_blendWeights(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.blendWeights);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_pixelLightCount(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, QualitySettings.pixelLightCount);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_shadows(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.shadows);
 		return 1;
 	}
 
@@ -113,6 +153,20 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_shadowResolution(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.shadowResolution);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_shadowmaskMode(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.shadowmaskMode);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_shadowNearPlaneOffset(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, QualitySettings.shadowNearPlaneOffset);
@@ -127,9 +181,9 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_shadowCascade4Split(IntPtr L)
+	static int get_lodBias(IntPtr L)
 	{
-		LuaScriptMgr.Push(L, QualitySettings.shadowCascade4Split);
+		LuaScriptMgr.Push(L, QualitySettings.lodBias);
 		return 1;
 	}
 
@@ -137,20 +191,6 @@ public class QualitySettingsWrap
 	static int get_masterTextureLimit(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, QualitySettings.masterTextureLimit);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_anisotropicFiltering(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.anisotropicFiltering);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_lodBias(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.lodBias);
 		return 1;
 	}
 
@@ -169,30 +209,16 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_softParticles(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.softParticles);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_softVegetation(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, QualitySettings.softVegetation);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_realtimeReflectionProbes(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.realtimeReflectionProbes);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_billboardsFaceCameraPosition(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.billboardsFaceCameraPosition);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_maxQueuedFrames(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.maxQueuedFrames);
 		return 1;
 	}
 
@@ -211,27 +237,6 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_desiredColorSpace(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.desiredColorSpace);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_activeColorSpace(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.activeColorSpace);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_blendWeights(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, QualitySettings.blendWeights);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_asyncUploadTimeSlice(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, QualitySettings.asyncUploadTimeSlice);
@@ -246,9 +251,79 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_realtimeReflectionProbes(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.realtimeReflectionProbes);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_billboardsFaceCameraPosition(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.billboardsFaceCameraPosition);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_resolutionScalingFixedDPIFactor(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.resolutionScalingFixedDPIFactor);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_desiredColorSpace(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.desiredColorSpace);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_activeColorSpace(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, QualitySettings.activeColorSpace);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_shadowCascade4Split(IntPtr L)
+	{
+		QualitySettings.shadowCascade4Split = LuaScriptMgr.GetVector3(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_anisotropicFiltering(IntPtr L)
+	{
+		QualitySettings.anisotropicFiltering = (AnisotropicFiltering)LuaScriptMgr.GetNetObject(L, 3, typeof(AnisotropicFiltering));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_maxQueuedFrames(IntPtr L)
+	{
+		QualitySettings.maxQueuedFrames = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_blendWeights(IntPtr L)
+	{
+		QualitySettings.blendWeights = (BlendWeights)LuaScriptMgr.GetNetObject(L, 3, typeof(BlendWeights));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_pixelLightCount(IntPtr L)
 	{
 		QualitySettings.pixelLightCount = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_shadows(IntPtr L)
+	{
+		QualitySettings.shadows = (ShadowQuality)LuaScriptMgr.GetNetObject(L, 3, typeof(ShadowQuality));
 		return 0;
 	}
 
@@ -274,6 +349,20 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_shadowResolution(IntPtr L)
+	{
+		QualitySettings.shadowResolution = (ShadowResolution)LuaScriptMgr.GetNetObject(L, 3, typeof(ShadowResolution));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_shadowmaskMode(IntPtr L)
+	{
+		QualitySettings.shadowmaskMode = (ShadowmaskMode)LuaScriptMgr.GetNetObject(L, 3, typeof(ShadowmaskMode));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_shadowNearPlaneOffset(IntPtr L)
 	{
 		QualitySettings.shadowNearPlaneOffset = (float)LuaScriptMgr.GetNumber(L, 3);
@@ -288,9 +377,9 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_shadowCascade4Split(IntPtr L)
+	static int set_lodBias(IntPtr L)
 	{
-		QualitySettings.shadowCascade4Split = LuaScriptMgr.GetVector3(L, 3);
+		QualitySettings.lodBias = (float)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -298,20 +387,6 @@ public class QualitySettingsWrap
 	static int set_masterTextureLimit(IntPtr L)
 	{
 		QualitySettings.masterTextureLimit = (int)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_anisotropicFiltering(IntPtr L)
-	{
-		QualitySettings.anisotropicFiltering = (AnisotropicFiltering)LuaScriptMgr.GetNetObject(L, 3, typeof(AnisotropicFiltering));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_lodBias(IntPtr L)
-	{
-		QualitySettings.lodBias = (float)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -330,30 +405,16 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_softParticles(IntPtr L)
+	{
+		QualitySettings.softParticles = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_softVegetation(IntPtr L)
 	{
 		QualitySettings.softVegetation = LuaScriptMgr.GetBoolean(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_realtimeReflectionProbes(IntPtr L)
-	{
-		QualitySettings.realtimeReflectionProbes = LuaScriptMgr.GetBoolean(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_billboardsFaceCameraPosition(IntPtr L)
-	{
-		QualitySettings.billboardsFaceCameraPosition = LuaScriptMgr.GetBoolean(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_maxQueuedFrames(IntPtr L)
-	{
-		QualitySettings.maxQueuedFrames = (int)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -372,13 +433,6 @@ public class QualitySettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_blendWeights(IntPtr L)
-	{
-		QualitySettings.blendWeights = (BlendWeights)LuaScriptMgr.GetNetObject(L, 3, typeof(BlendWeights));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_asyncUploadTimeSlice(IntPtr L)
 	{
 		QualitySettings.asyncUploadTimeSlice = (int)LuaScriptMgr.GetNumber(L, 3);
@@ -389,6 +443,27 @@ public class QualitySettingsWrap
 	static int set_asyncUploadBufferSize(IntPtr L)
 	{
 		QualitySettings.asyncUploadBufferSize = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_realtimeReflectionProbes(IntPtr L)
+	{
+		QualitySettings.realtimeReflectionProbes = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_billboardsFaceCameraPosition(IntPtr L)
+	{
+		QualitySettings.billboardsFaceCameraPosition = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_resolutionScalingFixedDPIFactor(IntPtr L)
+	{
+		QualitySettings.resolutionScalingFixedDPIFactor = (float)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 

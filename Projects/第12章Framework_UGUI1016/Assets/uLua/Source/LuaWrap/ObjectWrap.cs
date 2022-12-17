@@ -12,9 +12,9 @@ public class ObjectWrap
 			new LuaMethod("FindObjectsOfType", FindObjectsOfType),
 			new LuaMethod("DontDestroyOnLoad", DontDestroyOnLoad),
 			new LuaMethod("ToString", ToString),
-			new LuaMethod("Equals", Equals),
-			new LuaMethod("GetHashCode", GetHashCode),
 			new LuaMethod("GetInstanceID", GetInstanceID),
+			new LuaMethod("GetHashCode", GetHashCode),
+			new LuaMethod("Equals", Equals),
 			new LuaMethod("Instantiate", Instantiate),
 			new LuaMethod("FindObjectOfType", FindObjectOfType),
 			new LuaMethod("DestroyObject", DestroyObject),
@@ -206,12 +206,11 @@ public class ObjectWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int Equals(IntPtr L)
+	static int GetInstanceID(IntPtr L)
 	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		Object obj = LuaScriptMgr.GetVarObject(L, 1) as Object;
-		object arg0 = LuaScriptMgr.GetVarObject(L, 2);
-		bool o = obj != null ? obj.Equals(arg0) : arg0 == null;
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		Object obj = (Object)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Object");
+		int o = obj.GetInstanceID();
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}
@@ -227,11 +226,12 @@ public class ObjectWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int GetInstanceID(IntPtr L)
+	static int Equals(IntPtr L)
 	{
-		LuaScriptMgr.CheckArgsCount(L, 1);
-		Object obj = (Object)LuaScriptMgr.GetUnityObjectSelf(L, 1, "Object");
-		int o = obj.GetInstanceID();
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		Object obj = LuaScriptMgr.GetVarObject(L, 1) as Object;
+		object arg0 = LuaScriptMgr.GetVarObject(L, 2);
+		bool o = obj != null ? obj.Equals(arg0) : arg0 == null;
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}
@@ -248,12 +248,39 @@ public class ObjectWrap
 			LuaScriptMgr.Push(L, o);
 			return 1;
 		}
-		else if (count == 3)
+		else if (count == 2)
+		{
+			Object arg0 = (Object)LuaScriptMgr.GetUnityObject(L, 1, typeof(Object));
+			Transform arg1 = (Transform)LuaScriptMgr.GetUnityObject(L, 2, typeof(Transform));
+			Object o = Object.Instantiate(arg0,arg1);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 3 && LuaScriptMgr.CheckTypes(L, 1, typeof(Object), typeof(Transform), typeof(bool)))
+		{
+			Object arg0 = (Object)LuaScriptMgr.GetLuaObject(L, 1);
+			Transform arg1 = (Transform)LuaScriptMgr.GetLuaObject(L, 2);
+			bool arg2 = LuaDLL.lua_toboolean(L, 3);
+			Object o = Object.Instantiate(arg0,arg1,arg2);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 3 && LuaScriptMgr.CheckTypes(L, 1, typeof(Object), typeof(LuaTable), typeof(LuaTable)))
+		{
+			Object arg0 = (Object)LuaScriptMgr.GetLuaObject(L, 1);
+			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
+			Quaternion arg2 = LuaScriptMgr.GetQuaternion(L, 3);
+			Object o = Object.Instantiate(arg0,arg1,arg2);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 4)
 		{
 			Object arg0 = (Object)LuaScriptMgr.GetUnityObject(L, 1, typeof(Object));
 			Vector3 arg1 = LuaScriptMgr.GetVector3(L, 2);
 			Quaternion arg2 = LuaScriptMgr.GetQuaternion(L, 3);
-			Object o = Object.Instantiate(arg0,arg1,arg2);
+			Transform arg3 = (Transform)LuaScriptMgr.GetUnityObject(L, 4, typeof(Transform));
+			Object o = Object.Instantiate(arg0,arg1,arg2,arg3);
 			LuaScriptMgr.Push(L, o);
 			return 1;
 		}

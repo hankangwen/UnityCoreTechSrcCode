@@ -19,15 +19,19 @@ public class TimeWrap
 			new LuaField("deltaTime", get_deltaTime, null),
 			new LuaField("fixedTime", get_fixedTime, null),
 			new LuaField("unscaledTime", get_unscaledTime, null),
+			new LuaField("fixedUnscaledTime", get_fixedUnscaledTime, null),
 			new LuaField("unscaledDeltaTime", get_unscaledDeltaTime, null),
+			new LuaField("fixedUnscaledDeltaTime", get_fixedUnscaledDeltaTime, null),
 			new LuaField("fixedDeltaTime", get_fixedDeltaTime, set_fixedDeltaTime),
 			new LuaField("maximumDeltaTime", get_maximumDeltaTime, set_maximumDeltaTime),
 			new LuaField("smoothDeltaTime", get_smoothDeltaTime, null),
+			new LuaField("maximumParticleDeltaTime", get_maximumParticleDeltaTime, set_maximumParticleDeltaTime),
 			new LuaField("timeScale", get_timeScale, set_timeScale),
 			new LuaField("frameCount", get_frameCount, null),
 			new LuaField("renderedFrameCount", get_renderedFrameCount, null),
 			new LuaField("realtimeSinceStartup", get_realtimeSinceStartup, null),
 			new LuaField("captureFramerate", get_captureFramerate, set_captureFramerate),
+			new LuaField("inFixedTimeStep", get_inFixedTimeStep, null),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Time", typeof(Time), regs, fields, typeof(object));
@@ -97,9 +101,23 @@ public class TimeWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_fixedUnscaledTime(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Time.fixedUnscaledTime);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_unscaledDeltaTime(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, Time.unscaledDeltaTime);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_fixedUnscaledDeltaTime(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Time.fixedUnscaledDeltaTime);
 		return 1;
 	}
 
@@ -121,6 +139,13 @@ public class TimeWrap
 	static int get_smoothDeltaTime(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, Time.smoothDeltaTime);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_maximumParticleDeltaTime(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Time.maximumParticleDeltaTime);
 		return 1;
 	}
 
@@ -160,6 +185,13 @@ public class TimeWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_inFixedTimeStep(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, Time.inFixedTimeStep);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_fixedDeltaTime(IntPtr L)
 	{
 		Time.fixedDeltaTime = (float)LuaScriptMgr.GetNumber(L, 3);
@@ -170,6 +202,13 @@ public class TimeWrap
 	static int set_maximumDeltaTime(IntPtr L)
 	{
 		Time.maximumDeltaTime = (float)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_maximumParticleDeltaTime(IntPtr L)
+	{
+		Time.maximumParticleDeltaTime = (float)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 

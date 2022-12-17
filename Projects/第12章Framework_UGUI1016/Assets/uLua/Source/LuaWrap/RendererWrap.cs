@@ -20,28 +20,31 @@ public class RendererWrap
 
 		LuaField[] fields = new LuaField[]
 		{
-			new LuaField("isPartOfStaticBatch", get_isPartOfStaticBatch, null),
-			new LuaField("worldToLocalMatrix", get_worldToLocalMatrix, null),
-			new LuaField("localToWorldMatrix", get_localToWorldMatrix, null),
+			new LuaField("bounds", get_bounds, null),
 			new LuaField("enabled", get_enabled, set_enabled),
+			new LuaField("isVisible", get_isVisible, null),
 			new LuaField("shadowCastingMode", get_shadowCastingMode, set_shadowCastingMode),
 			new LuaField("receiveShadows", get_receiveShadows, set_receiveShadows),
-			new LuaField("material", get_material, set_material),
-			new LuaField("sharedMaterial", get_sharedMaterial, set_sharedMaterial),
-			new LuaField("materials", get_materials, set_materials),
-			new LuaField("sharedMaterials", get_sharedMaterials, set_sharedMaterials),
-			new LuaField("bounds", get_bounds, null),
-			new LuaField("lightmapIndex", get_lightmapIndex, set_lightmapIndex),
-			new LuaField("realtimeLightmapIndex", get_realtimeLightmapIndex, set_realtimeLightmapIndex),
-			new LuaField("lightmapScaleOffset", get_lightmapScaleOffset, set_lightmapScaleOffset),
-			new LuaField("realtimeLightmapScaleOffset", get_realtimeLightmapScaleOffset, set_realtimeLightmapScaleOffset),
-			new LuaField("isVisible", get_isVisible, null),
-			new LuaField("useLightProbes", get_useLightProbes, set_useLightProbes),
-			new LuaField("probeAnchor", get_probeAnchor, set_probeAnchor),
+			new LuaField("motionVectorGenerationMode", get_motionVectorGenerationMode, set_motionVectorGenerationMode),
+			new LuaField("lightProbeUsage", get_lightProbeUsage, set_lightProbeUsage),
 			new LuaField("reflectionProbeUsage", get_reflectionProbeUsage, set_reflectionProbeUsage),
 			new LuaField("sortingLayerName", get_sortingLayerName, set_sortingLayerName),
 			new LuaField("sortingLayerID", get_sortingLayerID, set_sortingLayerID),
 			new LuaField("sortingOrder", get_sortingOrder, set_sortingOrder),
+			new LuaField("allowOcclusionWhenDynamic", get_allowOcclusionWhenDynamic, set_allowOcclusionWhenDynamic),
+			new LuaField("isPartOfStaticBatch", get_isPartOfStaticBatch, null),
+			new LuaField("worldToLocalMatrix", get_worldToLocalMatrix, null),
+			new LuaField("localToWorldMatrix", get_localToWorldMatrix, null),
+			new LuaField("lightProbeProxyVolumeOverride", get_lightProbeProxyVolumeOverride, set_lightProbeProxyVolumeOverride),
+			new LuaField("probeAnchor", get_probeAnchor, set_probeAnchor),
+			new LuaField("lightmapIndex", get_lightmapIndex, set_lightmapIndex),
+			new LuaField("realtimeLightmapIndex", get_realtimeLightmapIndex, set_realtimeLightmapIndex),
+			new LuaField("lightmapScaleOffset", get_lightmapScaleOffset, set_lightmapScaleOffset),
+			new LuaField("realtimeLightmapScaleOffset", get_realtimeLightmapScaleOffset, set_realtimeLightmapScaleOffset),
+			new LuaField("material", get_material, set_material),
+			new LuaField("sharedMaterial", get_sharedMaterial, set_sharedMaterial),
+			new LuaField("materials", get_materials, set_materials),
+			new LuaField("sharedMaterials", get_sharedMaterials, set_sharedMaterials),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.Renderer", typeof(Renderer), regs, fields, typeof(Component));
@@ -76,7 +79,7 @@ public class RendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_isPartOfStaticBatch(IntPtr L)
+	static int get_bounds(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -87,63 +90,15 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name isPartOfStaticBatch");
+				LuaDLL.luaL_error(L, "unknown member name bounds");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index isPartOfStaticBatch on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index bounds on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.isPartOfStaticBatch);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_worldToLocalMatrix(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name worldToLocalMatrix");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index worldToLocalMatrix on a nil value");
-			}
-		}
-
-		LuaScriptMgr.PushValue(L, obj.worldToLocalMatrix);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_localToWorldMatrix(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name localToWorldMatrix");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index localToWorldMatrix on a nil value");
-			}
-		}
-
-		LuaScriptMgr.PushValue(L, obj.localToWorldMatrix);
+		LuaScriptMgr.Push(L, obj.bounds);
 		return 1;
 	}
 
@@ -168,6 +123,30 @@ public class RendererWrap
 		}
 
 		LuaScriptMgr.Push(L, obj.enabled);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_isVisible(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name isVisible");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index isVisible on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.isVisible);
 		return 1;
 	}
 
@@ -220,7 +199,7 @@ public class RendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_material(IntPtr L)
+	static int get_motionVectorGenerationMode(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -231,20 +210,20 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name material");
+				LuaDLL.luaL_error(L, "unknown member name motionVectorGenerationMode");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index material on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index motionVectorGenerationMode on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.material);
+		LuaScriptMgr.Push(L, obj.motionVectorGenerationMode);
 		return 1;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_sharedMaterial(IntPtr L)
+	static int get_lightProbeUsage(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -255,255 +234,15 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name sharedMaterial");
+				LuaDLL.luaL_error(L, "unknown member name lightProbeUsage");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index sharedMaterial on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index lightProbeUsage on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.sharedMaterial);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_materials(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name materials");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index materials on a nil value");
-			}
-		}
-
-		LuaScriptMgr.PushArray(L, obj.materials);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_sharedMaterials(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name sharedMaterials");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index sharedMaterials on a nil value");
-			}
-		}
-
-		LuaScriptMgr.PushArray(L, obj.sharedMaterials);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_bounds(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name bounds");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index bounds on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.bounds);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_lightmapIndex(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name lightmapIndex");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index lightmapIndex on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.lightmapIndex);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_realtimeLightmapIndex(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name realtimeLightmapIndex");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index realtimeLightmapIndex on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.realtimeLightmapIndex);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_lightmapScaleOffset(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name lightmapScaleOffset");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index lightmapScaleOffset on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.lightmapScaleOffset);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_realtimeLightmapScaleOffset(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name realtimeLightmapScaleOffset");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index realtimeLightmapScaleOffset on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.realtimeLightmapScaleOffset);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_isVisible(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name isVisible");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index isVisible on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.isVisible);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_useLightProbes(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name useLightProbes");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index useLightProbes on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.useLightProbes);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_probeAnchor(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name probeAnchor");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index probeAnchor on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.probeAnchor);
+		LuaScriptMgr.Push(L, obj.lightProbeUsage);
 		return 1;
 	}
 
@@ -604,6 +343,342 @@ public class RendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_allowOcclusionWhenDynamic(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name allowOcclusionWhenDynamic");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index allowOcclusionWhenDynamic on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.allowOcclusionWhenDynamic);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_isPartOfStaticBatch(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name isPartOfStaticBatch");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index isPartOfStaticBatch on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.isPartOfStaticBatch);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_worldToLocalMatrix(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name worldToLocalMatrix");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index worldToLocalMatrix on a nil value");
+			}
+		}
+
+		LuaScriptMgr.PushValue(L, obj.worldToLocalMatrix);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_localToWorldMatrix(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name localToWorldMatrix");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index localToWorldMatrix on a nil value");
+			}
+		}
+
+		LuaScriptMgr.PushValue(L, obj.localToWorldMatrix);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_lightProbeProxyVolumeOverride(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name lightProbeProxyVolumeOverride");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index lightProbeProxyVolumeOverride on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.lightProbeProxyVolumeOverride);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_probeAnchor(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name probeAnchor");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index probeAnchor on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.probeAnchor);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_lightmapIndex(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name lightmapIndex");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index lightmapIndex on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.lightmapIndex);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_realtimeLightmapIndex(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name realtimeLightmapIndex");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index realtimeLightmapIndex on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.realtimeLightmapIndex);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_lightmapScaleOffset(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name lightmapScaleOffset");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index lightmapScaleOffset on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.lightmapScaleOffset);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_realtimeLightmapScaleOffset(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name realtimeLightmapScaleOffset");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index realtimeLightmapScaleOffset on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.realtimeLightmapScaleOffset);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_material(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name material");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index material on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.material);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_sharedMaterial(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name sharedMaterial");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index sharedMaterial on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.sharedMaterial);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_materials(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name materials");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index materials on a nil value");
+			}
+		}
+
+		LuaScriptMgr.PushArray(L, obj.materials);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_sharedMaterials(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name sharedMaterials");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index sharedMaterials on a nil value");
+			}
+		}
+
+		LuaScriptMgr.PushArray(L, obj.sharedMaterials);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_enabled(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -676,7 +751,7 @@ public class RendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_material(IntPtr L)
+	static int set_motionVectorGenerationMode(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -687,20 +762,20 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name material");
+				LuaDLL.luaL_error(L, "unknown member name motionVectorGenerationMode");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index material on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index motionVectorGenerationMode on a nil value");
 			}
 		}
 
-		obj.material = (Material)LuaScriptMgr.GetUnityObject(L, 3, typeof(Material));
+		obj.motionVectorGenerationMode = (MotionVectorGenerationMode)LuaScriptMgr.GetNetObject(L, 3, typeof(MotionVectorGenerationMode));
 		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_sharedMaterial(IntPtr L)
+	static int set_lightProbeUsage(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -711,20 +786,20 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name sharedMaterial");
+				LuaDLL.luaL_error(L, "unknown member name lightProbeUsage");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index sharedMaterial on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index lightProbeUsage on a nil value");
 			}
 		}
 
-		obj.sharedMaterial = (Material)LuaScriptMgr.GetUnityObject(L, 3, typeof(Material));
+		obj.lightProbeUsage = (UnityEngine.Rendering.LightProbeUsage)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.LightProbeUsage));
 		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_materials(IntPtr L)
+	static int set_reflectionProbeUsage(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -735,20 +810,20 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name materials");
+				LuaDLL.luaL_error(L, "unknown member name reflectionProbeUsage");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index materials on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index reflectionProbeUsage on a nil value");
 			}
 		}
 
-		obj.materials = LuaScriptMgr.GetArrayObject<Material>(L, 3);
+		obj.reflectionProbeUsage = (UnityEngine.Rendering.ReflectionProbeUsage)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.ReflectionProbeUsage));
 		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_sharedMaterials(IntPtr L)
+	static int set_sortingLayerName(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -759,15 +834,135 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name sharedMaterials");
+				LuaDLL.luaL_error(L, "unknown member name sortingLayerName");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index sharedMaterials on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index sortingLayerName on a nil value");
 			}
 		}
 
-		obj.sharedMaterials = LuaScriptMgr.GetArrayObject<Material>(L, 3);
+		obj.sortingLayerName = LuaScriptMgr.GetString(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_sortingLayerID(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name sortingLayerID");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index sortingLayerID on a nil value");
+			}
+		}
+
+		obj.sortingLayerID = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_sortingOrder(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name sortingOrder");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index sortingOrder on a nil value");
+			}
+		}
+
+		obj.sortingOrder = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_allowOcclusionWhenDynamic(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name allowOcclusionWhenDynamic");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index allowOcclusionWhenDynamic on a nil value");
+			}
+		}
+
+		obj.allowOcclusionWhenDynamic = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_lightProbeProxyVolumeOverride(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name lightProbeProxyVolumeOverride");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index lightProbeProxyVolumeOverride on a nil value");
+			}
+		}
+
+		obj.lightProbeProxyVolumeOverride = (GameObject)LuaScriptMgr.GetUnityObject(L, 3, typeof(GameObject));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_probeAnchor(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		Renderer obj = (Renderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name probeAnchor");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index probeAnchor on a nil value");
+			}
+		}
+
+		obj.probeAnchor = (Transform)LuaScriptMgr.GetUnityObject(L, 3, typeof(Transform));
 		return 0;
 	}
 
@@ -868,7 +1063,7 @@ public class RendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_useLightProbes(IntPtr L)
+	static int set_material(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -879,20 +1074,20 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name useLightProbes");
+				LuaDLL.luaL_error(L, "unknown member name material");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index useLightProbes on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index material on a nil value");
 			}
 		}
 
-		obj.useLightProbes = LuaScriptMgr.GetBoolean(L, 3);
+		obj.material = (Material)LuaScriptMgr.GetUnityObject(L, 3, typeof(Material));
 		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_probeAnchor(IntPtr L)
+	static int set_sharedMaterial(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -903,20 +1098,20 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name probeAnchor");
+				LuaDLL.luaL_error(L, "unknown member name sharedMaterial");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index probeAnchor on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index sharedMaterial on a nil value");
 			}
 		}
 
-		obj.probeAnchor = (Transform)LuaScriptMgr.GetUnityObject(L, 3, typeof(Transform));
+		obj.sharedMaterial = (Material)LuaScriptMgr.GetUnityObject(L, 3, typeof(Material));
 		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_reflectionProbeUsage(IntPtr L)
+	static int set_materials(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -927,20 +1122,20 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name reflectionProbeUsage");
+				LuaDLL.luaL_error(L, "unknown member name materials");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index reflectionProbeUsage on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index materials on a nil value");
 			}
 		}
 
-		obj.reflectionProbeUsage = (UnityEngine.Rendering.ReflectionProbeUsage)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.ReflectionProbeUsage));
+		obj.materials = LuaScriptMgr.GetArrayObject<Material>(L, 3);
 		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_sortingLayerName(IntPtr L)
+	static int set_sharedMaterials(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		Renderer obj = (Renderer)o;
@@ -951,63 +1146,15 @@ public class RendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name sortingLayerName");
+				LuaDLL.luaL_error(L, "unknown member name sharedMaterials");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index sortingLayerName on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index sharedMaterials on a nil value");
 			}
 		}
 
-		obj.sortingLayerName = LuaScriptMgr.GetString(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_sortingLayerID(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name sortingLayerID");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index sortingLayerID on a nil value");
-			}
-		}
-
-		obj.sortingLayerID = (int)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_sortingOrder(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		Renderer obj = (Renderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name sortingOrder");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index sortingOrder on a nil value");
-			}
-		}
-
-		obj.sortingOrder = (int)LuaScriptMgr.GetNumber(L, 3);
+		obj.sharedMaterials = LuaScriptMgr.GetArrayObject<Material>(L, 3);
 		return 0;
 	}
 

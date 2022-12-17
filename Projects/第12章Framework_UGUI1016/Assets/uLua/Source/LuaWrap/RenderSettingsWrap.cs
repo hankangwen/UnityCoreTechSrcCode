@@ -16,28 +16,30 @@ public class RenderSettingsWrap
 
 		LuaField[] fields = new LuaField[]
 		{
+			new LuaField("ambientProbe", get_ambientProbe, set_ambientProbe),
+			new LuaField("customReflection", get_customReflection, set_customReflection),
 			new LuaField("fog", get_fog, set_fog),
+			new LuaField("fogStartDistance", get_fogStartDistance, set_fogStartDistance),
+			new LuaField("fogEndDistance", get_fogEndDistance, set_fogEndDistance),
 			new LuaField("fogMode", get_fogMode, set_fogMode),
 			new LuaField("fogColor", get_fogColor, set_fogColor),
 			new LuaField("fogDensity", get_fogDensity, set_fogDensity),
-			new LuaField("fogStartDistance", get_fogStartDistance, set_fogStartDistance),
-			new LuaField("fogEndDistance", get_fogEndDistance, set_fogEndDistance),
 			new LuaField("ambientMode", get_ambientMode, set_ambientMode),
 			new LuaField("ambientSkyColor", get_ambientSkyColor, set_ambientSkyColor),
 			new LuaField("ambientEquatorColor", get_ambientEquatorColor, set_ambientEquatorColor),
 			new LuaField("ambientGroundColor", get_ambientGroundColor, set_ambientGroundColor),
-			new LuaField("ambientLight", get_ambientLight, set_ambientLight),
 			new LuaField("ambientIntensity", get_ambientIntensity, set_ambientIntensity),
-			new LuaField("ambientProbe", get_ambientProbe, set_ambientProbe),
+			new LuaField("ambientLight", get_ambientLight, set_ambientLight),
+			new LuaField("subtractiveShadowColor", get_subtractiveShadowColor, set_subtractiveShadowColor),
+			new LuaField("skybox", get_skybox, set_skybox),
+			new LuaField("sun", get_sun, set_sun),
 			new LuaField("reflectionIntensity", get_reflectionIntensity, set_reflectionIntensity),
 			new LuaField("reflectionBounces", get_reflectionBounces, set_reflectionBounces),
+			new LuaField("defaultReflectionMode", get_defaultReflectionMode, set_defaultReflectionMode),
+			new LuaField("defaultReflectionResolution", get_defaultReflectionResolution, set_defaultReflectionResolution),
 			new LuaField("haloStrength", get_haloStrength, set_haloStrength),
 			new LuaField("flareStrength", get_flareStrength, set_flareStrength),
 			new LuaField("flareFadeSpeed", get_flareFadeSpeed, set_flareFadeSpeed),
-			new LuaField("skybox", get_skybox, set_skybox),
-			new LuaField("defaultReflectionMode", get_defaultReflectionMode, set_defaultReflectionMode),
-			new LuaField("defaultReflectionResolution", get_defaultReflectionResolution, set_defaultReflectionResolution),
-			new LuaField("customReflection", get_customReflection, set_customReflection),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.RenderSettings", typeof(RenderSettings), regs, fields, typeof(Object));
@@ -72,9 +74,37 @@ public class RenderSettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_ambientProbe(IntPtr L)
+	{
+		LuaScriptMgr.PushValue(L, RenderSettings.ambientProbe);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_customReflection(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.customReflection);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_fog(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, RenderSettings.fog);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_fogStartDistance(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.fogStartDistance);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_fogEndDistance(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.fogEndDistance);
 		return 1;
 	}
 
@@ -96,20 +126,6 @@ public class RenderSettingsWrap
 	static int get_fogDensity(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, RenderSettings.fogDensity);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_fogStartDistance(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, RenderSettings.fogStartDistance);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_fogEndDistance(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, RenderSettings.fogEndDistance);
 		return 1;
 	}
 
@@ -142,13 +158,6 @@ public class RenderSettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_ambientLight(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, RenderSettings.ambientLight);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_ambientIntensity(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, RenderSettings.ambientIntensity);
@@ -156,9 +165,30 @@ public class RenderSettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_ambientProbe(IntPtr L)
+	static int get_ambientLight(IntPtr L)
 	{
-		LuaScriptMgr.PushValue(L, RenderSettings.ambientProbe);
+		LuaScriptMgr.Push(L, RenderSettings.ambientLight);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_subtractiveShadowColor(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.subtractiveShadowColor);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_skybox(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.skybox);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_sun(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.sun);
 		return 1;
 	}
 
@@ -173,6 +203,20 @@ public class RenderSettingsWrap
 	static int get_reflectionBounces(IntPtr L)
 	{
 		LuaScriptMgr.Push(L, RenderSettings.reflectionBounces);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_defaultReflectionMode(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.defaultReflectionMode);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_defaultReflectionResolution(IntPtr L)
+	{
+		LuaScriptMgr.Push(L, RenderSettings.defaultReflectionResolution);
 		return 1;
 	}
 
@@ -198,37 +242,37 @@ public class RenderSettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_skybox(IntPtr L)
+	static int set_ambientProbe(IntPtr L)
 	{
-		LuaScriptMgr.Push(L, RenderSettings.skybox);
-		return 1;
+		RenderSettings.ambientProbe = (UnityEngine.Rendering.SphericalHarmonicsL2)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.SphericalHarmonicsL2));
+		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_defaultReflectionMode(IntPtr L)
+	static int set_customReflection(IntPtr L)
 	{
-		LuaScriptMgr.Push(L, RenderSettings.defaultReflectionMode);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_defaultReflectionResolution(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, RenderSettings.defaultReflectionResolution);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_customReflection(IntPtr L)
-	{
-		LuaScriptMgr.Push(L, RenderSettings.customReflection);
-		return 1;
+		RenderSettings.customReflection = (Cubemap)LuaScriptMgr.GetUnityObject(L, 3, typeof(Cubemap));
+		return 0;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_fog(IntPtr L)
 	{
 		RenderSettings.fog = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_fogStartDistance(IntPtr L)
+	{
+		RenderSettings.fogStartDistance = (float)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_fogEndDistance(IntPtr L)
+	{
+		RenderSettings.fogEndDistance = (float)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -250,20 +294,6 @@ public class RenderSettingsWrap
 	static int set_fogDensity(IntPtr L)
 	{
 		RenderSettings.fogDensity = (float)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_fogStartDistance(IntPtr L)
-	{
-		RenderSettings.fogStartDistance = (float)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_fogEndDistance(IntPtr L)
-	{
-		RenderSettings.fogEndDistance = (float)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -296,13 +326,6 @@ public class RenderSettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_ambientLight(IntPtr L)
-	{
-		RenderSettings.ambientLight = LuaScriptMgr.GetColor(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_ambientIntensity(IntPtr L)
 	{
 		RenderSettings.ambientIntensity = (float)LuaScriptMgr.GetNumber(L, 3);
@@ -310,9 +333,30 @@ public class RenderSettingsWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_ambientProbe(IntPtr L)
+	static int set_ambientLight(IntPtr L)
 	{
-		RenderSettings.ambientProbe = (UnityEngine.Rendering.SphericalHarmonicsL2)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.SphericalHarmonicsL2));
+		RenderSettings.ambientLight = LuaScriptMgr.GetColor(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_subtractiveShadowColor(IntPtr L)
+	{
+		RenderSettings.subtractiveShadowColor = LuaScriptMgr.GetColor(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_skybox(IntPtr L)
+	{
+		RenderSettings.skybox = (Material)LuaScriptMgr.GetUnityObject(L, 3, typeof(Material));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_sun(IntPtr L)
+	{
+		RenderSettings.sun = (Light)LuaScriptMgr.GetUnityObject(L, 3, typeof(Light));
 		return 0;
 	}
 
@@ -327,6 +371,20 @@ public class RenderSettingsWrap
 	static int set_reflectionBounces(IntPtr L)
 	{
 		RenderSettings.reflectionBounces = (int)LuaScriptMgr.GetNumber(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_defaultReflectionMode(IntPtr L)
+	{
+		RenderSettings.defaultReflectionMode = (UnityEngine.Rendering.DefaultReflectionMode)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.DefaultReflectionMode));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_defaultReflectionResolution(IntPtr L)
+	{
+		RenderSettings.defaultReflectionResolution = (int)LuaScriptMgr.GetNumber(L, 3);
 		return 0;
 	}
 
@@ -348,34 +406,6 @@ public class RenderSettingsWrap
 	static int set_flareFadeSpeed(IntPtr L)
 	{
 		RenderSettings.flareFadeSpeed = (float)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_skybox(IntPtr L)
-	{
-		RenderSettings.skybox = (Material)LuaScriptMgr.GetUnityObject(L, 3, typeof(Material));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_defaultReflectionMode(IntPtr L)
-	{
-		RenderSettings.defaultReflectionMode = (UnityEngine.Rendering.DefaultReflectionMode)LuaScriptMgr.GetNetObject(L, 3, typeof(UnityEngine.Rendering.DefaultReflectionMode));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_defaultReflectionResolution(IntPtr L)
-	{
-		RenderSettings.defaultReflectionResolution = (int)LuaScriptMgr.GetNumber(L, 3);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_customReflection(IntPtr L)
-	{
-		RenderSettings.customReflection = (Cubemap)LuaScriptMgr.GetUnityObject(L, 3, typeof(Cubemap));
 		return 0;
 	}
 

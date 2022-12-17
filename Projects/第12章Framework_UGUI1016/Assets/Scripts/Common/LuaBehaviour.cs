@@ -65,7 +65,7 @@ namespace BIEFramework {
         /// <summary>
         /// 执行Lua方法
         /// </summary>
-        protected object[] CallMethod(string func, params object[] args) {
+        protected object[]   CallMethod(string func, params object[] args) {
             if (!initialize) return null;
             return Util.CallMethod(name, func, args);
         }

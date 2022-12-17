@@ -15,7 +15,6 @@ public class MonoBehaviourWrap
 			new LuaMethod("CancelInvoke", CancelInvoke),
 			new LuaMethod("IsInvoking", IsInvoking),
 			new LuaMethod("StartCoroutine", StartCoroutine),
-			new LuaMethod("StartCoroutine_Auto", StartCoroutine_Auto),
 			new LuaMethod("StopCoroutine", StopCoroutine),
 			new LuaMethod("StopAllCoroutines", StopAllCoroutines),
 			new LuaMethod("print", print),
@@ -27,6 +26,7 @@ public class MonoBehaviourWrap
 		LuaField[] fields = new LuaField[]
 		{
 			new LuaField("useGUILayout", get_useGUILayout, set_useGUILayout),
+			new LuaField("runInEditMode", get_runInEditMode, set_runInEditMode),
 		};
 
 		LuaScriptMgr.RegisterLib(L, "UnityEngine.MonoBehaviour", typeof(MonoBehaviour), regs, fields, typeof(Behaviour));
@@ -73,6 +73,30 @@ public class MonoBehaviourWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_runInEditMode(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		MonoBehaviour obj = (MonoBehaviour)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name runInEditMode");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index runInEditMode on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.runInEditMode);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_useGUILayout(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -93,6 +117,30 @@ public class MonoBehaviourWrap
 		}
 
 		obj.useGUILayout = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_runInEditMode(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		MonoBehaviour obj = (MonoBehaviour)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name runInEditMode");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index runInEditMode on a nil value");
+			}
+		}
+
+		obj.runInEditMode = LuaScriptMgr.GetBoolean(L, 3);
 		return 0;
 	}
 
@@ -209,17 +257,6 @@ public class MonoBehaviourWrap
 		}
 
 		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int StartCoroutine_Auto(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		MonoBehaviour obj = (MonoBehaviour)LuaScriptMgr.GetUnityObjectSelf(L, 1, "MonoBehaviour");
-		IEnumerator arg0 = (IEnumerator)LuaScriptMgr.GetNetObject(L, 2, typeof(IEnumerator));
-		Coroutine o = obj.StartCoroutine_Auto(arg0);
-		LuaScriptMgr.PushObject(L, o);
-		return 1;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]

@@ -9,9 +9,9 @@ public class SkinnedMeshRendererWrap
 	{
 		LuaMethod[] regs = new LuaMethod[]
 		{
-			new LuaMethod("BakeMesh", BakeMesh),
 			new LuaMethod("GetBlendShapeWeight", GetBlendShapeWeight),
 			new LuaMethod("SetBlendShapeWeight", SetBlendShapeWeight),
+			new LuaMethod("BakeMesh", BakeMesh),
 			new LuaMethod("New", _CreateSkinnedMeshRenderer),
 			new LuaMethod("GetClassType", GetClassType),
 			new LuaMethod("__eq", Lua_Eq),
@@ -20,10 +20,11 @@ public class SkinnedMeshRendererWrap
 		LuaField[] fields = new LuaField[]
 		{
 			new LuaField("bones", get_bones, set_bones),
-			new LuaField("rootBone", get_rootBone, set_rootBone),
 			new LuaField("quality", get_quality, set_quality),
-			new LuaField("sharedMesh", get_sharedMesh, set_sharedMesh),
 			new LuaField("updateWhenOffscreen", get_updateWhenOffscreen, set_updateWhenOffscreen),
+			new LuaField("rootBone", get_rootBone, set_rootBone),
+			new LuaField("sharedMesh", get_sharedMesh, set_sharedMesh),
+			new LuaField("skinnedMotionVectors", get_skinnedMotionVectors, set_skinnedMotionVectors),
 			new LuaField("localBounds", get_localBounds, set_localBounds),
 		};
 
@@ -83,30 +84,6 @@ public class SkinnedMeshRendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_rootBone(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name rootBone");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index rootBone on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.rootBone);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_quality(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -127,6 +104,54 @@ public class SkinnedMeshRendererWrap
 		}
 
 		LuaScriptMgr.Push(L, obj.quality);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_updateWhenOffscreen(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name updateWhenOffscreen");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index updateWhenOffscreen on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.updateWhenOffscreen);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_rootBone(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name rootBone");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index rootBone on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.rootBone);
 		return 1;
 	}
 
@@ -155,7 +180,7 @@ public class SkinnedMeshRendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_updateWhenOffscreen(IntPtr L)
+	static int get_skinnedMotionVectors(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
@@ -166,15 +191,15 @@ public class SkinnedMeshRendererWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name updateWhenOffscreen");
+				LuaDLL.luaL_error(L, "unknown member name skinnedMotionVectors");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index updateWhenOffscreen on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index skinnedMotionVectors on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.updateWhenOffscreen);
+		LuaScriptMgr.Push(L, obj.skinnedMotionVectors);
 		return 1;
 	}
 
@@ -227,30 +252,6 @@ public class SkinnedMeshRendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_rootBone(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name rootBone");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index rootBone on a nil value");
-			}
-		}
-
-		obj.rootBone = (Transform)LuaScriptMgr.GetUnityObject(L, 3, typeof(Transform));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_quality(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -271,30 +272,6 @@ public class SkinnedMeshRendererWrap
 		}
 
 		obj.quality = (SkinQuality)LuaScriptMgr.GetNetObject(L, 3, typeof(SkinQuality));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_sharedMesh(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name sharedMesh");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index sharedMesh on a nil value");
-			}
-		}
-
-		obj.sharedMesh = (Mesh)LuaScriptMgr.GetUnityObject(L, 3, typeof(Mesh));
 		return 0;
 	}
 
@@ -323,6 +300,78 @@ public class SkinnedMeshRendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_rootBone(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name rootBone");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index rootBone on a nil value");
+			}
+		}
+
+		obj.rootBone = (Transform)LuaScriptMgr.GetUnityObject(L, 3, typeof(Transform));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_sharedMesh(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name sharedMesh");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index sharedMesh on a nil value");
+			}
+		}
+
+		obj.sharedMesh = (Mesh)LuaScriptMgr.GetUnityObject(L, 3, typeof(Mesh));
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_skinnedMotionVectors(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name skinnedMotionVectors");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index skinnedMotionVectors on a nil value");
+			}
+		}
+
+		obj.skinnedMotionVectors = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_localBounds(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -347,16 +396,6 @@ public class SkinnedMeshRendererWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int BakeMesh(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)LuaScriptMgr.GetUnityObjectSelf(L, 1, "SkinnedMeshRenderer");
-		Mesh arg0 = (Mesh)LuaScriptMgr.GetUnityObject(L, 2, typeof(Mesh));
-		obj.BakeMesh(arg0);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int GetBlendShapeWeight(IntPtr L)
 	{
 		LuaScriptMgr.CheckArgsCount(L, 2);
@@ -375,6 +414,16 @@ public class SkinnedMeshRendererWrap
 		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);
 		float arg1 = (float)LuaScriptMgr.GetNumber(L, 3);
 		obj.SetBlendShapeWeight(arg0,arg1);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int BakeMesh(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)LuaScriptMgr.GetUnityObjectSelf(L, 1, "SkinnedMeshRenderer");
+		Mesh arg0 = (Mesh)LuaScriptMgr.GetUnityObject(L, 2, typeof(Mesh));
+		obj.BakeMesh(arg0);
 		return 0;
 	}
 

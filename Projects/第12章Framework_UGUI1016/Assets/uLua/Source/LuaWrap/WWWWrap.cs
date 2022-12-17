@@ -9,38 +9,37 @@ public class WWWWrap
 	{
 		LuaMethod[] regs = new LuaMethod[]
 		{
-			new LuaMethod("Dispose", Dispose),
-			new LuaMethod("InitWWW", InitWWW),
 			new LuaMethod("EscapeURL", EscapeURL),
 			new LuaMethod("UnEscapeURL", UnEscapeURL),
+			new LuaMethod("LoadFromCacheOrDownload", LoadFromCacheOrDownload),
+			new LuaMethod("LoadImageIntoTexture", LoadImageIntoTexture),
+			new LuaMethod("Dispose", Dispose),
 			new LuaMethod("GetAudioClip", GetAudioClip),
 			new LuaMethod("GetAudioClipCompressed", GetAudioClipCompressed),
-			new LuaMethod("LoadImageIntoTexture", LoadImageIntoTexture),
-			new LuaMethod("LoadFromCacheOrDownload", LoadFromCacheOrDownload),
+			new LuaMethod("GetMovieTexture", GetMovieTexture),
 			new LuaMethod("New", _CreateWWW),
 			new LuaMethod("GetClassType", GetClassType),
 		};
 
 		LuaField[] fields = new LuaField[]
 		{
-			new LuaField("responseHeaders", get_responseHeaders, null),
-			new LuaField("text", get_text, null),
+			new LuaField("assetBundle", get_assetBundle, null),
 			new LuaField("bytes", get_bytes, null),
-			new LuaField("size", get_size, null),
+			new LuaField("bytesDownloaded", get_bytesDownloaded, null),
 			new LuaField("error", get_error, null),
-			new LuaField("texture", get_texture, null),
-			new LuaField("textureNonReadable", get_textureNonReadable, null),
-			new LuaField("audioClip", get_audioClip, null),
 			new LuaField("isDone", get_isDone, null),
 			new LuaField("progress", get_progress, null),
-			new LuaField("uploadProgress", get_uploadProgress, null),
-			new LuaField("bytesDownloaded", get_bytesDownloaded, null),
-			new LuaField("url", get_url, null),
-			new LuaField("assetBundle", get_assetBundle, null),
+			new LuaField("responseHeaders", get_responseHeaders, null),
+			new LuaField("text", get_text, null),
+			new LuaField("texture", get_texture, null),
+			new LuaField("textureNonReadable", get_textureNonReadable, null),
 			new LuaField("threadPriority", get_threadPriority, set_threadPriority),
+			new LuaField("uploadProgress", get_uploadProgress, null),
+			new LuaField("url", get_url, null),
+			new LuaField("keepWaiting", get_keepWaiting, null),
 		};
 
-		LuaScriptMgr.RegisterLib(L, "UnityEngine.WWW", typeof(WWW), regs, fields, typeof(object));
+		LuaScriptMgr.RegisterLib(L, "UnityEngine.WWW", typeof(WWW), regs, fields, typeof(CustomYieldInstruction));
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
@@ -52,7 +51,7 @@ public class WWWWrap
 		{
 			string arg0 = LuaScriptMgr.GetString(L, 1);
 			WWW obj = new WWW(arg0);
-			LuaScriptMgr.PushObject(L, obj);
+			LuaScriptMgr.Push(L, obj);
 			return 1;
 		}
 		else if (count == 2 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(byte[])))
@@ -60,7 +59,7 @@ public class WWWWrap
 			string arg0 = LuaScriptMgr.GetString(L, 1);
 			byte[] objs1 = LuaScriptMgr.GetArrayNumber<byte>(L, 2);
 			WWW obj = new WWW(arg0,objs1);
-			LuaScriptMgr.PushObject(L, obj);
+			LuaScriptMgr.Push(L, obj);
 			return 1;
 		}
 		else if (count == 2 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(WWWForm)))
@@ -68,7 +67,7 @@ public class WWWWrap
 			string arg0 = LuaScriptMgr.GetString(L, 1);
 			WWWForm arg1 = (WWWForm)LuaScriptMgr.GetNetObject(L, 2, typeof(WWWForm));
 			WWW obj = new WWW(arg0,arg1);
-			LuaScriptMgr.PushObject(L, obj);
+			LuaScriptMgr.Push(L, obj);
 			return 1;
 		}
 		else if (count == 3)
@@ -77,7 +76,7 @@ public class WWWWrap
 			byte[] objs1 = LuaScriptMgr.GetArrayNumber<byte>(L, 2);
 			Dictionary<string,string> arg2 = (Dictionary<string,string>)LuaScriptMgr.GetNetObject(L, 3, typeof(Dictionary<string,string>));
 			WWW obj = new WWW(arg0,objs1,arg2);
-			LuaScriptMgr.PushObject(L, obj);
+			LuaScriptMgr.Push(L, obj);
 			return 1;
 		}
 		else
@@ -98,7 +97,7 @@ public class WWWWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_responseHeaders(IntPtr L)
+	static int get_assetBundle(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		WWW obj = (WWW)o;
@@ -109,39 +108,15 @@ public class WWWWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name responseHeaders");
+				LuaDLL.luaL_error(L, "unknown member name assetBundle");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index responseHeaders on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index assetBundle on a nil value");
 			}
 		}
 
-		LuaScriptMgr.PushObject(L, obj.responseHeaders);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_text(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		WWW obj = (WWW)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name text");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index text on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.text);
+		LuaScriptMgr.Push(L, obj.assetBundle);
 		return 1;
 	}
 
@@ -170,7 +145,7 @@ public class WWWWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_size(IntPtr L)
+	static int get_bytesDownloaded(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		WWW obj = (WWW)o;
@@ -181,15 +156,15 @@ public class WWWWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name size");
+				LuaDLL.luaL_error(L, "unknown member name bytesDownloaded");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index size on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index bytesDownloaded on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.size);
+		LuaScriptMgr.Push(L, obj.bytesDownloaded);
 		return 1;
 	}
 
@@ -214,78 +189,6 @@ public class WWWWrap
 		}
 
 		LuaScriptMgr.Push(L, obj.error);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_texture(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		WWW obj = (WWW)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name texture");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index texture on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.texture);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_textureNonReadable(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		WWW obj = (WWW)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name textureNonReadable");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index textureNonReadable on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.textureNonReadable);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_audioClip(IntPtr L)
-	{
-		object o = LuaScriptMgr.GetLuaObject(L, 1);
-		WWW obj = (WWW)o;
-
-		if (obj == null)
-		{
-			LuaTypes types = LuaDLL.lua_type(L, 1);
-
-			if (types == LuaTypes.LUA_TTABLE)
-			{
-				LuaDLL.luaL_error(L, "unknown member name audioClip");
-			}
-			else
-			{
-				LuaDLL.luaL_error(L, "attempt to index audioClip on a nil value");
-			}
-		}
-
-		LuaScriptMgr.Push(L, obj.audioClip);
 		return 1;
 	}
 
@@ -338,7 +241,7 @@ public class WWWWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_uploadProgress(IntPtr L)
+	static int get_responseHeaders(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		WWW obj = (WWW)o;
@@ -349,20 +252,20 @@ public class WWWWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name uploadProgress");
+				LuaDLL.luaL_error(L, "unknown member name responseHeaders");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index uploadProgress on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index responseHeaders on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.uploadProgress);
+		LuaScriptMgr.PushObject(L, obj.responseHeaders);
 		return 1;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_bytesDownloaded(IntPtr L)
+	static int get_text(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		WWW obj = (WWW)o;
@@ -373,20 +276,20 @@ public class WWWWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name bytesDownloaded");
+				LuaDLL.luaL_error(L, "unknown member name text");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index bytesDownloaded on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index text on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.bytesDownloaded);
+		LuaScriptMgr.Push(L, obj.text);
 		return 1;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_url(IntPtr L)
+	static int get_texture(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		WWW obj = (WWW)o;
@@ -397,20 +300,20 @@ public class WWWWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name url");
+				LuaDLL.luaL_error(L, "unknown member name texture");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index url on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index texture on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.url);
+		LuaScriptMgr.Push(L, obj.texture);
 		return 1;
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_assetBundle(IntPtr L)
+	static int get_textureNonReadable(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
 		WWW obj = (WWW)o;
@@ -421,15 +324,15 @@ public class WWWWrap
 
 			if (types == LuaTypes.LUA_TTABLE)
 			{
-				LuaDLL.luaL_error(L, "unknown member name assetBundle");
+				LuaDLL.luaL_error(L, "unknown member name textureNonReadable");
 			}
 			else
 			{
-				LuaDLL.luaL_error(L, "attempt to index assetBundle on a nil value");
+				LuaDLL.luaL_error(L, "attempt to index textureNonReadable on a nil value");
 			}
 		}
 
-		LuaScriptMgr.Push(L, obj.assetBundle);
+		LuaScriptMgr.Push(L, obj.textureNonReadable);
 		return 1;
 	}
 
@@ -458,6 +361,78 @@ public class WWWWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_uploadProgress(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		WWW obj = (WWW)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name uploadProgress");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index uploadProgress on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.uploadProgress);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_url(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		WWW obj = (WWW)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name url");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index url on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.url);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_keepWaiting(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		WWW obj = (WWW)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name keepWaiting");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index keepWaiting on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.keepWaiting);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_threadPriority(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -478,27 +453,6 @@ public class WWWWrap
 		}
 
 		obj.threadPriority = (ThreadPriority)LuaScriptMgr.GetNetObject(L, 3, typeof(ThreadPriority));
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int Dispose(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 1);
-		WWW obj = (WWW)LuaScriptMgr.GetNetObjectSelf(L, 1, "WWW");
-		obj.Dispose();
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int InitWWW(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 4);
-		WWW obj = (WWW)LuaScriptMgr.GetNetObjectSelf(L, 1, "WWW");
-		string arg0 = LuaScriptMgr.GetLuaString(L, 2);
-		byte[] objs1 = LuaScriptMgr.GetArrayNumber<byte>(L, 3);
-		string[] objs2 = LuaScriptMgr.GetArrayString(L, 4);
-		obj.InitWWW(arg0,objs1,objs2);
 		return 0;
 	}
 
@@ -559,11 +513,93 @@ public class WWWWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadFromCacheOrDownload(IntPtr L)
+	{
+		int count = LuaDLL.lua_gettop(L);
+
+		if (count == 2 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(Hash128)))
+		{
+			string arg0 = LuaScriptMgr.GetString(L, 1);
+			Hash128 arg1 = (Hash128)LuaScriptMgr.GetLuaObject(L, 2);
+			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 2 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(int)))
+		{
+			string arg0 = LuaScriptMgr.GetString(L, 1);
+			int arg1 = (int)LuaDLL.lua_tonumber(L, 2);
+			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 3 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(CachedAssetBundle), typeof(uint)))
+		{
+			string arg0 = LuaScriptMgr.GetString(L, 1);
+			CachedAssetBundle arg1 = (CachedAssetBundle)LuaScriptMgr.GetLuaObject(L, 2);
+			uint arg2 = (uint)LuaDLL.lua_tonumber(L, 3);
+			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1,arg2);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 3 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(Hash128), typeof(uint)))
+		{
+			string arg0 = LuaScriptMgr.GetString(L, 1);
+			Hash128 arg1 = (Hash128)LuaScriptMgr.GetLuaObject(L, 2);
+			uint arg2 = (uint)LuaDLL.lua_tonumber(L, 3);
+			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1,arg2);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 3 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(int), typeof(uint)))
+		{
+			string arg0 = LuaScriptMgr.GetString(L, 1);
+			int arg1 = (int)LuaDLL.lua_tonumber(L, 2);
+			uint arg2 = (uint)LuaDLL.lua_tonumber(L, 3);
+			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1,arg2);
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else
+		{
+			LuaDLL.luaL_error(L, "invalid arguments to method: WWW.LoadFromCacheOrDownload");
+		}
+
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LoadImageIntoTexture(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		WWW obj = (WWW)LuaScriptMgr.GetNetObjectSelf(L, 1, "WWW");
+		Texture2D arg0 = (Texture2D)LuaScriptMgr.GetUnityObject(L, 2, typeof(Texture2D));
+		obj.LoadImageIntoTexture(arg0);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Dispose(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 1);
+		WWW obj = (WWW)LuaScriptMgr.GetNetObjectSelf(L, 1, "WWW");
+		obj.Dispose();
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int GetAudioClip(IntPtr L)
 	{
 		int count = LuaDLL.lua_gettop(L);
 
-		if (count == 2)
+		if (count == 1)
+		{
+			WWW obj = (WWW)LuaScriptMgr.GetNetObjectSelf(L, 1, "WWW");
+			AudioClip o = obj.GetAudioClip();
+			LuaScriptMgr.Push(L, o);
+			return 1;
+		}
+		else if (count == 2)
 		{
 			WWW obj = (WWW)LuaScriptMgr.GetNetObjectSelf(L, 1, "WWW");
 			bool arg0 = LuaScriptMgr.GetBoolean(L, 2);
@@ -636,60 +672,13 @@ public class WWWWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int LoadImageIntoTexture(IntPtr L)
+	static int GetMovieTexture(IntPtr L)
 	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
+		LuaScriptMgr.CheckArgsCount(L, 1);
 		WWW obj = (WWW)LuaScriptMgr.GetNetObjectSelf(L, 1, "WWW");
-		Texture2D arg0 = (Texture2D)LuaScriptMgr.GetUnityObject(L, 2, typeof(Texture2D));
-		obj.LoadImageIntoTexture(arg0);
-		return 0;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int LoadFromCacheOrDownload(IntPtr L)
-	{
-		int count = LuaDLL.lua_gettop(L);
-
-		if (count == 2 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(Hash128)))
-		{
-			string arg0 = LuaScriptMgr.GetString(L, 1);
-			Hash128 arg1 = (Hash128)LuaScriptMgr.GetLuaObject(L, 2);
-			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1);
-			LuaScriptMgr.PushObject(L, o);
-			return 1;
-		}
-		else if (count == 2 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(int)))
-		{
-			string arg0 = LuaScriptMgr.GetString(L, 1);
-			int arg1 = (int)LuaDLL.lua_tonumber(L, 2);
-			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1);
-			LuaScriptMgr.PushObject(L, o);
-			return 1;
-		}
-		else if (count == 3 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(Hash128), typeof(uint)))
-		{
-			string arg0 = LuaScriptMgr.GetString(L, 1);
-			Hash128 arg1 = (Hash128)LuaScriptMgr.GetLuaObject(L, 2);
-			uint arg2 = (uint)LuaDLL.lua_tonumber(L, 3);
-			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1,arg2);
-			LuaScriptMgr.PushObject(L, o);
-			return 1;
-		}
-		else if (count == 3 && LuaScriptMgr.CheckTypes(L, 1, typeof(string), typeof(int), typeof(uint)))
-		{
-			string arg0 = LuaScriptMgr.GetString(L, 1);
-			int arg1 = (int)LuaDLL.lua_tonumber(L, 2);
-			uint arg2 = (uint)LuaDLL.lua_tonumber(L, 3);
-			WWW o = WWW.LoadFromCacheOrDownload(arg0,arg1,arg2);
-			LuaScriptMgr.PushObject(L, o);
-			return 1;
-		}
-		else
-		{
-			LuaDLL.luaL_error(L, "invalid arguments to method: WWW.LoadFromCacheOrDownload");
-		}
-
-		return 0;
+		MovieTexture o = obj.GetMovieTexture();
+		LuaScriptMgr.Push(L, o);
+		return 1;
 	}
 }
 

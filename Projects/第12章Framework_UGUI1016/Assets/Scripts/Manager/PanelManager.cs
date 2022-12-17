@@ -44,7 +44,7 @@ namespace BIEFramework.Manager {
             // Get the asset.
             GameObject prefab = request.GetAsset<GameObject>();
 
-            if (Parent.FindChild(name) != null || prefab == null) {
+            if (Parent.Find(name) != null || prefab == null) {
                 yield break;
             }
             GameObject go = Instantiate(prefab) as GameObject;

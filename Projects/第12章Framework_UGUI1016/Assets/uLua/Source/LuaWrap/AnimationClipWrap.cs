@@ -27,6 +27,7 @@ public class AnimationClipWrap
 			new LuaField("localBounds", get_localBounds, set_localBounds),
 			new LuaField("legacy", get_legacy, set_legacy),
 			new LuaField("humanMotion", get_humanMotion, null),
+			new LuaField("empty", get_empty, null),
 			new LuaField("events", get_events, set_events),
 		};
 
@@ -202,6 +203,30 @@ public class AnimationClipWrap
 		}
 
 		LuaScriptMgr.Push(L, obj.humanMotion);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_empty(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		AnimationClip obj = (AnimationClip)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name empty");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index empty on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.empty);
 		return 1;
 	}
 

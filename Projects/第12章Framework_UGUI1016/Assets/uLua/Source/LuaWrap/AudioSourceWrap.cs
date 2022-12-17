@@ -25,6 +25,8 @@ public class AudioSourceWrap
 			new LuaMethod("GetSpectrumData", GetSpectrumData),
 			new LuaMethod("SetSpatializerFloat", SetSpatializerFloat),
 			new LuaMethod("GetSpatializerFloat", GetSpatializerFloat),
+			new LuaMethod("SetAmbisonicDecoderFloat", SetAmbisonicDecoderFloat),
+			new LuaMethod("GetAmbisonicDecoderFloat", GetAmbisonicDecoderFloat),
 			new LuaMethod("New", _CreateAudioSource),
 			new LuaMethod("GetClassType", GetClassType),
 			new LuaMethod("__eq", Lua_Eq),
@@ -39,6 +41,7 @@ public class AudioSourceWrap
 			new LuaField("clip", get_clip, set_clip),
 			new LuaField("outputAudioMixerGroup", get_outputAudioMixerGroup, set_outputAudioMixerGroup),
 			new LuaField("isPlaying", get_isPlaying, null),
+			new LuaField("isVirtual", get_isVirtual, null),
 			new LuaField("loop", get_loop, set_loop),
 			new LuaField("ignoreListenerVolume", get_ignoreListenerVolume, set_ignoreListenerVolume),
 			new LuaField("playOnAwake", get_playOnAwake, set_playOnAwake),
@@ -47,6 +50,7 @@ public class AudioSourceWrap
 			new LuaField("panStereo", get_panStereo, set_panStereo),
 			new LuaField("spatialBlend", get_spatialBlend, set_spatialBlend),
 			new LuaField("spatialize", get_spatialize, set_spatialize),
+			new LuaField("spatializePostEffects", get_spatializePostEffects, set_spatializePostEffects),
 			new LuaField("reverbZoneMix", get_reverbZoneMix, set_reverbZoneMix),
 			new LuaField("bypassEffects", get_bypassEffects, set_bypassEffects),
 			new LuaField("bypassListenerEffects", get_bypassListenerEffects, set_bypassListenerEffects),
@@ -260,6 +264,30 @@ public class AudioSourceWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_isVirtual(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		AudioSource obj = (AudioSource)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name isVirtual");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index isVirtual on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.isVirtual);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int get_loop(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -448,6 +476,30 @@ public class AudioSourceWrap
 		}
 
 		LuaScriptMgr.Push(L, obj.spatialize);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_spatializePostEffects(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		AudioSource obj = (AudioSource)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name spatializePostEffects");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index spatializePostEffects on a nil value");
+			}
+		}
+
+		LuaScriptMgr.Push(L, obj.spatializePostEffects);
 		return 1;
 	}
 
@@ -1052,6 +1104,30 @@ public class AudioSourceWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_spatializePostEffects(IntPtr L)
+	{
+		object o = LuaScriptMgr.GetLuaObject(L, 1);
+		AudioSource obj = (AudioSource)o;
+
+		if (obj == null)
+		{
+			LuaTypes types = LuaDLL.lua_type(L, 1);
+
+			if (types == LuaTypes.LUA_TTABLE)
+			{
+				LuaDLL.luaL_error(L, "unknown member name spatializePostEffects");
+			}
+			else
+			{
+				LuaDLL.luaL_error(L, "attempt to index spatializePostEffects on a nil value");
+			}
+		}
+
+		obj.spatializePostEffects = LuaScriptMgr.GetBoolean(L, 3);
+		return 0;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int set_reverbZoneMix(IntPtr L)
 	{
 		object o = LuaScriptMgr.GetLuaObject(L, 1);
@@ -1529,6 +1605,31 @@ public class AudioSourceWrap
 		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);
 		float arg1;
 		bool o = obj.GetSpatializerFloat(arg0,out arg1);
+		LuaScriptMgr.Push(L, o);
+		LuaScriptMgr.Push(L, arg1);
+		return 2;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int SetAmbisonicDecoderFloat(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 3);
+		AudioSource obj = (AudioSource)LuaScriptMgr.GetUnityObjectSelf(L, 1, "AudioSource");
+		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);
+		float arg1 = (float)LuaScriptMgr.GetNumber(L, 3);
+		bool o = obj.SetAmbisonicDecoderFloat(arg0,arg1);
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int GetAmbisonicDecoderFloat(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 3);
+		AudioSource obj = (AudioSource)LuaScriptMgr.GetUnityObjectSelf(L, 1, "AudioSource");
+		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);
+		float arg1;
+		bool o = obj.GetAmbisonicDecoderFloat(arg0,out arg1);
 		LuaScriptMgr.Push(L, o);
 		LuaScriptMgr.Push(L, arg1);
 		return 2;

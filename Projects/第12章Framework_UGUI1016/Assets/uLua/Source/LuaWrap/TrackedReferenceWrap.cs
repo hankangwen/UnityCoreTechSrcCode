@@ -39,6 +39,17 @@ public class TrackedReferenceWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Lua_Eq(IntPtr L)
+	{
+		LuaScriptMgr.CheckArgsCount(L, 2);
+		TrackedReference arg0 = LuaScriptMgr.GetLuaObject(L, 1) as TrackedReference;
+		TrackedReference arg1 = LuaScriptMgr.GetLuaObject(L, 2) as TrackedReference;
+		bool o = arg0 == arg1;
+		LuaScriptMgr.Push(L, o);
+		return 1;
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int Equals(IntPtr L)
 	{
 		LuaScriptMgr.CheckArgsCount(L, 2);
@@ -55,17 +66,6 @@ public class TrackedReferenceWrap
 		LuaScriptMgr.CheckArgsCount(L, 1);
 		TrackedReference obj = (TrackedReference)LuaScriptMgr.GetTrackedObjectSelf(L, 1, "TrackedReference");
 		int o = obj.GetHashCode();
-		LuaScriptMgr.Push(L, o);
-		return 1;
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int Lua_Eq(IntPtr L)
-	{
-		LuaScriptMgr.CheckArgsCount(L, 2);
-		TrackedReference arg0 = LuaScriptMgr.GetLuaObject(L, 1) as TrackedReference;
-		TrackedReference arg1 = LuaScriptMgr.GetLuaObject(L, 2) as TrackedReference;
-		bool o = arg0 == arg1;
 		LuaScriptMgr.Push(L, o);
 		return 1;
 	}
