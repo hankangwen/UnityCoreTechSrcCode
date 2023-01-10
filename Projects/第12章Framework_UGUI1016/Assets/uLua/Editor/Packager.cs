@@ -20,6 +20,7 @@ public class Packager {
         return AssetDatabase.LoadMainAssetAtPath("Assets/Builds/" + file);
     }
 
+    //在iPhone平台编译iPhone资源
     [MenuItem("Game/Build iPhone Resource", false, 11)]
     public static void BuildiPhoneResource() { 
         BuildTarget target;
@@ -27,11 +28,13 @@ public class Packager {
         BuildAssetResource(target, false);
     }
 
+    //在Android平台编译Android资源
     [MenuItem("Game/Build Android Resource", false, 12)]
     public static void BuildAndroidResource() {
         BuildAssetResource(BuildTarget.Android, true);
     }
 
+    //在Windows平台编译Windows资源
     [MenuItem("Game/Build Windows Resource", false, 13)]
     public static void BuildWindowsResource() {
         BuildAssetResource(BuildTarget.StandaloneWindows, true);
@@ -84,6 +87,7 @@ public class Packager {
         EditorUtility.ClearProgressBar();
 
         ///----------------------创建文件列表-----------------------
+        /// 对文件md5加密的代码模块
         string newFilePath = resPath + "/files.txt";
         if (File.Exists(newFilePath)) File.Delete(newFilePath);
 
@@ -99,7 +103,7 @@ public class Packager {
 
             string md5 = Util.md5file(file);
             string value = file.Replace(resPath, string.Empty);
-            sw.WriteLine(value + "|" + md5);
+            sw.WriteLine(value + "|" + md5);    //资源和md5码之间用"|"表示
         }
         sw.Close(); fs.Close();
         AssetDatabase.Refresh();

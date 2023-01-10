@@ -136,6 +136,7 @@ public static class LuaBinding
     //    }
     //}
 
+    //产生Lua的wrap文件
     [MenuItem("Lua/Gen Lua Wrap Files", false, 11)]
     public static void Binding()
     {
@@ -225,6 +226,7 @@ public static class LuaBinding
         }
     }
 
+    //清空生成的文件列表和wrap cs文件
     [MenuItem("Lua/Clear LuaBinder File + Wrap Files", false, 13)]
     public static void ClearLuaBinder()
     {

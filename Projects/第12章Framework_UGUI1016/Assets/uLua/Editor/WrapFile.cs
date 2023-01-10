@@ -21,7 +21,7 @@ public static class WrapFile {
         //测试模板
         ////_GT(typeof(Dictionary<int,string>)).SetWrapName("DictInt2Str").SetLibName("DictInt2Str"),
         
-        //custom    
+        //custom 自定义类   
         _GT(typeof(WWW)),
         _GT(typeof(Debugger)),
 		_GT(typeof(Util)),
